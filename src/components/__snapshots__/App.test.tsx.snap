@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h2>
+      Welcome to React
+    </h2>
+  </div>
+  <p
+    className="App-intro"
+  >
+    To get started, edit 
+    <code>
+      src/App.tsx
+    </code>
+     and save to reload.
+  </p>
+  <button
+    className="ant-btn ant-btn-primary"
+    onClick={[Function]}
+    title={undefined}
+    type="button"
+  >
+    <span>
+      Primary
+    </span>
+  </button>
+   
+</div>
+`;
