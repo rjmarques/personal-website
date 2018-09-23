@@ -4,5 +4,7 @@ import App from "./components/App";
 import "./index.scss";
 import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<App />, document.getElementById("root") as HTMLElement);
+ReactDOM.render(<App message="Hi Everybody!" />, document.getElementById(
+  "root"
+) as HTMLElement);
 registerServiceWorker();

@@ -1,27 +1,36 @@
 .App {
-  text-align: center;
+  align-items: center;
+  display: flex;
+  height: 50%;
 
   .App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
+    color: #95c3ec;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 400px;
 
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-      height: 80px;
+    &::before {
+      animation: wave 1.5s infinite;
+      background: url("./waving-hand.png") no-repeat 0px/100%;
+      content: "";
+      height: 30px;
+      position: absolute;
+      right: 70px;
+      bottom: 8px;
+      width: 30px;
     }
-
-    h2 {
-      color: white;
-    }
-  }
-
-  .App-intro {
-    font-size: large;
   }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(80deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
