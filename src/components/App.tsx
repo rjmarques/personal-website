@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import * as React from "react";
 import "./App.scss";
 
@@ -10,6 +11,7 @@ class App extends React.Component<IAppProps, {}> {
     return (
       <div className="App">
         <h1 className="App-header">{this.props.message}</h1>
+        <Button type="primary">Primary</Button>
       </div>
     );
   }

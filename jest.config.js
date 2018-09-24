@@ -45,5 +45,10 @@ module.exports = {
       lines: 80,
       statements: 10
     }
-  }
+  },
+  coveragePathIgnorePatterns: [
+    "/node_modules/",
+    "/src/index.tsx",
+    "/src/registerServiceWorker.ts"
+  ]
 };
