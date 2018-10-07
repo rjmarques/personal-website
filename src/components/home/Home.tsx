@@ -6,23 +6,23 @@ import "./Home.less";
 class Home extends React.Component {
   public render() {
     return (
-      <section className="Bio">
+      <section className="Home">
         <div className="content">
-          <div className="Bio-content">
+          <div className="Home-content">
             <Row>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <img className="Bio-mugshot" src={require("./img/me.jpg")} />
+                <img className="Home-mugshot" src={require("./img/me.jpg")} />
               </Col>
               <Col xs={24} sm={24} md={16} lg={16} xl={16}>
-                <div className="Bio-description">
+                <div className="Home-description">
                   <h1>Ricardo Marques</h1>
-                  <span className="Bio-sub-title">Full Stack Developer</span>
+                  <span className="Home-sub-title">Full Stack Developer</span>
                   <p>
                     I specialize in Objected Oriented Development and Web
                     Development. I stand for quality and love spending time
                     optimizing every little piece of code.
                   </p>
-                  <div className="Bio-buttons">
+                  <div className="Home-buttons">
                     <Button type="primary" size="large">
                       Contact me
                     </Button>
