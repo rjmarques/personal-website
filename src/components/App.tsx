@@ -1,17 +1,21 @@
-import { Button } from "antd";
+import { Layout } from "antd";
 import * as React from "react";
-import "./App.scss";
 
-export interface IAppProps {
-  message: string;
-}
+import "./App.less";
+import Home from "./bio/Home";
 
-class App extends React.Component<IAppProps, {}> {
+const { Header, Content } = Layout;
+
+class App extends React.Component {
   public render() {
     return (
       <div className="App">
-        <h1 className="App-header">{this.props.message}</h1>
-        <Button type="primary">Primary</Button>
+        <Layout>
+          <Header />
+          <Content>
+            <Home />
+          </Content>
+        </Layout>
       </div>
     );
   }

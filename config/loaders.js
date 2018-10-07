@@ -130,7 +130,7 @@ const rawLessLoader = {
   loader: require.resolve("less-loader"),
   options: {
     modifyVars: {
-      // HERE YOU CAN OVERRIDE THE THEME VARIABLES
+      "@primary-color": "#08a060"
     },
     javascriptEnabled: true
   }

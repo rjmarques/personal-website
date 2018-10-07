@@ -448,7 +448,9 @@ export { emptyIcon };
 // export { default as DoubleLeftOutline } from '@ant-design/icons/lib/outline/DoubleLeftOutline';
 // export { default as DoubleRightOutline } from '@ant-design/icons/lib/outline/DoubleRightOutline';
 // export { default as DownOutline } from '@ant-design/icons/lib/outline/DownOutline';
-// export { default as DownloadOutline } from '@ant-design/icons/lib/outline/DownloadOutline';
+export {
+  default as DownloadOutline
+} from "@ant-design/icons/lib/outline/DownloadOutline";
 // export { default as DragOutline } from '@ant-design/icons/lib/outline/DragOutline';
 // export { default as DribbbleOutline } from '@ant-design/icons/lib/outline/DribbbleOutline';
 // export { default as DropboxOutline } from '@ant-design/icons/lib/outline/DropboxOutline';
