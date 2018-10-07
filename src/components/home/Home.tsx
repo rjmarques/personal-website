@@ -11,7 +11,11 @@ class Home extends React.Component {
           <div className="Home-content">
             <Row>
               <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-                <img className="Home-mugshot" src={require("./img/me.jpg")} />
+                <img
+                  className="Home-mugshot"
+                  alt="picture of me"
+                  src={require("../../assets/img/me.jpg")}
+                />
               </Col>
               <Col xs={24} sm={24} md={16} lg={16} xl={16}>
                 <div className="Home-description">
