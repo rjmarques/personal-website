@@ -1,0 +1,26 @@
+@import "../../theme.less";
+
+.ant-menu {
+  background-color: inherit;
+  border: none;
+  color: @white;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.ant-menu-item {
+  color: @white;
+  padding: 0px;
+
+  &:not(:nth-last-child(2)) {
+    margin-right: 30px;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}

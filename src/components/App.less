@@ -1,8 +1,24 @@
 @import "../theme.less";
 
 .App {
+  position: relative;
+
   .content {
     margin: auto;
     width: 1170px;
+  }
+}
+
+.App-header {
+  background-color: @main-blue;
+  padding: 20px 0px;
+  position: absolute;
+  transition: 0.2s all;
+  width: 100%;
+  z-index: 100;
+
+  &.ghost {
+    background-color: fade(@main-blue, 80%);
+    padding: 32px 0px;
   }
 }
