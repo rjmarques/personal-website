@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import * as React from "react";
 
 import "./App.less";
-import Home from "./bio/Home";
+import Home from "./home/Home";
 
 const { Header, Content } = Layout;
 
