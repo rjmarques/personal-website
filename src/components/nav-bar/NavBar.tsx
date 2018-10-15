@@ -23,7 +23,7 @@ class NavBar extends React.Component {
               Bio
             </Menu.Item>
             <Menu.Item className="Nav-item" key="3">
-              Career
+              Experience
             </Menu.Item>
             <Menu.Item className="Nav-item" key="4">
               Education

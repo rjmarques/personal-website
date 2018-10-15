@@ -270,7 +270,9 @@ export { emptyIcon };
 // export { default as DownSquareOutline } from '@ant-design/icons/lib/outline/DownSquareOutline';
 // export { default as DribbbleSquareOutline } from '@ant-design/icons/lib/outline/DribbbleSquareOutline';
 // export { default as EditOutline } from '@ant-design/icons/lib/outline/EditOutline';
-// export { default as EnvironmentOutline } from '@ant-design/icons/lib/outline/EnvironmentOutline';
+export {
+  default as EnvironmentOutline
+} from "@ant-design/icons/lib/outline/EnvironmentOutline";
 // export { default as ExclamationCircleOutline } from '@ant-design/icons/lib/outline/ExclamationCircleOutline';
 // export { default as ExperimentOutline } from '@ant-design/icons/lib/outline/ExperimentOutline';
 // export { default as EyeOutline } from '@ant-design/icons/lib/outline/EyeOutline';
