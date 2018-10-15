@@ -26,8 +26,7 @@
     "location": "London",
     "roles": [
       "Kick-started and lead conceptualization and development of Hyperglance’s Web Client. This included selecting what technologies to use, defining a CI build, developing the Client’s architectural backbone, implementing a scalable SASS rule-structure, and outlining coding practices and standards. Moreover, oversaw all technical aspects regarding the Web Client and its integration with the Hyperglance server.",
-      "Enhanced the Hyperglance JEE server-side feature-base, by developing core modules. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components.",
-      "Implemented several real-time data gathering integrations between Hyperglance and external datasources (e.g., AWS, Openstack). This involved normalizing external data into Hyperglance’s topological and analytical data model.",
+      "Enhanced the Hyperglance JEE server-side feature-base, by developing core modules. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components. Additionally, implemented several real-time data gathering integrations between Hyperglance and external datasources (e.g., AWS, Openstack). This involved normalizing external data into Hyperglance’s topological and analytical data model.",
       "Other responsibilities included: interviewing both frontend and backend developer candidates, attending conferences, interacting with customers, mentoring new-hires."
     ],
     "startingDate": "Jul 2014",
@@ -53,8 +52,7 @@
     "roles": [
       "Partly designed, developed and maintained an efficient and fault-tolerant configuration of a multi-tiered J2EE Guidewire billing product on two tier one Insurance companies, that would later handle several millions of Dollars and GBPs of insurance premium.",
       "Designed and developed integration points (e.g., SOAP, JMS) between the client server application and external third party services, that provided scalable and concurrent bidirectional data flows based on real-time monetary client transactions.",
-      "Conceptualized and implemented a modular JUnit framework for populating Guidewire’s product database with test data. The framework improved the JUnit development productivity, on average, by 50%.",
-      "Responsible for thoroughly evaluating job candidate code-test submissions."
+      "Conceptualized and implemented a modular JUnit framework for populating Guidewire’s product database with test data. The framework improved the JUnit development productivity, on average, by 50%."
     ],
     "startingDate": "Nov 2012",
     "technologies": ["Java", "JMS", "SOAP", "Rest", "PostgreSQL"],
