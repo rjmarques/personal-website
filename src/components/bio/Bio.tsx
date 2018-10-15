@@ -52,16 +52,6 @@ class Bio extends React.Component {
               </div>
             </Col>
           </Row>
-          {/* <SectionTitle
-            title="Technologies"
-            subTitle="The ones I'm more profecient in"
-          /> */}
-          {/* <Row>
-            <h2>Profecient in</h2>
-          </Row>
-          <Row>
-            <Col span={24}>Here go the skills</Col>
-          </Row> */}
         </div>
       </section>
     );
