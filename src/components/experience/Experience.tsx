@@ -32,6 +32,7 @@ class Experience extends React.Component {
       </section>
     );
   }
+
   private getExpEntries(): JSX.Element {
     return (
       <ul>
@@ -40,14 +41,14 @@ class Experience extends React.Component {
             key={entry.jobTitle + entry.company}
             className="Experience-timeline-entry"
           >
-            <div className="Experience-timeline-content">
+            <div className="App-card-wide">
               <h3>
                 {entry.jobTitle} -{" "}
                 <a href={entry.url} target="_blank">
                   {entry.company}
                 </a>
               </h3>
-              <div className="Experience-subtitle">
+              <div className="App-card-subtitle">
                 <span>
                   {entry.startingDate} to {entry.endingDate}
                 </span>

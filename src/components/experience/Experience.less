@@ -1,6 +1,5 @@
 @import "../../theme.less";
 
-@left-margin: 20px;
 @border-width: 2px;
 @dot-size: 16px;
 @dot-top: 24px;
@@ -9,9 +8,9 @@
   .Experience-timeline-entry {
     border-left: @border-width solid @light-grey;
     position: relative;
-    margin-left: @left-margin;
-    padding-bottom: 40px;
-    padding-left: 30px;
+    margin-left: 10px;
+    padding-bottom: @card-spacing;
+    padding-left: 40px;
 
     &:last-child {
       padding-bottom: 0px;
@@ -37,23 +36,6 @@
       position: absolute;
       top: @dot-top + @dot-size / 2 - @border-width / 2;
       width: 14px;
-    }
-  }
-
-  .Experience-timeline-content {
-    background: @white;
-    border: 1px solid @light-grey;
-    border-left: @border-width solid @primary-color;
-    padding: 20px 30px;
-  }
-
-  .Experience-subtitle {
-    display: inline-block;
-    margin-top: 4px;
-    margin-bottom: 15px;
-
-    span {
-      margin-right: 5px;
     }
   }
 
