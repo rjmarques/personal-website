@@ -147,8 +147,12 @@ export { emptyIcon };
 // export { default as PhoneFill } from '@ant-design/icons/lib/fill/PhoneFill';
 // export { default as PictureFill } from '@ant-design/icons/lib/fill/PictureFill';
 // export { default as PieChartFill } from '@ant-design/icons/lib/fill/PieChartFill';
-// export { default as PlayCircleFill } from '@ant-design/icons/lib/fill/PlayCircleFill';
-// export { default as PlaySquareFill } from '@ant-design/icons/lib/fill/PlaySquareFill';
+// export {
+//   default as PlayCircleFill
+// } from "@ant-design/icons/lib/fill/PlayCircleFill";
+// export {
+//   default as PlaySquareFill
+// } from "@ant-design/icons/lib/fill/PlaySquareFill";
 // export { default as PlusCircleFill } from '@ant-design/icons/lib/fill/PlusCircleFill';
 // export { default as PlusSquareFill } from '@ant-design/icons/lib/fill/PlusSquareFill';
 // export { default as PoundCircleFill } from '@ant-design/icons/lib/fill/PoundCircleFill';
@@ -302,7 +306,9 @@ export {
 // export { default as FundOutline } from '@ant-design/icons/lib/outline/FundOutline';
 // export { default as FunnelPlotOutline } from '@ant-design/icons/lib/outline/FunnelPlotOutline';
 // export { default as GiftOutline } from '@ant-design/icons/lib/outline/GiftOutline';
-// export { default as GithubOutline } from '@ant-design/icons/lib/outline/GithubOutline';
+export {
+  default as GithubOutline
+} from "@ant-design/icons/lib/outline/GithubOutline";
 // export { default as GitlabOutline } from '@ant-design/icons/lib/outline/GitlabOutline';
 // export { default as HddOutline } from '@ant-design/icons/lib/outline/HddOutline';
 // export { default as HeartOutline } from '@ant-design/icons/lib/outline/HeartOutline';
@@ -335,8 +341,12 @@ export {
 // export { default as PhoneOutline } from '@ant-design/icons/lib/outline/PhoneOutline';
 // export { default as PictureOutline } from '@ant-design/icons/lib/outline/PictureOutline';
 // export { default as PieChartOutline } from '@ant-design/icons/lib/outline/PieChartOutline';
-// export { default as PlayCircleOutline } from '@ant-design/icons/lib/outline/PlayCircleOutline';
-// export { default as PlaySquareOutline } from '@ant-design/icons/lib/outline/PlaySquareOutline';
+export {
+  default as PlayCircleOutline
+} from "@ant-design/icons/lib/outline/PlayCircleOutline";
+export {
+  default as PlaySquareOutline
+} from "@ant-design/icons/lib/outline/PlaySquareOutline";
 // export { default as PlusCircleOutline } from '@ant-design/icons/lib/outline/PlusCircleOutline';
 // export { default as PlusSquareOutline } from '@ant-design/icons/lib/outline/PlusSquareOutline';
 // export { default as PrinterOutline } from '@ant-design/icons/lib/outline/PrinterOutline';

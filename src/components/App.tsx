@@ -6,6 +6,7 @@ import Education from "./education/Education";
 import Experience from "./experience/Experience";
 import Home from "./home/Home";
 import NavBar from "./nav-bar/NavBar";
+import Projects from "./projects/Projects";
 import Publications from "./publications/Publications";
 import Skills from "./skills/Skills";
 
@@ -21,6 +22,7 @@ class App extends React.Component {
           <Bio />
           <Skills />
           <Experience />
+          <Projects />
           <Publications />
           <Education />
         </div>
