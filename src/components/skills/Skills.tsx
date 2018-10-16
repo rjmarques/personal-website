@@ -63,30 +63,30 @@ class Skills extends React.Component {
             title="Expertise"
             subTitle="The technologies I am proficient in"
           />
-          <div>
-            <Row gutter={16} className="Skills-card-row">
-              {this.getSkills()}
-            </Row>
-          </div>
+          <div>{this.getSkills()}</div>
         </div>
       </section>
     );
   }
 
-  private getSkills(): JSX.Element[] {
-    return this.skills.map((skill: ISkill) => (
-      <Col key={skill.title} xs={24} sm={24} md={6} lg={6} xl={6}>
-        <a href={skill.url} target="_blank">
-          <Card
-            className="Skills-card"
-            hoverable={true}
-            cover={<img alt="example" src={skill.icon} />}
-          >
-            <div className="Skills-card-meta">{skill.title}</div>
-          </Card>
-        </a>
-      </Col>
-    ));
+  private getSkills(): JSX.Element {
+    return (
+      <Row gutter={16} className="Skills-card-row">
+        {this.skills.map((skill: ISkill) => (
+          <Col key={skill.title} xs={24} sm={24} md={6} lg={6} xl={6}>
+            <a href={skill.url} target="_blank">
+              <Card
+                className="Skills-card"
+                hoverable={true}
+                cover={<img alt={skill.title} src={skill.icon} />}
+              >
+                <div className="Skills-card-meta">{skill.title}</div>
+              </Card>
+            </a>
+          </Col>
+        ))}
+      </Row>
+    );
   }
 }
 
