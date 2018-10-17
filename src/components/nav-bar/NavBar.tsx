@@ -4,32 +4,37 @@ import * as React from "react";
 
 import "./NavBar.less";
 
-class NavBar extends React.Component {
+interface INavItem {
+  id: string;
+  name: string;
+}
+
+interface IProps {
+  items: INavItem[];
+  selectedItemId: string;
+  // TODO USER CLICKING FUNCTION
+}
+
+class NavBar extends React.Component<IProps, {}> {
   public render() {
     return (
-      <div className="content">
-        <nav className="nav-wrapper">
-          <Menu
-            className="Nav-menu"
-            onClick={this.handleClick}
-            defaultOpenKeys={["sub1"]}
-            selectedKeys={["1"]}
-            mode="horizontal"
-          >
-            <Menu.Item className="Nav-item" key="1">
-              Home
-            </Menu.Item>
-            <Menu.Item className="Nav-item" key="2">
-              Bio
-            </Menu.Item>
-            <Menu.Item className="Nav-item" key="3">
-              Experience
-            </Menu.Item>
-            <Menu.Item className="Nav-item" key="4">
-              Education
-            </Menu.Item>
-          </Menu>
-        </nav>
+      <div className="Nav">
+        <div className="content">
+          <nav className="nav-wrapper">
+            <Menu
+              className="Nav-menu"
+              onClick={this.handleClick}
+              mode="horizontal"
+              selectedKeys={[this.props.selectedItemId]}
+            >
+              {this.props.items.map(item => (
+                <Menu.Item className="Nav-item" key={item.id}>
+                  {item.name}
+                </Menu.Item>
+              ))}
+            </Menu>
+          </nav>
+        </div>
       </div>
     );
   }

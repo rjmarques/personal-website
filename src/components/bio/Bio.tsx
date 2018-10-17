@@ -9,7 +9,7 @@ class Bio extends React.Component {
   public render() {
     return (
       <section className="Bio">
-        <div className="content" id="BIO">
+        <div className="content">
           <SectionTitle title="about me" subTitle="Know me a bit better" />
           <Row>
             <Col xs={24} sm={24} md={4} lg={4} xl={4}>
