@@ -12,7 +12,7 @@ interface INavItem {
 interface IProps {
   items: INavItem[];
   selectedItemId: string;
-  // TODO USER CLICKING FUNCTION
+  userSelectedView: (viewId: string) => void;
 }
 
 class NavBar extends React.Component<IProps, {}> {
@@ -40,7 +40,8 @@ class NavBar extends React.Component<IProps, {}> {
   }
 
   private handleClick = (e: ClickParam) => {
-    alert(`click ${e.key}`);
+    const id = e.key;
+    this.props.userSelectedView(id);
   };
 }
 

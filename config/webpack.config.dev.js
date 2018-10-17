@@ -88,6 +88,7 @@ module.exports = {
       ".web.ts",
       ".ts",
       ".web.tsx",
+      ".ts",
       ".tsx",
       ".web.js",
       ".js",

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./App.less";
+import { AtView, ScrollTo } from "../services/Scroll";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
 import Experience from "./experience/Experience";
@@ -9,6 +9,8 @@ import NavBar from "./nav-bar/NavBar";
 import Projects from "./projects/Projects";
 import Publications from "./publications/Publications";
 import Skills from "./skills/Skills";
+
+import "./App.less";
 
 interface IView {
   id: string;
@@ -19,8 +21,6 @@ interface IView {
 interface IState {
   atViewId: string;
 }
-
-const MARGIN_OFFSET = 80;
 
 class App extends React.Component<{}, IState> {
   // views that trigger status a nav change
@@ -55,6 +55,7 @@ class App extends React.Component<{}, IState> {
   constructor(props: {}) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
+    this.viewSelected = this.viewSelected.bind(this);
 
     this.state = {
       atViewId: this.views[0].id
@@ -65,7 +66,11 @@ class App extends React.Component<{}, IState> {
     return (
       <div className="App">
         <header className="App-header">
-          <NavBar items={this.views} selectedItemId={this.state.atViewId} />
+          <NavBar
+            items={this.views}
+            selectedItemId={this.state.atViewId}
+            userSelectedView={this.viewSelected}
+          />
         </header>
         <div id={this.views[0].id} ref={this.views[0].ref}>
           <Home />
@@ -98,27 +103,30 @@ class App extends React.Component<{}, IState> {
     window.removeEventListener("scroll", this.handleScroll);
   }
 
+  private viewSelected(viewId: string) {
+    this.setSelectedView(viewId);
+    const selectedView = this.views.find(v => v.id === viewId);
+    if (selectedView && selectedView.ref.current && document.scrollingElement) {
+      ScrollTo(document.scrollingElement, selectedView.ref.current);
+    }
+  }
+
   private handleScroll() {
     this.views.forEach(view => {
       const cur = view.ref.current;
       if (
         cur &&
         document.scrollingElement &&
-        this.atView(document.scrollingElement, cur)
+        AtView(document.scrollingElement, cur)
       ) {
-        this.setState({ atViewId: view.id });
+        this.setSelectedView(view.id);
         return;
       }
     });
   }
 
-  private atView(scrollingElem: Element, viewElem: HTMLDivElement): boolean {
-    const viewOffsetTop = viewElem.offsetTop - MARGIN_OFFSET;
-    const viewOffsetBottom = viewOffsetTop + viewElem.clientHeight;
-    return (
-      scrollingElem.scrollTop > viewOffsetTop &&
-      scrollingElem.scrollTop < viewOffsetBottom
-    );
+  private setSelectedView(viewId: string) {
+    this.setState({ atViewId: viewId });
   }
 }
 
