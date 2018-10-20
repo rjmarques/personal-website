@@ -123,8 +123,6 @@ class App extends React.Component<{}, IState> {
   }
 
   private handleScroll() {
-    // tslint:disable-next-line:no-console
-    console.log("scroll");
     this.setHeaderClass();
 
     if (this.state.isScrolling) {
