@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { AtView, ScrollTo } from "../services/Scroll";
+import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
 import Bio from "./bio/Bio";
 import Education from "./education/Education";
 import Experience from "./experience/Experience";
@@ -20,6 +20,8 @@ interface IView {
 
 interface IState {
   atViewId: string;
+  isGhostHeader: boolean;
+  isScrolling: boolean;
 }
 
 class App extends React.Component<{}, IState> {
@@ -52,22 +54,22 @@ class App extends React.Component<{}, IState> {
     }
   ];
 
-  private isScrolling = false;
-
   constructor(props: {}) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.viewSelected = this.viewSelected.bind(this);
 
     this.state = {
-      atViewId: this.views[0].id
+      atViewId: this.views[0].id,
+      isGhostHeader: true,
+      isScrolling: false
     };
   }
 
   public render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className={this.getHeaderClass()}>
           <NavBar
             items={this.views}
             selectedItemId={this.state.atViewId}
@@ -105,19 +107,27 @@ class App extends React.Component<{}, IState> {
     window.removeEventListener("scroll", this.handleScroll);
   }
 
+  private getHeaderClass(): string {
+    return this.state.isGhostHeader ? "App-header ghost" : "App-header";
+  }
+
   private viewSelected(viewId: string) {
     this.setSelectedView(viewId);
     const selectedView = this.views.find(v => v.id === viewId);
     if (selectedView && selectedView.ref.current && document.scrollingElement) {
-      this.isScrolling = true;
+      this.setIsScrolling(true);
       ScrollTo(document.scrollingElement, selectedView.ref.current, () => {
-        this.isScrolling = false;
+        this.setIsScrolling(false);
       });
     }
   }
 
   private handleScroll() {
-    if (this.isScrolling) {
+    // tslint:disable-next-line:no-console
+    console.log("scroll");
+    this.setHeaderClass();
+
+    if (this.state.isScrolling) {
       return;
     }
 
@@ -134,8 +144,27 @@ class App extends React.Component<{}, IState> {
     });
   }
 
+  private setHeaderClass() {
+    if (
+      document.scrollingElement &&
+      CloseToPageTop(document.scrollingElement)
+    ) {
+      this.setIsGhostHeader(true);
+    } else {
+      this.setIsGhostHeader(false);
+    }
+  }
+
   private setSelectedView(viewId: string) {
     this.setState({ atViewId: viewId });
+  }
+
+  private setIsScrolling(isScrolling: boolean) {
+    this.setState({ isScrolling });
+  }
+
+  private setIsGhostHeader(isGhostHeader: boolean) {
+    this.setState({ isGhostHeader });
   }
 }
 

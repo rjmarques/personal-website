@@ -1,9 +1,14 @@
 const MARGIN_OFFSET = 80; // TODO remove magic number (because of margin)
+const TOP_MARGIN_GHOST_DISTANCE = 100;
 const INCREMENT = 20;
 const DEFAULT_DURATION_MILLISECONDS = 1000;
 
 export function GetScrollTop(elem: HTMLElement) {
   return elem.offsetTop - MARGIN_OFFSET;
+}
+
+export function CloseToPageTop(scrollingElem: Element) {
+  return scrollingElem.scrollTop < TOP_MARGIN_GHOST_DISTANCE;
 }
 
 export function AtView(scrollingElem: Element, viewElem: HTMLElement): boolean {
