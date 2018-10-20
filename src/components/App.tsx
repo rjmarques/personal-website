@@ -112,6 +112,10 @@ class App extends React.Component<{}, IState> {
   }
 
   private viewSelected(viewId: string) {
+    if (this.state.isScrolling) {
+      return;
+    }
+
     this.setSelectedView(viewId);
     const selectedView = this.views.find(v => v.id === viewId);
     if (selectedView && selectedView.ref.current && document.scrollingElement) {
