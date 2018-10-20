@@ -1,4 +1,6 @@
 const MARGIN_OFFSET = 80; // TODO remove magic number (because of margin)
+const INCREMENT = 20;
+const DEFAULT_DURATION_MILLISECONDS = 1000;
 
 export function GetScrollTop(elem: HTMLElement) {
   return elem.offsetTop - MARGIN_OFFSET;
@@ -13,6 +15,42 @@ export function AtView(scrollingElem: Element, viewElem: HTMLElement): boolean {
   );
 }
 
-export function ScrollTo(scrollingElem: Element, viewElem: HTMLElement) {
-  scrollingElem.scrollTop = viewElem.offsetTop;
+export function ScrollTo(
+  scrollingElem: Element,
+  viewElem: HTMLElement,
+  onComplete: () => void
+) {
+  const duration = DEFAULT_DURATION_MILLISECONDS;
+
+  const start = scrollingElem.scrollTop;
+  const to = GetScrollTop(viewElem);
+  const change = to - start;
+  let currentTime = 0;
+
+  const animateScroll = () => {
+    currentTime += INCREMENT;
+    const val = easeInOutQuad(currentTime, start, change, duration);
+    scrollingElem.scrollTop = val;
+    if (currentTime < duration) {
+      window.requestAnimationFrame(animateScroll);
+    } else {
+      onComplete();
+    }
+  };
+
+  animateScroll();
 }
+
+const easeInOutQuad = (
+  currentTime: number,
+  startPos: number,
+  deltaPos: number,
+  duration: number
+): number => {
+  currentTime /= duration / 2;
+  if (currentTime < 1) {
+    return (deltaPos / 2) * currentTime * currentTime + startPos;
+  }
+  currentTime--;
+  return (-deltaPos / 2) * (currentTime * (currentTime - 2) - 1) + startPos;
+};

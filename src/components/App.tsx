@@ -52,6 +52,8 @@ class App extends React.Component<{}, IState> {
     }
   ];
 
+  private isScrolling = false;
+
   constructor(props: {}) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
@@ -107,11 +109,18 @@ class App extends React.Component<{}, IState> {
     this.setSelectedView(viewId);
     const selectedView = this.views.find(v => v.id === viewId);
     if (selectedView && selectedView.ref.current && document.scrollingElement) {
-      ScrollTo(document.scrollingElement, selectedView.ref.current);
+      this.isScrolling = true;
+      ScrollTo(document.scrollingElement, selectedView.ref.current, () => {
+        this.isScrolling = false;
+      });
     }
   }
 
   private handleScroll() {
+    if (this.isScrolling) {
+      return;
+    }
+
     this.views.forEach(view => {
       const cur = view.ref.current;
       if (
