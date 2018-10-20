@@ -129,7 +129,7 @@ class App extends React.Component<{}, IState> {
       return;
     }
 
-    this.views.forEach(view => {
+    for (const view of this.views) {
       const cur = view.ref.current;
       if (
         cur &&
@@ -139,7 +139,7 @@ class App extends React.Component<{}, IState> {
         this.setSelectedView(view.id);
         return;
       }
-    });
+    }
   }
 
   private setHeaderClass() {
