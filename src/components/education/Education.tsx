@@ -39,7 +39,7 @@ class Education extends React.Component {
                     </a>
                   </div>
                   <div>
-                    Code:{" "}
+                    Source Code:{" "}
                     <a
                       href="https://bitbucket.org/MarrowTeam/marrow"
                       target="_blank"
