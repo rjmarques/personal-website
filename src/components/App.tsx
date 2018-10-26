@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
 import Bio from "./bio/Bio";
+import Contact from "./contact/Contact";
 import Education from "./education/Education";
 import Experience from "./experience/Experience";
 import Home from "./home/Home";
@@ -51,6 +52,11 @@ class App extends React.Component<{}, IState> {
       id: "ACADEMIC",
       name: "academic",
       ref: React.createRef()
+    },
+    {
+      id: "CONTACT",
+      name: "contact",
+      ref: React.createRef()
     }
   ];
 
@@ -93,6 +99,9 @@ class App extends React.Component<{}, IState> {
           <div id={this.views[4].id} ref={this.views[4].ref}>
             <Publications />
             <Education />
+          </div>
+          <div id={this.views[5].id} ref={this.views[5].ref}>
+            <Contact />
           </div>
         </div>
       </div>
