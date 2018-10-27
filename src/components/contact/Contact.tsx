@@ -21,12 +21,26 @@ interface IProps extends FormComponentProps {
   ) => Promise<void>;
 }
 
-class Contact extends React.Component<IProps, {}> {
+interface IState {
+  isSending: boolean;
+}
+
+class Contact extends React.Component<IProps, IState> {
+  constructor(props: IProps) {
+    super(props);
+
+    this.state = {
+      isSending: false
+    };
+  }
+
   public handleSubmit = (e: FormEvent<any>) => {
     e.preventDefault();
     this.props.form.validateFields(async (err: any, values: any) => {
       if (!err) {
         const hide = message.loading("Sending message...", 0);
+        this.setState({ isSending: true });
+
         try {
           await this.props.sendMessage(
             values.name,
@@ -36,7 +50,14 @@ class Contact extends React.Component<IProps, {}> {
             values.company
           );
 
-          this.props.form.resetFields();
+          // reset all except recaptcha
+          this.props.form.resetFields([
+            "name",
+            "email",
+            "message",
+            "subject",
+            "company"
+          ]);
           message.success(
             "Thank you for your message! I'll come back to you as soon as possible.",
             5
@@ -44,7 +65,9 @@ class Contact extends React.Component<IProps, {}> {
         } catch (error) {
           message.error("Uh oh...Please refresh the page and try again", 5);
         }
+
         hide();
+        this.setState({ isSending: false });
       }
     });
   };
@@ -185,6 +208,7 @@ class Contact extends React.Component<IProps, {}> {
                   type="primary"
                   htmlType="submit"
                   size="large"
+                  loading={this.state.isSending}
                 >
                   send message
                 </Button>

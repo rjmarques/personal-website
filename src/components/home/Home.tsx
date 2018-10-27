@@ -33,6 +33,7 @@ class Home extends React.Component<IProps, {}> {
                   <div className="Home-buttons">
                     <Button
                       type="primary"
+                      icon="mail"
                       size="large"
                       onClick={this.props.goToContact}
                     >

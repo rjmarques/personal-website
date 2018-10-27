@@ -331,7 +331,9 @@ export {
 // export { default as LikeOutline } from '@ant-design/icons/lib/outline/LikeOutline';
 // export { default as LinkedinOutline } from '@ant-design/icons/lib/outline/LinkedinOutline';
 // export { default as LockOutline } from '@ant-design/icons/lib/outline/LockOutline';
-// export { default as MailOutline } from '@ant-design/icons/lib/outline/MailOutline';
+export {
+  default as MailOutline
+} from "@ant-design/icons/lib/outline/MailOutline";
 // export { default as MehOutline } from '@ant-design/icons/lib/outline/MehOutline';
 // export { default as MessageOutline } from '@ant-design/icons/lib/outline/MessageOutline';
 // export { default as MedicineBoxOutline } from '@ant-design/icons/lib/outline/MedicineBoxOutline';
