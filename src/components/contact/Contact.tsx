@@ -9,7 +9,6 @@ import ReCaptchaInput from "./ReCaptchaInput";
 import "./Contact.less";
 
 const FormItem = Form.Item;
-const { TextArea } = Input;
 
 interface IProps extends FormComponentProps {
   sendMessage: (
@@ -187,7 +186,7 @@ class Contact extends React.Component<IProps, IState> {
                         }
                       ]
                     })(
-                      <TextArea
+                      <Input.TextArea
                         className="Contact-text-area"
                         placeholder="Message *"
                         autosize={{ minRows: 6, maxRows: 6 }}

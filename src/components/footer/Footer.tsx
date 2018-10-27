@@ -20,7 +20,7 @@ class Footer extends React.Component {
               </a>
             </div>
             <small className="Footer-copy">
-              &copy; Copyright 2018 Ricardo Marques
+              &copy; Copyright {new Date().getFullYear()} Ricardo Marques
             </small>
           </div>
         </div>
