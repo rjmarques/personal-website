@@ -6,6 +6,7 @@ import Bio from "./bio/Bio";
 import Contact from "./contact/Contact";
 import Education from "./education/Education";
 import Experience from "./experience/Experience";
+import Footer from "./footer/Footer";
 import Home from "./home/Home";
 import NavBar from "./nav-bar/NavBar";
 import Projects from "./projects/Projects";
@@ -104,6 +105,7 @@ class App extends React.Component<{}, IState> {
           </div>
           <div id={this.views[5].id} ref={this.views[5].ref}>
             <Contact sendMessage={SendMessage} />
+            <Footer />
           </div>
         </div>
       </div>
