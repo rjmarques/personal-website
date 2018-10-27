@@ -3,7 +3,11 @@ import * as React from "react";
 
 import "./Home.less";
 
-class Home extends React.Component {
+interface IProps {
+  goToContact: () => void;
+}
+
+class Home extends React.Component<IProps, {}> {
   public render() {
     return (
       <section className="Home">
@@ -27,7 +31,11 @@ class Home extends React.Component {
                     optimizing every little piece of code.
                   </p>
                   <div className="Home-buttons">
-                    <Button type="primary" size="large">
+                    <Button
+                      type="primary"
+                      size="large"
+                      onClick={this.props.goToContact}
+                    >
                       Contact me
                     </Button>
                     <Button icon="download" size="large">

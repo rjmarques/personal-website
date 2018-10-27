@@ -64,6 +64,7 @@ class App extends React.Component<{}, IState> {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.viewSelected = this.viewSelected.bind(this);
+    this.contactViewSelected = this.contactViewSelected.bind(this);
 
     this.state = {
       atViewId: this.views[0].id,
@@ -83,7 +84,7 @@ class App extends React.Component<{}, IState> {
           />
         </header>
         <div id={this.views[0].id} ref={this.views[0].ref}>
-          <Home />
+          <Home goToContact={this.contactViewSelected} />
         </div>
         <div className="App-main-content">
           <div id={this.views[1].id} ref={this.views[1].ref}>
@@ -118,6 +119,10 @@ class App extends React.Component<{}, IState> {
 
   private getHeaderClass(): string {
     return this.state.isGhostHeader ? "App-header ghost" : "App-header";
+  }
+
+  private contactViewSelected() {
+    this.viewSelected(this.views[this.views.length - 1].id);
   }
 
   private viewSelected(viewId: string) {
