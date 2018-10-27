@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
-import SendMessage from "../services/SendMessage";
 import Bio from "./bio/Bio";
 import Contact from "./contact/Contact";
 import Education from "./education/Education";
@@ -12,6 +10,10 @@ import NavBar from "./nav-bar/NavBar";
 import Projects from "./projects/Projects";
 import Publications from "./publications/Publications";
 import Skills from "./skills/Skills";
+
+import PDFDownload from "../services/PDFDownload";
+import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
+import SendMessage from "../services/SendMessage";
 
 import "./App.less";
 
@@ -86,7 +88,10 @@ class App extends React.Component<{}, IState> {
           />
         </header>
         <div id={this.views[0].id} ref={this.views[0].ref}>
-          <Home goToContact={this.contactViewSelected} />
+          <Home
+            goToContact={this.contactViewSelected}
+            cvDownload={PDFDownload}
+          />
         </div>
         <div className="App-main-content">
           <div id={this.views[1].id} ref={this.views[1].ref}>

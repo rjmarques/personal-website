@@ -1,13 +1,22 @@
-import { Button, Col, Row } from "antd";
+import { Button, Col, message, Row } from "antd";
 import * as React from "react";
 
 import "./Home.less";
 
 interface IProps {
   goToContact: () => void;
+  cvDownload: (fileURL: string, saveAsName: string) => Promise<void>;
 }
 
+const CV_URL = "cv.pdf";
+const SAVE_AS_NAME = "ricardomarquesCV.pdf";
+
 class Home extends React.Component<IProps, {}> {
+  constructor(props: IProps) {
+    super(props);
+    this.cvDownload = this.cvDownload.bind(this);
+  }
+
   public render() {
     return (
       <section className="Home">
@@ -39,7 +48,11 @@ class Home extends React.Component<IProps, {}> {
                     >
                       Contact me
                     </Button>
-                    <Button icon="download" size="large">
+                    <Button
+                      icon="download"
+                      size="large"
+                      onClick={this.cvDownload}
+                    >
                       Download CV
                     </Button>
                   </div>
@@ -50,6 +63,14 @@ class Home extends React.Component<IProps, {}> {
         </div>
       </section>
     );
+  }
+
+  private async cvDownload() {
+    try {
+      await this.props.cvDownload(CV_URL, SAVE_AS_NAME);
+    } catch (error) {
+      message.error(`Failed download CV: ${error}`, 5);
+    }
   }
 }
 
