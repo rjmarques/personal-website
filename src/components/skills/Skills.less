@@ -7,10 +7,15 @@
 
   a {
     text-decoration: none;
+    border-color: @light-grey;
+
+    &:focus {
+      border-color: @primary-color;
+    }
   }
 
   .Skills-card {
-    border-color: @light-grey;
+    border-color: inherit;
     font-family: inherit;
     margin-bottom: @verticalGutter;
     padding: 20px 20px 0px 20px;

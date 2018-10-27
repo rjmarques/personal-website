@@ -329,7 +329,9 @@ export {
 // export { default as LeftCircleOutline } from '@ant-design/icons/lib/outline/LeftCircleOutline';
 // export { default as LeftSquareOutline } from '@ant-design/icons/lib/outline/LeftSquareOutline';
 // export { default as LikeOutline } from '@ant-design/icons/lib/outline/LikeOutline';
-// export { default as LinkedinOutline } from '@ant-design/icons/lib/outline/LinkedinOutline';
+export {
+  default as LinkedinOutline
+} from "@ant-design/icons/lib/outline/LinkedinOutline";
 // export { default as LockOutline } from '@ant-design/icons/lib/outline/LockOutline';
 export {
   default as MailOutline
