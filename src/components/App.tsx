@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
+import { SendMessage } from "../services/SendMessage";
 import Bio from "./bio/Bio";
 import Contact from "./contact/Contact";
 import Education from "./education/Education";
@@ -102,7 +103,7 @@ class App extends React.Component<{}, IState> {
             <Education />
           </div>
           <div id={this.views[5].id} ref={this.views[5].ref}>
-            <Contact />
+            <Contact sendMessage={SendMessage} />
           </div>
         </div>
       </div>

@@ -4,7 +4,6 @@ import * as React from "react";
 import { FormEvent } from "react";
 
 import SectionTitle from "../common/SectionTitle";
-import { SendContactMessage } from "./Contact.service";
 import ReCaptchaInput from "./ReCaptchaInput";
 
 import "./Contact.less";
@@ -12,8 +11,15 @@ import "./Contact.less";
 const FormItem = Form.Item;
 const { TextArea } = Input;
 
-// tslint:disable-next-line:no-empty-interface
-interface IProps extends FormComponentProps {}
+interface IProps extends FormComponentProps {
+  sendMessage: (
+    name: string,
+    email: string,
+    message: string,
+    subject?: string,
+    company?: string
+  ) => Promise<void>;
+}
 
 class Contact extends React.Component<IProps, {}> {
   public handleSubmit = (e: FormEvent<any>) => {
@@ -22,7 +28,7 @@ class Contact extends React.Component<IProps, {}> {
       if (!err) {
         const hide = message.loading("Sending message...", 0);
         try {
-          await SendContactMessage(
+          await this.props.sendMessage(
             values.name,
             values.email,
             values.message,
