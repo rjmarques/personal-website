@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
-import { SendMessage } from "../services/SendMessage";
+import SendMessage from "../services/SendMessage";
 import Bio from "./bio/Bio";
 import Contact from "./contact/Contact";
 import Education from "./education/Education";

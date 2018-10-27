@@ -1,6 +1,6 @@
 export const CONTACT_URL = "php/contact.php"; // URL to PHP script
 
-export function SendMessage(
+export default function(
   name: string,
   email: string,
   message: string,
