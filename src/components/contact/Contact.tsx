@@ -1,16 +1,16 @@
-import { Button, Col, Form, Input, Row } from "antd";
+import { Button, Col, Form, Input, message, Row } from "antd";
 import { FormComponentProps } from "antd/lib/form";
 import * as React from "react";
 import { FormEvent } from "react";
 
 import SectionTitle from "../common/SectionTitle";
-import "./Contact.less";
+import { SendContactMessage } from "./Contact.service";
 import ReCaptchaInput from "./ReCaptchaInput";
+
+import "./Contact.less";
 
 const FormItem = Form.Item;
 const { TextArea } = Input;
-
-// TODO SENDING SERVICE
 
 // tslint:disable-next-line:no-empty-interface
 interface IProps extends FormComponentProps {}
@@ -18,12 +18,27 @@ interface IProps extends FormComponentProps {}
 class Contact extends React.Component<IProps, {}> {
   public handleSubmit = (e: FormEvent<any>) => {
     e.preventDefault();
-    this.props.form.validateFields((err: any, values: any) => {
+    this.props.form.validateFields(async (err: any, values: any) => {
       if (!err) {
-        // tslint:disable-next-line:no-console
-        console.log("Received values of form: ", values);
+        const hide = message.loading("Sending message...", 0);
+        try {
+          await SendContactMessage(
+            values.name,
+            values.email,
+            values.message,
+            values.subject,
+            values.company
+          );
 
-        this.props.form.resetFields();
+          this.props.form.resetFields();
+          message.success(
+            "Thank you for your message! I'll come back to you as soon as possible.",
+            5
+          );
+        } catch (error) {
+          message.error("Uh oh...Please refresh the page and try again", 5);
+        }
+        hide();
       }
     });
   };
@@ -78,7 +93,7 @@ class Contact extends React.Component<IProps, {}> {
                   className="Contact-form-column"
                 >
                   <FormItem>
-                    {getFieldDecorator("Email", {
+                    {getFieldDecorator("email", {
                       rules: [
                         {
                           message: "The input is not valid Email",

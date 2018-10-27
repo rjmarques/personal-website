@@ -37,12 +37,16 @@ export { emptyIcon };
 // export { default as CaretRightFill } from '@ant-design/icons/lib/fill/CaretRightFill';
 // export { default as CaretUpFill } from '@ant-design/icons/lib/fill/CaretUpFill';
 // export { default as CarryOutFill } from '@ant-design/icons/lib/fill/CarryOutFill';
-// export { default as CheckCircleFill } from '@ant-design/icons/lib/fill/CheckCircleFill';
+export {
+  default as CheckCircleFill
+} from "@ant-design/icons/lib/fill/CheckCircleFill";
 // export { default as CheckSquareFill } from '@ant-design/icons/lib/fill/CheckSquareFill';
 // export { default as ChromeFill } from '@ant-design/icons/lib/fill/ChromeFill';
 // export { default as CiCircleFill } from '@ant-design/icons/lib/fill/CiCircleFill';
 // export { default as ClockCircleFill } from '@ant-design/icons/lib/fill/ClockCircleFill';
-// export { default as CloseCircleFill } from '@ant-design/icons/lib/fill/CloseCircleFill';
+export {
+  default as CloseCircleFill
+} from "@ant-design/icons/lib/fill/CloseCircleFill";
 // export { default as CloseSquareFill } from '@ant-design/icons/lib/fill/CloseSquareFill';
 // export { default as CloudFill } from '@ant-design/icons/lib/fill/CloudFill';
 // export { default as CodeSandboxCircleFill } from '@ant-design/icons/lib/fill/CodeSandboxCircleFill';
@@ -121,7 +125,7 @@ export { emptyIcon };
 // export { default as IdcardFill } from '@ant-design/icons/lib/fill/IdcardFill';
 // export { default as IeCircleFill } from '@ant-design/icons/lib/fill/IeCircleFill';
 // export { default as IeSquareFill } from '@ant-design/icons/lib/fill/IeSquareFill';
-// export { default as InfoCircleFill } from '@ant-design/icons/lib/fill/InfoCircleFill';
+// export { default as InfoCircleFill } from "@ant-design/icons/lib/fill/InfoCircleFill";
 // export { default as InstagramFill } from '@ant-design/icons/lib/fill/InstagramFill';
 // export { default as InsuranceFill } from '@ant-design/icons/lib/fill/InsuranceFill';
 // export { default as InterationFill } from '@ant-design/icons/lib/fill/InterationFill';
@@ -504,7 +508,9 @@ export {
 // export { default as LineOutline } from '@ant-design/icons/lib/outline/LineOutline';
 // export { default as LinkOutline } from '@ant-design/icons/lib/outline/LinkOutline';
 // export { default as Loading3QuartersOutline } from '@ant-design/icons/lib/outline/Loading3QuartersOutline';
-// export { default as LoadingOutline } from '@ant-design/icons/lib/outline/LoadingOutline';
+export {
+  default as LoadingOutline
+} from "@ant-design/icons/lib/outline/LoadingOutline";
 // export { default as LoginOutline } from '@ant-design/icons/lib/outline/LoginOutline';
 // export { default as LogoutOutline } from '@ant-design/icons/lib/outline/LogoutOutline';
 // export { default as ManOutline } from '@ant-design/icons/lib/outline/ManOutline';
@@ -665,7 +671,7 @@ export {
 // export { default as HourglassTwoTone } from '@ant-design/icons/lib/twotone/HourglassTwoTone';
 // export { default as Html5TwoTone } from '@ant-design/icons/lib/twotone/Html5TwoTone';
 // export { default as IdcardTwoTone } from '@ant-design/icons/lib/twotone/IdcardTwoTone';
-// export { default as InfoCircleTwoTone } from '@ant-design/icons/lib/twotone/InfoCircleTwoTone';
+// export { default as InfoCircleTwoTone } from "@ant-design/icons/lib/twotone/InfoCircleTwoTone";
 // export { default as InsuranceTwoTone } from '@ant-design/icons/lib/twotone/InsuranceTwoTone';
 // export { default as InterationTwoTone } from '@ant-design/icons/lib/twotone/InterationTwoTone';
 // export { default as LayoutTwoTone } from '@ant-design/icons/lib/twotone/LayoutTwoTone';
