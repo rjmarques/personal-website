@@ -1,7 +1,7 @@
 import { Card, Col, Icon, Row } from "antd";
 import * as React from "react";
 
-import SectionTitle from "../common/SectionTitle";
+import ContentSection from "../common/ContentSection";
 
 import "./Projects.less";
 
@@ -40,42 +40,36 @@ class Projects extends React.Component {
 
   public render() {
     return (
-      <section className="Projects">
-        <div className="content">
-          <SectionTitle
-            title="Projects"
-            subTitle="Some projects I've done in my free time"
-          />
-          <div>{this.getProjects()}</div>
-        </div>
-      </section>
-    );
-  }
-
-  private getProjects(): JSX.Element {
-    return (
-      <Row gutter={12}>
-        {this.projects.map(proj => (
-          <Col key={proj.title} xs={24} sm={24} md={8} lg={8} xl={8}>
-            <Card
-              hoverable={true}
-              className="Projects-card"
-              cover={<img alt="example" src={proj.image} />}
-              actions={[
-                <a key="demo_url" href={proj.url} target="_blank">
-                  <Icon className="Projects-action-icon" type="play-circle" />
-                </a>,
-                <a key="repo_url" href={proj.repoUrl} target="_blank">
-                  <Icon className="Projects-action-icon" type="github" />
-                </a>
-              ]}
-            >
-              <h4>{proj.title}</h4>
-              <span className="Projects-card-subtitle">{proj.description}</span>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+      <ContentSection
+        title="Projects"
+        subTitle="Some projects I've done in my free time"
+        wrapperClass="Projects"
+      >
+        <Row gutter={12}>
+          {this.projects.map(proj => (
+            <Col key={proj.title} xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Card
+                hoverable={true}
+                className="Projects-card"
+                cover={<img alt="example" src={proj.image} />}
+                actions={[
+                  <a key="demo_url" href={proj.url} target="_blank">
+                    <Icon className="Projects-action-icon" type="play-circle" />
+                  </a>,
+                  <a key="repo_url" href={proj.repoUrl} target="_blank">
+                    <Icon className="Projects-action-icon" type="github" />
+                  </a>
+                ]}
+              >
+                <h4>{proj.title}</h4>
+                <span className="Projects-card-subtitle">
+                  {proj.description}
+                </span>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </ContentSection>
     );
   }
 }

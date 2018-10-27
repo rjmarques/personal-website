@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import SectionTitle from "../common/SectionTitle";
+import ContentSection from "../common/ContentSection";
 
 import "./Publications.less";
 
@@ -28,39 +28,31 @@ class Publications extends React.Component {
 
   public render() {
     return (
-      <section className="Publications">
-        <div className="content">
-          <SectionTitle
-            title="Publications"
-            subTitle="Papers I have published"
-          />
-          <div>{this.getPublications()}</div>
-        </div>
-      </section>
-    );
-  }
-
-  private getPublications(): JSX.Element {
-    return (
-      <ul>
-        {this.publications.map(pub => (
-          <li key={pub.conference} className="Publications-entry">
-            <div className="App-card-wide">
-              <h3>{pub.conference}</h3>
-              <div className="App-card-subtitle">
-                <span>{pub.paper}</span>
-              </div>
-              {pub.urls.map(url => (
-                <div key={url}>
-                  <a href={url} target="_blank">
-                    {url}
-                  </a>
+      <ContentSection
+        title="Publications"
+        subTitle="Papers I have published"
+        wrapperClass="Publications"
+      >
+        <ul>
+          {this.publications.map(pub => (
+            <li key={pub.conference} className="Publications-entry">
+              <div className="App-card-wide">
+                <h3>{pub.conference}</h3>
+                <div className="App-card-subtitle">
+                  <span>{pub.paper}</span>
                 </div>
-              ))}
-            </div>
-          </li>
-        ))}
-      </ul>
+                {pub.urls.map(url => (
+                  <div key={url}>
+                    <a href={url} target="_blank">
+                      {url}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </ContentSection>
     );
   }
 }

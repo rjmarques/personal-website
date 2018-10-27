@@ -3,7 +3,7 @@ import { FormComponentProps } from "antd/lib/form";
 import * as React from "react";
 import { FormEvent } from "react";
 
-import SectionTitle from "../common/SectionTitle";
+import ContentSection from "../common/ContentSection";
 import ReCaptchaInput from "./ReCaptchaInput";
 
 import "./Contact.less";
@@ -84,138 +84,132 @@ class Contact extends React.Component<IProps, IState> {
     const gutter = 36;
 
     return (
-      <section className="Contact">
-        <div className="content">
-          <SectionTitle
-            title="Contact"
-            subTitle="Want to get in touch? Leave me a message"
-          />
-          <div>
-            <Form onSubmit={this.handleSubmit} className="login-form">
-              <Row gutter={gutter}>
-                <Col
-                  xs={24}
-                  sm={24}
-                  md={12}
-                  lg={12}
-                  xl={12}
-                  className="Contact-form-column"
-                >
-                  <FormItem>
-                    {getFieldDecorator("name", {
-                      rules: [
-                        {
-                          message: "What's your name?",
-                          required: true
-                        }
-                      ]
-                    })(<Input size="large" placeholder="Your Name *" />)}
-                  </FormItem>
-                </Col>
-                <Col
-                  xs={24}
-                  sm={24}
-                  md={12}
-                  lg={12}
-                  xl={12}
-                  className="Contact-form-column"
-                >
-                  <FormItem>
-                    {getFieldDecorator("email", {
-                      rules: [
-                        {
-                          message: "The input is not valid Email",
-                          type: "email"
-                        },
-                        {
-                          message: "How do I message you back?",
-                          required: true
-                        }
-                      ]
-                    })(
-                      <Input size="large" type="text" placeholder="Email *" />
-                    )}
-                  </FormItem>
-                </Col>
-              </Row>
-              <Row gutter={gutter}>
-                <Col
-                  xs={24}
-                  sm={24}
-                  md={12}
-                  lg={12}
-                  xl={12}
-                  className="Contact-form-column"
-                >
-                  <FormItem>
-                    {getFieldDecorator("subject", {})(
-                      <Input size="large" placeholder="Subject" />
-                    )}
-                  </FormItem>
-                </Col>
-                <Col
-                  xs={24}
-                  sm={24}
-                  md={12}
-                  lg={12}
-                  xl={12}
-                  className="Contact-form-column"
-                >
-                  <FormItem>
-                    {getFieldDecorator("company", {})(
-                      <Input size="large" type="text" placeholder="Company" />
-                    )}
-                  </FormItem>
-                </Col>
-              </Row>
-              <Row gutter={gutter}>
-                <Col
-                  xs={24}
-                  sm={24}
-                  md={24}
-                  lg={24}
-                  xl={24}
-                  className="Contact-form-column"
-                >
-                  <FormItem>
-                    {getFieldDecorator("message", {
-                      rules: [
-                        {
-                          message: "Did you want to tell me something?",
-                          required: true
-                        }
-                      ]
-                    })(
-                      <Input.TextArea
-                        className="Contact-text-area"
-                        placeholder="Message *"
-                        autosize={{ minRows: 6, maxRows: 6 }}
-                      />
-                    )}
-                  </FormItem>
-                </Col>
-              </Row>
+      <ContentSection
+        title="Contact"
+        subTitle="Want to get in touch? Leave me a message"
+        wrapperClass="Contact"
+      >
+        <Form onSubmit={this.handleSubmit} className="login-form">
+          <Row gutter={gutter}>
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              xl={12}
+              className="Contact-form-column"
+            >
               <FormItem>
-                {getFieldDecorator("recaptcha", {
-                  initialValue: undefined,
-                  rules: [{ validator: this.validateReCaptcha }]
-                })(<ReCaptchaInput />)}
+                {getFieldDecorator("name", {
+                  rules: [
+                    {
+                      message: "What's your name?",
+                      required: true
+                    }
+                  ]
+                })(<Input size="large" placeholder="Your Name *" />)}
               </FormItem>
+            </Col>
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              xl={12}
+              className="Contact-form-column"
+            >
               <FormItem>
-                <Button
-                  className="Contact-submit"
-                  type="primary"
-                  htmlType="submit"
-                  size="large"
-                  loading={this.state.isSending}
-                >
-                  send message
-                </Button>
+                {getFieldDecorator("email", {
+                  rules: [
+                    {
+                      message: "The input is not valid Email",
+                      type: "email"
+                    },
+                    {
+                      message: "How do I message you back?",
+                      required: true
+                    }
+                  ]
+                })(<Input size="large" type="text" placeholder="Email *" />)}
               </FormItem>
-            </Form>
-          </div>
-        </div>
-      </section>
+            </Col>
+          </Row>
+          <Row gutter={gutter}>
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              xl={12}
+              className="Contact-form-column"
+            >
+              <FormItem>
+                {getFieldDecorator("subject", {})(
+                  <Input size="large" placeholder="Subject" />
+                )}
+              </FormItem>
+            </Col>
+            <Col
+              xs={24}
+              sm={24}
+              md={12}
+              lg={12}
+              xl={12}
+              className="Contact-form-column"
+            >
+              <FormItem>
+                {getFieldDecorator("company", {})(
+                  <Input size="large" type="text" placeholder="Company" />
+                )}
+              </FormItem>
+            </Col>
+          </Row>
+          <Row gutter={gutter}>
+            <Col
+              xs={24}
+              sm={24}
+              md={24}
+              lg={24}
+              xl={24}
+              className="Contact-form-column"
+            >
+              <FormItem>
+                {getFieldDecorator("message", {
+                  rules: [
+                    {
+                      message: "Did you want to tell me something?",
+                      required: true
+                    }
+                  ]
+                })(
+                  <Input.TextArea
+                    className="Contact-text-area"
+                    placeholder="Message *"
+                    autosize={{ minRows: 6, maxRows: 6 }}
+                  />
+                )}
+              </FormItem>
+            </Col>
+          </Row>
+          <FormItem>
+            {getFieldDecorator("recaptcha", {
+              initialValue: undefined,
+              rules: [{ validator: this.validateReCaptcha }]
+            })(<ReCaptchaInput />)}
+          </FormItem>
+          <FormItem>
+            <Button
+              className="Contact-submit"
+              type="primary"
+              htmlType="submit"
+              size="large"
+              loading={this.state.isSending}
+            >
+              send message
+            </Button>
+          </FormItem>
+        </Form>
+      </ContentSection>
     );
   }
 }
