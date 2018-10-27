@@ -1,6 +1,6 @@
 export const CONTACT_URL = "php/contact.php"; // URL to PHP script
 
-export default function(
+export default async function(
   name: string,
   email: string,
   message: string,
@@ -9,18 +9,17 @@ export default function(
 ): Promise<void> {
   const body = buildMessageBody(name, email, message, subject, company);
 
-  return fetch(CONTACT_URL, {
+  const response = await fetch(CONTACT_URL, {
     body,
     headers: {
       "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     },
     method: "POST"
-  }).then(response => {
-    if (!response.ok) {
-      throw Error(response.statusText);
-    }
-    return response.json();
   });
+
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
 }
 
 const buildMessageBody = (
