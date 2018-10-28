@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { Component, RefObject } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const SITE_KEY = "6LdoTSkTAAAAACxMJ2yf5S_CghOhFnyNkyT3ZFe9";
@@ -11,8 +11,8 @@ interface IState {
   reCaptchaValue: any;
 }
 
-class ReCaptchaInput extends React.Component<IProps, IState> {
-  private reCaptchaRef: React.RefObject<ReCAPTCHA> = React.createRef();
+class ReCaptchaInput extends Component<IProps, IState> {
+  private reCaptchaRef: RefObject<ReCAPTCHA> = React.createRef();
 
   constructor(props: IProps) {
     super(props);

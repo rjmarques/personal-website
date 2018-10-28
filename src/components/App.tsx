@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { Component, RefObject } from "react";
 
 import Bio from "./bio/Bio";
 import Contact from "./contact/Contact";
@@ -20,7 +20,7 @@ import "./App.less";
 interface IView {
   id: string;
   name: string;
-  ref: React.RefObject<HTMLDivElement>;
+  ref: RefObject<HTMLDivElement>;
 }
 
 interface IState {
@@ -29,46 +29,46 @@ interface IState {
   isScrolling: boolean;
 }
 
-class App extends React.Component<{}, IState> {
-  // views that trigger status a nav change
-  private views: IView[] = [
-    {
-      id: "HOME",
-      name: "home",
-      ref: React.createRef()
-    },
-    {
-      id: "BIO",
-      name: "bio",
-      ref: React.createRef()
-    },
-    {
-      id: "EXPERIENCE",
-      name: "experience",
-      ref: React.createRef()
-    },
-    {
-      id: "PROJECTS",
-      name: "projects",
-      ref: React.createRef()
-    },
-    {
-      id: "ACADEMIC",
-      name: "academic",
-      ref: React.createRef()
-    },
-    {
-      id: "CONTACT",
-      name: "contact",
-      ref: React.createRef()
-    }
-  ];
+// views that trigger status a nav change
+const views: IView[] = [
+  {
+    id: "HOME",
+    name: "home",
+    ref: React.createRef()
+  },
+  {
+    id: "BIO",
+    name: "bio",
+    ref: React.createRef()
+  },
+  {
+    id: "EXPERIENCE",
+    name: "experience",
+    ref: React.createRef()
+  },
+  {
+    id: "PROJECTS",
+    name: "projects",
+    ref: React.createRef()
+  },
+  {
+    id: "ACADEMIC",
+    name: "academic",
+    ref: React.createRef()
+  },
+  {
+    id: "CONTACT",
+    name: "contact",
+    ref: React.createRef()
+  }
+];
 
+class App extends Component<{}, IState> {
   constructor(props: {}) {
     super(props);
 
     this.state = {
-      atViewId: this.views[0].id,
+      atViewId: views[0].id,
       isGhostHeader: true,
       isScrolling: false
     };
@@ -79,33 +79,33 @@ class App extends React.Component<{}, IState> {
       <div className="App">
         <header className={this.getHeaderClass()}>
           <NavBar
-            items={this.views}
+            items={views}
             selectedItemId={this.state.atViewId}
             userSelectedView={this.viewSelected}
           />
         </header>
-        <div id={this.views[0].id} ref={this.views[0].ref}>
+        <div id={views[0].id} ref={views[0].ref}>
           <Home
             goToContact={this.contactViewSelected}
             cvDownload={PDFDownload}
           />
         </div>
         <div className="App-main-content">
-          <div id={this.views[1].id} ref={this.views[1].ref}>
+          <div id={views[1].id} ref={views[1].ref}>
             <Bio />
             <Skills />
           </div>
-          <div id={this.views[2].id} ref={this.views[2].ref}>
+          <div id={views[2].id} ref={views[2].ref}>
             <Experience />
           </div>
-          <div id={this.views[3].id} ref={this.views[3].ref}>
+          <div id={views[3].id} ref={views[3].ref}>
             <Projects />
           </div>
-          <div id={this.views[4].id} ref={this.views[4].ref}>
+          <div id={views[4].id} ref={views[4].ref}>
             <Publications />
             <Education />
           </div>
-          <div id={this.views[5].id} ref={this.views[5].ref}>
+          <div id={views[5].id} ref={views[5].ref}>
             <Contact sendMessage={SendMessage} />
             <Footer />
           </div>
@@ -127,7 +127,7 @@ class App extends React.Component<{}, IState> {
   }
 
   private contactViewSelected = () => {
-    this.viewSelected(this.views[this.views.length - 1].id);
+    this.viewSelected(views[views.length - 1].id);
   };
 
   private viewSelected = (viewId: string) => {
@@ -136,7 +136,7 @@ class App extends React.Component<{}, IState> {
     }
 
     this.setSelectedView(viewId);
-    const selectedView = this.views.find(v => v.id === viewId);
+    const selectedView = views.find(v => v.id === viewId);
     if (selectedView && selectedView.ref.current && document.scrollingElement) {
       this.setIsScrolling(true);
       ScrollTo(document.scrollingElement, selectedView.ref.current, () => {
@@ -152,7 +152,7 @@ class App extends React.Component<{}, IState> {
       return;
     }
 
-    for (const view of this.views) {
+    for (const view of views) {
       const cur = view.ref.current;
       if (
         cur &&

@@ -1,6 +1,6 @@
 import { Dropdown, Icon, Menu } from "antd";
 import { ClickParam } from "antd/lib/menu";
-import * as React from "react";
+import React, { Component } from "react";
 
 import "./NavBar.less";
 
@@ -19,7 +19,7 @@ interface IState {
   popoverVisible: boolean;
 }
 
-class NavBar extends React.Component<IProps, IState> {
+class NavBar extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
     this.state = { popoverVisible: false };

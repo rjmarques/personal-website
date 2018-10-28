@@ -1,7 +1,6 @@
 import { Button, Col, Form, Input, message, Row } from "antd";
 import { FormComponentProps } from "antd/lib/form";
-import * as React from "react";
-import { FormEvent } from "react";
+import React, { Component, FormEvent } from "react";
 
 import ContentSection from "../common/ContentSection";
 import ReCaptchaInput from "./ReCaptchaInput";
@@ -24,7 +23,7 @@ interface IState {
   isSending: boolean;
 }
 
-class Contact extends React.Component<IProps, IState> {
+class Contact extends Component<IProps, IState> {
   constructor(props: IProps) {
     super(props);
 
