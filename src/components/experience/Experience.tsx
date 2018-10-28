@@ -1,8 +1,8 @@
-import { Icon } from "antd";
 import * as React from "react";
 
 import ContentSection from "../common/ContentSection";
 
+import DateLocationEntry from "../common/DateLocationEntry";
 import "./Experience.less";
 
 interface IExperienceEntry {
@@ -41,13 +41,11 @@ class Experience extends React.Component {
                     </a>
                   </h3>
                   <div className="App-card-subtitle">
-                    <span>
-                      {entry.startingDate} to {entry.endingDate}
-                    </span>
-                    <span>|</span>
-                    <span>
-                      <Icon type="environment" /> {entry.location}
-                    </span>
+                    <DateLocationEntry
+                      startingDate={entry.startingDate}
+                      endingDate={entry.endingDate}
+                      location={entry.location}
+                    />
                   </div>
                   <div className="Experience-roles">
                     {entry.roles.map((role, index) => (

@@ -244,7 +244,9 @@ export {
 // export { default as BuildOutline } from '@ant-design/icons/lib/outline/BuildOutline';
 // export { default as BulbOutline } from '@ant-design/icons/lib/outline/BulbOutline';
 // export { default as CalculatorOutline } from '@ant-design/icons/lib/outline/CalculatorOutline';
-// export { default as CalendarOutline } from '@ant-design/icons/lib/outline/CalendarOutline';
+export {
+  default as CalendarOutline
+} from "@ant-design/icons/lib/outline/CalendarOutline";
 // export { default as CameraOutline } from '@ant-design/icons/lib/outline/CameraOutline';
 // export { default as CarOutline } from '@ant-design/icons/lib/outline/CarOutline';
 // export { default as CaretDownOutline } from '@ant-design/icons/lib/outline/CaretDownOutline';

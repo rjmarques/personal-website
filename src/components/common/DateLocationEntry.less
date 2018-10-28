@@ -1,0 +1,15 @@
+@import "../../theme.less";
+
+.Date-location-entry {
+  display: flex;
+  flex-direction: column;
+
+  .for-size(tablet-up; {flex-direction: row;});
+
+  span {
+    display: block;
+    margin-right: 10px;
+
+    .for-size(tablet-up; {flex: 0 0 auto;});
+  }
+}

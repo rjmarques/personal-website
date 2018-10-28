@@ -1,8 +1,8 @@
-import { Icon } from "antd";
 import * as React from "react";
 
 import ContentSection from "../common/ContentSection";
 
+import DateLocationEntry from "../common/DateLocationEntry";
 import "./Education.less";
 
 class Education extends React.Component {
@@ -23,11 +23,11 @@ class Education extends React.Component {
                 </a>
               </h3>
               <div className="App-card-subtitle">
-                <span>2010 to 2012</span>
-                <span>|</span>
-                <span>
-                  <Icon type="environment" /> Lisbon
-                </span>
+                <DateLocationEntry
+                  startingDate="2010"
+                  endingDate="2012"
+                  location="Lisbon"
+                />
               </div>
               <div>
                 Dissertation:{" "}
@@ -56,11 +56,11 @@ class Education extends React.Component {
                 </a>
               </h3>
               <div className="App-card-subtitle">
-                <span>2007 to 2010</span>
-                <span>|</span>
-                <span>
-                  <Icon type="environment" /> Lisbon
-                </span>
+                <DateLocationEntry
+                  startingDate="2007"
+                  endingDate="2010"
+                  location="Lisbon"
+                />
               </div>
             </div>
           </li>
