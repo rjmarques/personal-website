@@ -1,17 +1,22 @@
 @import "../../theme.less";
 
 .Home {
-  background: url(./img/banner.png) no-repeat scroll 0 0 / cover;
   position: relative;
+
+  .for-size(
+    laptop-small-up; {background: url(./img/banner.png) no-repeat scroll 0 0 / cover;}
+  );
 
   &::before {
     content: "";
     background-color: @main-blue;
     height: 100%;
-    opacity: 0.7;
+    opacity: 0.85;
     position: absolute;
     width: 100%;
     z-index: 1;
+
+    .for-size(laptop-small-up; {opacity: 0.7;});
   }
 
   p {

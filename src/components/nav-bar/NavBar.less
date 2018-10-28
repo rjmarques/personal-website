@@ -1,15 +1,15 @@
 @import "../../theme.less";
 
 .Nav {
+  .Nav-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .Nav-menu {
-    background-color: inherit;
-    border: none;
-    color: @white;
-    font-family: inherit;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 40px;
-    text-transform: uppercase;
+    display: none;
+
+    .for-size(laptop-small-up; {display: block});
   }
 
   .Nav-item {
@@ -21,8 +21,39 @@
     }
   }
 
-  .nav-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
+  .Nav-hamburger {
+    display: block;
+    font-size: 30px;
+    padding-right: 4px;
+
+    .for-size(laptop-small-up; {display: none});
+  }
+}
+
+.Nav-menu {
+  background-color: inherit;
+  border: none;
+  text-transform: uppercase;
+
+  &.vertical {
+    background: @main-blue;
+    width: 100%;
+
+    .Nav-item {
+      padding: 10px 20px;
+    }
+  }
+
+  .Nav-item {
+    color: @white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+
+    &.ant-dropdown-menu-item:hover,
+    &.ant-dropdown-menu-item-selected {
+      color: @primary-color;
+    }
   }
 }

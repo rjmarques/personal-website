@@ -522,7 +522,9 @@ export {
 // export { default as MediumOutline } from '@ant-design/icons/lib/outline/MediumOutline';
 // export { default as MenuFoldOutline } from '@ant-design/icons/lib/outline/MenuFoldOutline';
 // export { default as MenuUnfoldOutline } from '@ant-design/icons/lib/outline/MenuUnfoldOutline';
-// export { default as MenuOutline } from '@ant-design/icons/lib/outline/MenuOutline';
+export {
+  default as MenuOutline
+} from "@ant-design/icons/lib/outline/MenuOutline";
 // export { default as MinusOutline } from '@ant-design/icons/lib/outline/MinusOutline';
 // export { default as MonitorOutline } from '@ant-design/icons/lib/outline/MonitorOutline';
 // export { default as MrOutline } from '@ant-design/icons/lib/outline/MrOutline';
