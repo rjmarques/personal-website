@@ -14,7 +14,6 @@ const SAVE_AS_NAME = "ricardomarquesCV.pdf";
 class Home extends React.Component<IProps, {}> {
   constructor(props: IProps) {
     super(props);
-    this.cvDownload = this.cvDownload.bind(this);
   }
 
   public render() {
@@ -65,13 +64,13 @@ class Home extends React.Component<IProps, {}> {
     );
   }
 
-  private async cvDownload() {
+  private cvDownload = async () => {
     try {
       await this.props.cvDownload(CV_URL, SAVE_AS_NAME);
     } catch (error) {
       message.error(`Failed download CV: ${error}`, 5);
     }
-  }
+  };
 }
 
 export default Home;

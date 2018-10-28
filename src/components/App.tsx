@@ -66,9 +66,6 @@ class App extends React.Component<{}, IState> {
 
   constructor(props: {}) {
     super(props);
-    this.handleScroll = this.handleScroll.bind(this);
-    this.viewSelected = this.viewSelected.bind(this);
-    this.contactViewSelected = this.contactViewSelected.bind(this);
 
     this.state = {
       atViewId: this.views[0].id,
@@ -129,11 +126,11 @@ class App extends React.Component<{}, IState> {
     return this.state.isGhostHeader ? "App-header ghost" : "App-header";
   }
 
-  private contactViewSelected() {
+  private contactViewSelected = () => {
     this.viewSelected(this.views[this.views.length - 1].id);
-  }
+  };
 
-  private viewSelected(viewId: string) {
+  private viewSelected = (viewId: string) => {
     if (this.state.isScrolling) {
       return;
     }
@@ -146,9 +143,9 @@ class App extends React.Component<{}, IState> {
         this.setIsScrolling(false);
       });
     }
-  }
+  };
 
-  private handleScroll() {
+  private handleScroll = () => {
     this.setHeaderClass();
 
     if (this.state.isScrolling) {
@@ -166,7 +163,7 @@ class App extends React.Component<{}, IState> {
         return;
       }
     }
-  }
+  };
 
   private setHeaderClass() {
     if (
