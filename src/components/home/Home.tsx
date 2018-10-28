@@ -23,14 +23,14 @@ class Home extends React.Component<IProps, {}> {
         <div className="content">
           <div className="Home-content">
             <Row>
-              <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+              <Col xs={24} sm={24} md={24} lg={8} xl={8}>
                 <img
                   className="Home-mugshot"
                   alt="picture of me"
                   src={require("../../assets/img/me.jpg")}
                 />
               </Col>
-              <Col xs={24} sm={24} md={16} lg={16} xl={16}>
+              <Col xs={24} sm={24} md={24} lg={16} xl={16}>
                 <div className="Home-description">
                   <h1>Ricardo Marques</h1>
                   <span className="Home-sub-title">Full Stack Developer</span>

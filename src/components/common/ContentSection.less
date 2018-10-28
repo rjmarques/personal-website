@@ -1,9 +1,19 @@
 @import "../../theme.less";
 
-.Section-sub-title {
-  color: @grey;
-  display: block;
-  font-weight: 500;
-  margin-top: 2px;
-  margin-bottom: 35px;
+.content {
+  .Content-title {
+    text-align: center;
+
+    .for-size(laptop-small-up; {text-align: initial});
+  }
+
+  .Section-sub-title {
+    color: @grey;
+    display: block;
+    font-weight: 500;
+    margin-top: 2px;
+    margin-bottom: 25px;
+
+    .for-size(laptop-up; {margin-bottom: 35px;});
+  }
 }

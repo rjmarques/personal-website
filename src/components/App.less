@@ -5,8 +5,13 @@
 
   .content {
     margin: auto;
-    padding: 0px 15px;
-    width: 1170px;
+    min-width: 320px; // the website is not made for ants
+    padding: 0px 30px;
+    width: 100%;
+
+    .for-size(laptop-small-up; {width: 750px});
+    .for-size(laptop-up; {width: 970px});
+    .for-size(desktop-up; {width: 1170px;});
   }
 
   .App-header {
@@ -19,13 +24,16 @@
 
     &.ghost {
       background-color: fade(@main-blue, 80%);
-      padding: 32px 0px;
+
+      .for-size(desktop-up; {padding: 32px 0px;});
     }
   }
 
   .App-main-content {
     section {
-      padding: 40px 0px;
+      padding: 15px 0px;
+      .for-size(tablet-up; {padding: 25px 0px;});
+      .for-size(laptop-up; {padding: 40px 0px;});
     }
   }
 

@@ -64,7 +64,7 @@ class Skills extends React.Component {
       >
         <Row gutter={16} className="Skills-card-row">
           {this.skills.map((skill: ISkill) => (
-            <Col key={skill.title} xs={24} sm={24} md={6} lg={6} xl={6}>
+            <Col key={skill.title} xs={24} sm={12} md={12} lg={6} xl={6}>
               <a href={skill.url} target="_blank">
                 <Card
                   className="Skills-card"

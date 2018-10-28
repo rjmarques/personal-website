@@ -2,7 +2,6 @@
 
 .Home {
   background: url(./img/banner.png) no-repeat scroll 0 0 / cover;
-  min-height: 640px;
   position: relative;
 
   &::before {
@@ -16,10 +15,11 @@
   }
 
   p {
-    font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1px;
-    margin: 40px 0px;
+    margin: 20px 0px 40px 0px;
+
+    .for-size(desktop-up; {font-size: 16px; margin: 40px 0px;});
   }
 
   .Home-content {
@@ -27,18 +27,24 @@
     border-top: 9px solid @primary-color;
     box-shadow: 0 2px 30px 5px rgba(51, 51, 51, 0.38);
     display: inline-block;
-    margin-top: 150px;
-    padding: 46px 90px 0 67px;
+    margin-top: 110px;
+    text-align: center;
+    padding: 50px;
     position: relative;
     vertical-align: bottom;
     z-index: 10;
+
+    .for-size(laptop-up; {text-align: left; padding: 46px 70px 0 67px;});
+    .for-size(desktop-up; {margin-top: 150px; padding: 46px 90px 0 67px;});
   }
 
   .Home-mugshot {
-    // only when collums collapse -> border-bottom: 1px solid @light-grey;
-    height: 445px;
+    border-bottom: 1px solid @light-grey;
+    height: 280px;
     object-fit: none;
     width: 100%;
+
+    .for-size(laptop-up; {border: none; height: 445px;});
   }
 
   .Home-sub-title {
@@ -50,12 +56,22 @@
   }
 
   .Home-description {
-    padding: 50px 60px 0px 60px;
+    padding-top: 20px;
+
+    .for-size(laptop-up; {padding: 50px 30px 0px 40px;});
+    .for-size(desktop-up; {padding: 50px 30px 0px 60px;});
   }
 
   .Home-buttons {
     > * {
-      margin-right: 25px;
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+
+      .for-size(
+        laptop-small-up; {margin-left: 13px; margin-right: 13px; margin-bottom: 0px;}
+      );
+      .for-size(laptop-up; {margin-left: 0px; margin-right: 25px;});
     }
   }
 }

@@ -108,27 +108,37 @@ h4 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 26px;
+  line-height: normal;
   font-weight: 900;
-  line-height: 55px;
+
+  .for-size(laptop-small-up; {font-size: 34px;});
+  .for-size(laptop-up; {font-size: 42px; line-height: 55px;});
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 45px;
+
+  .for-size(tablet-up; {font-size: 27px;});
+  .for-size(laptop-up; {font-size: 32px;});
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
   line-height: 20px;
+
+  .for-size(tablet-up; {font-size: 20px;});
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: capitalize;
+
+  .for-size(tablet-up; {font-size: 16px;});
 }
 
 p {

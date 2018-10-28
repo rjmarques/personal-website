@@ -19,7 +19,7 @@ class Projects extends React.Component {
       description: "An Angular webapp recipe for webprojects",
       image: require("./img/angular-typescript-recipe.png"),
       repoUrl: "https://github.com/rjmarques/angular2-typescript-recipe",
-      title: "Angular 2 & Typescript Recipe",
+      title: "Angular & Typescript Recipe",
       url: "https://angular2recipe.ricardomarq.com/"
     },
     {
@@ -45,9 +45,9 @@ class Projects extends React.Component {
         subTitle="Some projects I've done in my free time"
         wrapperClass="Projects"
       >
-        <Row gutter={12}>
+        <Row gutter={12} className="Projects-card-row">
           {this.projects.map(proj => (
-            <Col key={proj.title} xs={24} sm={24} md={8} lg={8} xl={8}>
+            <Col key={proj.title} xs={24} sm={24} md={12} lg={8} xl={8}>
               <Card
                 hoverable={true}
                 className="Projects-card"

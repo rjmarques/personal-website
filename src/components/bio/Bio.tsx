@@ -14,12 +14,12 @@ class Bio extends React.Component {
         wrapperClass="Bio"
       >
         <Row>
-          <Col xs={24} sm={24} md={4} lg={4} xl={4}>
+          <Col xs={0} sm={0} md={0} lg={4} xl={4}>
             <div className="Bio-picture">
               <img alt="bio picture" src={require("../../assets/img/me.jpg")} />{" "}
             </div>
           </Col>
-          <Col xs={24} sm={24} md={16} lg={16} xl={16}>
+          <Col xs={24} sm={24} md={24} lg={16} xl={16}>
             <div className="Bio-text">
               <p>
                 Hi, I'm Ricardo Marques. I'm a professional nerd that works on

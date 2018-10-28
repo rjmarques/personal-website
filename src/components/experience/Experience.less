@@ -40,17 +40,24 @@
   }
 
   .Experience-roles {
-    max-width: 60em;
+    display: none;
+
+    .for-size(tablet-up; {display: block; max-width: 60em;});
   }
 
   .Experience-technologies {
     align-items: baseline;
     display: flex;
+    flex-direction: column;
     margin-bottom: -10px;
     padding-top: 5px;
 
+    .for-size(laptop-small-up; {flex-direction: row;});
+
     h4 {
       flex: 0 0 auto;
+      margin-right: 10px;
+      margin-bottom: 5px;
     }
   }
 
@@ -66,7 +73,7 @@
       flex: 0 0 auto;
       font-size: 13px;
       padding: 2px 4px;
-      margin-left: 10px;
+      margin-right: 10px;
       margin-bottom: 10px;
     }
   }

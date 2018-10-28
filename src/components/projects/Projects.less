@@ -1,19 +1,25 @@
 @import "../../theme.less";
 
+@verticalGutter: 16px;
+
 .Projects {
   .Projects-action-icon {
     font-size: 24px;
   }
 
+  .Projects-card-row {
+    margin-bottom: -@verticalGutter;
+  }
+
   .Projects-card {
     border-bottom: 4px solid @primary-color;
     cursor: auto;
-    min-height: 390px;
+    margin-bottom: @verticalGutter;
     text-align: center;
 
     &:hover {
       border-bottom: 4px solid @primary-color;
-      transform: translate(0px, -5px);
+      .for-size(laptop-small-up; {transform: translate(0px, -5px) ;});
     }
 
     a:hover,

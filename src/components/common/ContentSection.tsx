@@ -14,7 +14,7 @@ class ContentSection extends React.Component<IProps, {}> {
     return (
       <section className={this.props.wrapperClass}>
         <div className="content">
-          <div>
+          <div className="Content-title">
             <h2>{this.props.title}</h2>
             <span className="Section-sub-title">{this.props.subTitle}</span>
           </div>

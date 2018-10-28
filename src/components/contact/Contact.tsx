@@ -89,7 +89,7 @@ class Contact extends React.Component<IProps, IState> {
         subTitle="Want to get in touch? Leave me a message"
         wrapperClass="Contact"
       >
-        <Form onSubmit={this.handleSubmit} className="login-form">
+        <Form onSubmit={this.handleSubmit} className="Contact-form">
           <Row gutter={gutter}>
             <Col
               xs={24}
