@@ -4,9 +4,7 @@
   margin-top: 40px;
 
   .Bio-text {
-    .for-size(
-      laptop-up; {border-left: 2px solid @light-grey; padding-left: 45px;}
-    );
+    .for-size(laptop-up; {padding-left: 80px;});
   }
 
   .Bio-picture {
@@ -16,5 +14,16 @@
       height: 150px;
       width: 150px;
     }
+  }
+
+  .Bio-divider {
+    background: @light-grey;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 2px;
+
+    .for-size(laptop-up; {display: block; margin-left: 35px;});
+    .for-size(desktop-up; {display: block; margin-left: 20px;});
   }
 }

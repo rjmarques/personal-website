@@ -19,7 +19,8 @@ class Bio extends React.Component {
               <img alt="bio picture" src={require("../../assets/img/me.jpg")} />{" "}
             </div>
           </Col>
-          <Col xs={24} sm={24} md={24} lg={16} xl={16}>
+          <Col xs={24} sm={24} md={24} lg={19} xl={16}>
+            <div className="Bio-divider" />
             <div className="Bio-text">
               <p>
                 Hi, I'm Ricardo Marques. I'm a professional nerd that works on
