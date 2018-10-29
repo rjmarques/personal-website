@@ -1,10 +1,10 @@
-const MARGIN_OFFSET = 80; // TODO remove magic number (because of margin)
+const HEADER_HEIGHT_OFFSET = 82;
 const TOP_MARGIN_GHOST_DISTANCE = 100;
-const INCREMENT = 20;
-const DEFAULT_DURATION_MILLISECONDS = 1000;
+const TIME_INCREMENT = 20;
+const DEFAULT_DURATION_MILLISECONDS = 800;
 
 export function GetScrollTop(elem: HTMLElement) {
-  return elem.offsetTop - MARGIN_OFFSET;
+  return elem.offsetTop - HEADER_HEIGHT_OFFSET;
 }
 
 export function CloseToPageTop(scrollingElem: Element) {
@@ -29,11 +29,11 @@ export function ScrollTo(
 
   const start = scrollingElem.scrollTop;
   const to = GetScrollTop(viewElem);
-  const change = to - start;
+  const change = to + 1 - start; // the 1 is to include any border
   let currentTime = 0;
 
   const animateScroll = () => {
-    currentTime += INCREMENT;
+    currentTime += TIME_INCREMENT;
     const val = easeInOutQuad(currentTime, start, change, duration);
     scrollingElem.scrollTop = val;
     if (currentTime < duration) {

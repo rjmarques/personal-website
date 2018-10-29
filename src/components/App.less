@@ -16,7 +16,12 @@
 
   .App-header {
     background-color: @main-blue;
-    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    // IF THIS CHANGEs THE AUTO-SCROLL WON'T WORK AS EXPECTED
+    min-height: 82px;
+    // IF THIS CHANGEs THE AUTO-SCROLL WON'T WORK AS EXPECTED
+    padding: 18px 0px;
     position: fixed;
     transition: 0.2s all;
     width: 100%;
@@ -25,7 +30,7 @@
     &.ghost {
       background-color: fade(@main-blue, 80%);
 
-      .for-size(desktop-up; {padding: 32px 0px;});
+      .for-size(desktop-up; {padding: 36px 0px;});
     }
   }
 

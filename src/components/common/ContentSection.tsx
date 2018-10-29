@@ -16,7 +16,7 @@ const ContentSection = (props: IProps) => (
         <h2>{props.title}</h2>
         <span className="Section-sub-title">{props.subTitle}</span>
       </div>
-      <div>{props.children}</div>
+      {props.children}
     </div>
   </section>
 );
