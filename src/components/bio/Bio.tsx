@@ -17,7 +17,7 @@ const Bio = () => (
           <img alt="bio picture" src={require("../../assets/img/me.jpg")} />{" "}
         </div>
       </Col>
-      <Col xs={24} sm={24} md={24} lg={19} xl={16}>
+      <Col xs={24} sm={24} md={24} lg={20} xl={20}>
         <div className="Bio-divider" />
         <div className="Bio-text">
           <p>
