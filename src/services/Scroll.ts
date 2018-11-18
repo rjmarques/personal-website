@@ -38,7 +38,7 @@ export function ScrollTo(
 
   const start = scrollingElem.scrollTop;
   const to = GetScrollTop(viewElem);
-  const change = to + 1 - start; // the 1 is to include any border
+  const change = to + 2 - start; // the 1 is to include any border
   let currentTime = 0;
 
   const animateScroll = () => {
