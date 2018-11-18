@@ -10,6 +10,7 @@ interface IProps {
 
 const CV_URL = "cv.pdf";
 const SAVE_AS_NAME = "ricardomarquesCV.pdf";
+const IMG_CLASS = "lazy";
 
 const cvDownload = (props: IProps) => async () => {
   try {
@@ -19,6 +20,27 @@ const cvDownload = (props: IProps) => async () => {
   }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyImage = document.querySelectorAll(`img.${IMG_CLASS}`)[0];
+
+  const lazyImageObserver = new IntersectionObserver(entries => {
+    if (entries.length > 1) {
+      throw new Error("There can be only one!");
+    }
+
+    const entry = entries[0];
+    if (entry.isIntersecting) {
+      const img = entry.target as HTMLImageElement;
+      img.src = img.dataset.src || "";
+      img.srcset = img.dataset.srcset || "";
+      img.classList.remove(IMG_CLASS);
+      lazyImageObserver.unobserve(img);
+    }
+  });
+
+  lazyImageObserver.observe(lazyImage);
+});
+
 const Home = (props: IProps) => (
   <section className="Home">
     <div className="content">
@@ -26,9 +48,11 @@ const Home = (props: IProps) => (
         <Row>
           <Col xs={24} sm={24} md={24} lg={8} xl={8}>
             <img
-              className="Home-mugshot"
+              id="Home-hero-image"
+              className={IMG_CLASS}
               alt="picture of me"
-              src={require("../../assets/img/me.jpg")}
+              src={require("./img/me_placeholder.png")}
+              data-src={require("../../assets/img/me.jpg")}
             />
           </Col>
           <Col xs={24} sm={24} md={24} lg={16} xl={16}>
