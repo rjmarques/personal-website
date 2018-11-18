@@ -11,7 +11,7 @@ const Education = () => (
     subTitle="My academic background"
     wrapperClass="Education"
   >
-    <ul>
+    <ul className="materialize">
       <li className="Education-entry">
         <div className="App-card-wide">
           <h3>

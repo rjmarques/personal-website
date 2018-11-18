@@ -43,7 +43,7 @@ const Projects = () => (
     subTitle="Some projects I've done in my free time"
     wrapperClass="Projects"
   >
-    <Row gutter={12} className="Projects-card-row">
+    <Row gutter={12} className="Projects-card-row materialize">
       {projects.map(proj => (
         <Col key={proj.title} xs={24} sm={24} md={12} lg={8} xl={8}>
           <Card

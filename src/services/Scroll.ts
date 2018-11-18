@@ -21,6 +21,14 @@ export function AtView(scrollingElem: Element, viewElem: HTMLElement): boolean {
   );
 }
 
+export function InView(viewElem: HTMLElement): boolean {
+  const rect = viewElem.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  const top = rect.top + HEADER_HEIGHT_OFFSET;
+
+  return top <= windowHeight && rect.top + rect.height >= 0;
+}
+
 export function ScrollTo(
   scrollingElem: Element,
   viewElem: HTMLElement,

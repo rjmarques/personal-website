@@ -16,6 +16,7 @@ import {
   AtView,
   CloseToPageTop,
   HEADER_HEIGHT_OFFSET,
+  InView,
   ScrollTo
 } from "../services/Scroll";
 import SendMessage from "../services/SendMessage";
@@ -32,6 +33,7 @@ interface IState {
   atViewId: string;
   isGhostHeader: boolean;
   isScrolling: boolean;
+  visitedViewsByID: Map<string, boolean>;
 }
 
 // views that trigger status a nav change
@@ -75,7 +77,8 @@ class App extends Component<{}, IState> {
     this.state = {
       atViewId: views[0].id,
       isGhostHeader: true,
-      isScrolling: false
+      isScrolling: false,
+      visitedViewsByID: new Map<string, boolean>()
     };
   }
 
@@ -89,24 +92,44 @@ class App extends Component<{}, IState> {
             userSelectedView={this.viewSelected}
           />
         </header>
-        <div id={views[0].id} ref={views[0].ref}>
+        <div
+          id={views[0].id}
+          ref={views[0].ref}
+          className={this.isViewVisited(views[0].id) ? "visited" : ""}
+        >
           <Home
             goToContact={this.contactViewSelected}
             cvDownload={PDFDownload}
           />
         </div>
         <div className="App-main-content">
-          <div id={views[1].id} ref={views[1].ref}>
+          <div
+            id={views[1].id}
+            ref={views[1].ref}
+            className={this.isViewVisited(views[1].id) ? "visited" : ""}
+          >
             <Bio />
             <Skills />
           </div>
-          <div id={views[2].id} ref={views[2].ref}>
+          <div
+            id={views[2].id}
+            ref={views[2].ref}
+            className={this.isViewVisited(views[2].id) ? "visited" : ""}
+          >
             <Experience />
           </div>
-          <div id={views[3].id} ref={views[3].ref}>
+          <div
+            id={views[3].id}
+            ref={views[3].ref}
+            className={this.isViewVisited(views[3].id) ? "visited" : ""}
+          >
             <Projects />
           </div>
-          <div id={views[4].id} ref={views[4].ref}>
+          <div
+            id={views[4].id}
+            ref={views[4].ref}
+            className={this.isViewVisited(views[4].id) ? "visited" : ""}
+          >
             <Publications />
             <Education />
           </div>
@@ -114,6 +137,7 @@ class App extends Component<{}, IState> {
             id={views[5].id}
             ref={views[5].ref}
             style={{ minHeight: `calc(100vh - ${HEADER_HEIGHT_OFFSET}px)` }}
+            className={this.isViewVisited(views[5].id) ? "visited" : ""}
           >
             <Contact sendMessage={SendMessage} />
             <Footer />
@@ -125,6 +149,7 @@ class App extends Component<{}, IState> {
 
   public componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    this.setViewed();
   }
 
   public componentWillUnmount() {
@@ -156,6 +181,7 @@ class App extends Component<{}, IState> {
 
   private handleScroll = () => {
     this.setHeaderClass();
+    this.setViewed();
 
     if (this.state.isScrolling) {
       return;
@@ -169,7 +195,7 @@ class App extends Component<{}, IState> {
         AtView(document.scrollingElement, cur)
       ) {
         this.setSelectedView(view.id);
-        return;
+        break;
       }
     }
   };
@@ -195,6 +221,24 @@ class App extends Component<{}, IState> {
 
   private setIsGhostHeader(isGhostHeader: boolean) {
     this.setState({ isGhostHeader });
+  }
+
+  private setViewed = () => {
+    for (const view of views) {
+      if (this.isViewVisited(view.id)) {
+        continue;
+      }
+
+      const cur = view.ref.current;
+      if (cur && InView(cur)) {
+        this.state.visitedViewsByID[view.id] = true;
+        this.setState({ visitedViewsByID: this.state.visitedViewsByID });
+      }
+    }
+  };
+
+  private isViewVisited(id: string): boolean {
+    return this.state.visitedViewsByID[id] || false;
   }
 }
 

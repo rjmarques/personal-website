@@ -60,7 +60,7 @@ const Skills = () => (
     subTitle="The technologies I am proficient in"
     wrapperClass="Skills"
   >
-    <Row gutter={16} className="Skills-card-row">
+    <Row gutter={16} className="Skills-card-row materialize">
       {skills.map((skill: ISkill) => (
         <Col key={skill.title} xs={24} sm={12} md={12} lg={6} xl={6}>
           <a href={skill.url} target="_blank">

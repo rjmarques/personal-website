@@ -56,7 +56,7 @@ const Home = (props: IProps) => (
             />
           </Col>
           <Col xs={24} sm={24} md={24} lg={16} xl={16}>
-            <div className="Home-description">
+            <div className="Home-description materialize">
               <h1>Ricardo Marques</h1>
               <span className="Home-sub-title">Full Stack Developer</span>
               <p>

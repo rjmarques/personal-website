@@ -28,7 +28,7 @@ const Experience = () => {
       subTitle="What I have done professionally"
       wrapperClass="Experience"
     >
-      <div className="Experience-timeline">
+      <div className="Experience-timeline materialize">
         <ul>
           {experienceEntries.map(entry => (
             <li

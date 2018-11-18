@@ -19,7 +19,7 @@ const Bio = () => (
       </Col>
       <Col xs={24} sm={24} md={24} lg={20} xl={20}>
         <div className="Bio-divider" />
-        <div className="Bio-text">
+        <div className="Bio-text materialize">
           <p>
             Hi, I'm Ricardo Marques. I'm a professional nerd that works on both
             the back and front end, while using a modern tech stack to make

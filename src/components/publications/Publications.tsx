@@ -31,7 +31,7 @@ const Publications = () => (
     subTitle="Papers I have published"
     wrapperClass="Publications"
   >
-    <ul>
+    <ul className="materialize">
       {publications.map(pub => (
         <li key={pub.conference} className="Publications-entry">
           <div className="App-card-wide">

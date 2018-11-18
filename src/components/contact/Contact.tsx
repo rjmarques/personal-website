@@ -88,7 +88,7 @@ class Contact extends Component<IProps, IState> {
         subTitle="Want to get in touch? Leave me a message"
         wrapperClass="Contact"
       >
-        <Form onSubmit={this.handleSubmit} className="Contact-form">
+        <Form onSubmit={this.handleSubmit} className="Contact-form materialize">
           <Row gutter={gutter}>
             <Col
               xs={24}
