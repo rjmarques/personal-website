@@ -136,7 +136,9 @@ class App extends Component<{}, IState> {
           <div
             id={views[5].id}
             ref={views[5].ref}
-            style={{ minHeight: `calc(100vh - ${HEADER_HEIGHT_OFFSET}px)` }}
+            style={{
+              minHeight: `calc(100vh - ${HEADER_HEIGHT_OFFSET - 1}px)`
+            }}
             className={this.isViewVisited(views[5].id) ? "visited" : ""}
           >
             <Contact sendMessage={SendMessage} />
