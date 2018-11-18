@@ -12,7 +12,12 @@ import Publications from "./publications/Publications";
 import Skills from "./skills/Skills";
 
 import PDFDownload from "../services/PDFDownload";
-import { AtView, CloseToPageTop, ScrollTo } from "../services/Scroll";
+import {
+  AtView,
+  CloseToPageTop,
+  HEADER_HEIGHT_OFFSET,
+  ScrollTo
+} from "../services/Scroll";
 import SendMessage from "../services/SendMessage";
 
 import "./App.less";
@@ -105,7 +110,11 @@ class App extends Component<{}, IState> {
             <Publications />
             <Education />
           </div>
-          <div id={views[5].id} ref={views[5].ref}>
+          <div
+            id={views[5].id}
+            ref={views[5].ref}
+            style={{ minHeight: `calc(100vh - ${HEADER_HEIGHT_OFFSET}px)` }}
+          >
             <Contact sendMessage={SendMessage} />
             <Footer />
           </div>

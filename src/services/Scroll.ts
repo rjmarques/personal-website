@@ -1,7 +1,8 @@
-const HEADER_HEIGHT_OFFSET = 82;
 const TOP_MARGIN_GHOST_DISTANCE = 100;
 const TIME_INCREMENT = 20;
 const DEFAULT_DURATION_MILLISECONDS = 800;
+
+export const HEADER_HEIGHT_OFFSET = 82; // TODO get the actual value from the DOM
 
 export function GetScrollTop(elem: HTMLElement) {
   return elem.offsetTop - HEADER_HEIGHT_OFFSET;
