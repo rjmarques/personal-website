@@ -46,7 +46,7 @@ const Home = (props: IProps) => (
     <div className="content">
       <div className="Home-content">
         <Row>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+          <Col xs={24} sm={24} md={24} lg={8} xl={8} className="Home-hero-wrapper">
             <img
               id="Home-hero-image"
               className={IMG_CLASS}
