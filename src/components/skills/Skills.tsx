@@ -13,14 +13,14 @@ interface ISkill {
 
 const skills: ISkill[] = [
   {
-    icon: require("./img/angular.svg"),
-    title: "angular",
-    url: "https://angular.io/"
-  },
-  {
     icon: require("./img/react.svg"),
     title: "react",
     url: "https://reactjs.org/"
+  },
+  {
+    icon: require("./img/angular.svg"),
+    title: "angular",
+    url: "https://angular.io/"
   },
   {
     icon: require("./img/javascript.svg"),
@@ -43,14 +43,14 @@ const skills: ISkill[] = [
     url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html"
   },
   {
+    icon: require("./img/go.svg"),
+    title: "golang",
+    url: "https://golang.org/"
+  },
+  {
     icon: require("./img/postgres.svg"),
     title: "postgresql",
     url: "https://www.postgresql.org/"
-  },
-  {
-    icon: require("./img/c++.svg"),
-    title: "c++",
-    url: "http://www.cplusplus.com/"
   }
 ];
 
