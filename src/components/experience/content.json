@@ -14,9 +14,20 @@
     "endingDate": "Oct 2018",
     "jobTitle": "senior full stack developer",
     "location": "London",
-    "roles": ["Stay tuned for more..."],
+    "roles": [
+      "Conceptualized and implemented the first version of Typescript fraud-checker bot, on top of Node.js. The bot used data heuristics to compare new applications against, previously flagged, fraudulent ones and would automatically notify internal compliance, if required.",
+      "Implemented both the client side (React) and server side (Typescript) of an internal tool, used by Customer Success personnel, that replaced a non GDPR compliant workflow. The tool allowed bigger visibility, particularly in terms of data, into a critical part of the mortgage submission workflow.",
+      "Worked on mortgage application automation, by implementing a server-side Typescript budget planner. The latter used statistical data to assess user’s affordability to mortgage products."
+    ],
     "startingDate": "Apr 2018",
-    "technologies": ["React", "SASS", "Typescript", "PostgreSQL", "Webpack"],
+    "technologies": [
+      "React",
+      "SASS",
+      "Typescript",
+      "PostgreSQL",
+      "Node.js",
+      "Webpack"
+    ],
     "url": "https://trussle.com/"
   },
   {
