@@ -1,4 +1,5 @@
 import { Button, Col, message, Row } from "antd";
+import "intersection-observer";
 import React from "react";
 
 import "./Home.less";
@@ -46,7 +47,14 @@ const Home = (props: IProps) => (
     <div className="content">
       <div className="Home-content">
         <Row>
-          <Col xs={24} sm={24} md={24} lg={8} xl={8} className="Home-hero-wrapper">
+          <Col
+            xs={24}
+            sm={24}
+            md={24}
+            lg={8}
+            xl={8}
+            className="Home-hero-wrapper"
+          >
             <img
               id="Home-hero-image"
               className={IMG_CLASS}
