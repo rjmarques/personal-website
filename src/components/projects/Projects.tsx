@@ -15,7 +15,7 @@ interface IProject {
 
 const projects: IProject[] = [
   {
-    description: "An Angular webapp recipe for webprojects",
+    description: "An Angular webapp recipe for web projects",
     image: require("./img/angular-typescript-recipe.png"),
     repoUrl: "https://github.com/rjmarques/angular2-typescript-recipe",
     title: "Angular & Typescript Recipe",

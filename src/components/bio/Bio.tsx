@@ -43,7 +43,7 @@ const Bio = () => (
             .
           </p>
           <p>
-            On my free time I dabble with tech I don't know much about. Recently
+            In my free time I dabble with tech I don't know much about. Recently
             it has been Go and Webassembly.
           </p>
         </div>
