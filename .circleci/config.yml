@@ -1,0 +1,26 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:14.3.0
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: npm install
+
+      - run:
+          name: Run Tests
+          command: npm test -- --coverage
+
+      - run:
+          name: Build the Webapp
+          command: npm run build
+
+      - run:
+          name: "Deploy to Hosting Service"
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                echo fake deploy
+            fi
