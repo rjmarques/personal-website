@@ -17,30 +17,11 @@ const skills: ISkill[] = [
     title: "react",
     url: "https://reactjs.org/"
   },
-  {
-    icon: require("./img/angular.svg"),
-    title: "angular",
-    url: "https://angular.io/"
-  },
-  {
-    icon: require("./img/javascript.svg"),
-    title: "javascript",
-    url: "https://www.javascript.com/"
-  },
-  {
-    icon: require("./img/sass.svg"),
-    title: "sass",
-    url: "https://sass-lang.com/"
-  },
+
   {
     icon: require("./img/typescript.svg"),
     title: "typescript",
     url: "https://www.typescriptlang.org/"
-  },
-  {
-    icon: require("./img/java.svg"),
-    title: "java ee",
-    url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html"
   },
   {
     icon: require("./img/go.svg"),
@@ -51,6 +32,26 @@ const skills: ISkill[] = [
     icon: require("./img/postgres.svg"),
     title: "postgresql",
     url: "https://www.postgresql.org/"
+  },
+  {
+    icon: require("./img/java.svg"),
+    title: "java ee",
+    url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html"
+  },
+  {
+    icon: require("./img/javascript.svg"),
+    title: "javascript",
+    url: "https://www.javascript.com/"
+  },
+  {
+    icon: require("./img/angular.svg"),
+    title: "angular",
+    url: "https://angular.io/"
+  },
+  {
+    icon: require("./img/sass.svg"),
+    title: "sass",
+    url: "https://sass-lang.com/"
   }
 ];
 

@@ -85,147 +85,6 @@ exports[`renders without crashing renders correctly 1`] = `
         }
       >
         <a
-          href="https://angular.io/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div
-            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
-          >
-            <div
-              className="ant-card-cover"
-            >
-              <img
-                alt="angular"
-                src={
-                  Object {
-                    "ReactComponent": Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "render": [Function],
-                    },
-                    "__esModule": true,
-                    "default": "angular.svg",
-                  }
-                }
-              />
-            </div>
-            <div
-              className="ant-card-body"
-              style={Object {}}
-            >
-              <div
-                className="Skills-card-meta"
-              >
-                angular
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
-        style={
-          Object {
-            "paddingLeft": 8,
-            "paddingRight": 8,
-          }
-        }
-      >
-        <a
-          href="https://www.javascript.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div
-            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
-          >
-            <div
-              className="ant-card-cover"
-            >
-              <img
-                alt="javascript"
-                src={
-                  Object {
-                    "ReactComponent": Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "render": [Function],
-                    },
-                    "__esModule": true,
-                    "default": "javascript.svg",
-                  }
-                }
-              />
-            </div>
-            <div
-              className="ant-card-body"
-              style={Object {}}
-            >
-              <div
-                className="Skills-card-meta"
-              >
-                javascript
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
-        style={
-          Object {
-            "paddingLeft": 8,
-            "paddingRight": 8,
-          }
-        }
-      >
-        <a
-          href="https://sass-lang.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div
-            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
-          >
-            <div
-              className="ant-card-cover"
-            >
-              <img
-                alt="sass"
-                src={
-                  Object {
-                    "ReactComponent": Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "render": [Function],
-                    },
-                    "__esModule": true,
-                    "default": "sass.svg",
-                  }
-                }
-              />
-            </div>
-            <div
-              className="ant-card-body"
-              style={Object {}}
-            >
-              <div
-                className="Skills-card-meta"
-              >
-                sass
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
-        style={
-          Object {
-            "paddingLeft": 8,
-            "paddingRight": 8,
-          }
-        }
-      >
-        <a
           href="https://www.typescriptlang.org/"
           rel="noopener noreferrer"
           target="_blank"
@@ -258,53 +117,6 @@ exports[`renders without crashing renders correctly 1`] = `
                 className="Skills-card-meta"
               >
                 typescript
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div
-        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
-        style={
-          Object {
-            "paddingLeft": 8,
-            "paddingRight": 8,
-          }
-        }
-      >
-        <a
-          href="https://www.oracle.com/technetwork/java/javaee/overview/index.html"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <div
-            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
-          >
-            <div
-              className="ant-card-cover"
-            >
-              <img
-                alt="java ee"
-                src={
-                  Object {
-                    "ReactComponent": Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "render": [Function],
-                    },
-                    "__esModule": true,
-                    "default": "java.svg",
-                  }
-                }
-              />
-            </div>
-            <div
-              className="ant-card-body"
-              style={Object {}}
-            >
-              <div
-                className="Skills-card-meta"
-              >
-                java ee
               </div>
             </div>
           </div>
@@ -399,6 +211,194 @@ exports[`renders without crashing renders correctly 1`] = `
                 className="Skills-card-meta"
               >
                 postgresql
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
+        style={
+          Object {
+            "paddingLeft": 8,
+            "paddingRight": 8,
+          }
+        }
+      >
+        <a
+          href="https://www.oracle.com/technetwork/java/javaee/overview/index.html"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
+          >
+            <div
+              className="ant-card-cover"
+            >
+              <img
+                alt="java ee"
+                src={
+                  Object {
+                    "ReactComponent": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "__esModule": true,
+                    "default": "java.svg",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="ant-card-body"
+              style={Object {}}
+            >
+              <div
+                className="Skills-card-meta"
+              >
+                java ee
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
+        style={
+          Object {
+            "paddingLeft": 8,
+            "paddingRight": 8,
+          }
+        }
+      >
+        <a
+          href="https://www.javascript.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
+          >
+            <div
+              className="ant-card-cover"
+            >
+              <img
+                alt="javascript"
+                src={
+                  Object {
+                    "ReactComponent": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "__esModule": true,
+                    "default": "javascript.svg",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="ant-card-body"
+              style={Object {}}
+            >
+              <div
+                className="Skills-card-meta"
+              >
+                javascript
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
+        style={
+          Object {
+            "paddingLeft": 8,
+            "paddingRight": 8,
+          }
+        }
+      >
+        <a
+          href="https://angular.io/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
+          >
+            <div
+              className="ant-card-cover"
+            >
+              <img
+                alt="angular"
+                src={
+                  Object {
+                    "ReactComponent": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "__esModule": true,
+                    "default": "angular.svg",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="ant-card-body"
+              style={Object {}}
+            >
+              <div
+                className="Skills-card-meta"
+              >
+                angular
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div
+        className="ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-6 ant-col-xl-6"
+        style={
+          Object {
+            "paddingLeft": 8,
+            "paddingRight": 8,
+          }
+        }
+      >
+        <a
+          href="https://sass-lang.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <div
+            className="ant-card Skills-card ant-card-bordered ant-card-hoverable"
+          >
+            <div
+              className="ant-card-cover"
+            >
+              <img
+                alt="sass"
+                src={
+                  Object {
+                    "ReactComponent": Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "render": [Function],
+                    },
+                    "__esModule": true,
+                    "default": "sass.svg",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="ant-card-body"
+              style={Object {}}
+            >
+              <div
+                className="Skills-card-meta"
+              >
+                sass
               </div>
             </div>
           </div>
