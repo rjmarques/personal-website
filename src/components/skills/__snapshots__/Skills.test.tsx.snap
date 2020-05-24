@@ -367,7 +367,7 @@ exports[`renders without crashing renders correctly 1`] = `
         }
       >
         <a
-          href="https://sass-lang.com/"
+          href="https://www.docker.com/"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -378,7 +378,7 @@ exports[`renders without crashing renders correctly 1`] = `
               className="ant-card-cover"
             >
               <img
-                alt="sass"
+                alt="docker"
                 src={
                   Object {
                     "ReactComponent": Object {
@@ -386,7 +386,7 @@ exports[`renders without crashing renders correctly 1`] = `
                       "render": [Function],
                     },
                     "__esModule": true,
-                    "default": "sass.svg",
+                    "default": "docker.svg",
                   }
                 }
               />
@@ -398,7 +398,7 @@ exports[`renders without crashing renders correctly 1`] = `
               <div
                 className="Skills-card-meta"
               >
-                sass
+                docker
               </div>
             </div>
           </div>
