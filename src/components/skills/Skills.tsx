@@ -49,9 +49,9 @@ const skills: ISkill[] = [
     url: "https://angular.io/"
   },
   {
-    icon: require("./img/sass.svg"),
-    title: "sass",
-    url: "https://sass-lang.com/"
+    icon: require("./img/docker.svg"),
+    title: "docker",
+    url: "https://www.docker.com/"
   }
 ];
 
