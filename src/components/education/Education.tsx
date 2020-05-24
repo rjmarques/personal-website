@@ -16,7 +16,11 @@ const Education = () => (
         <div className="App-card-wide">
           <h3>
             MSc In Computer Science -{" "}
-            <a href="https://www.fct.unl.pt/en" target="_blank">
+            <a
+              href="https://www.fct.unl.pt/en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               New University of Lisbon
             </a>
           </h3>
@@ -29,14 +33,22 @@ const Education = () => (
           </div>
           <div>
             Dissertation:{" "}
-            <a href="https://run.unl.pt/handle/10362/8382" target="_blank">
+            <a
+              href="https://run.unl.pt/handle/10362/8382"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Algorithmic skeleton framework for the orchestration of GPU
               computations
             </a>
           </div>
           <div>
             Source Code:{" "}
-            <a href="https://bitbucket.org/MarrowTeam/marrow" target="_blank">
+            <a
+              href="https://bitbucket.org/MarrowTeam/marrow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               https://bitbucket.org/MarrowTeam/marrow
             </a>
           </div>
@@ -46,7 +58,11 @@ const Education = () => (
         <div className="App-card-wide">
           <h3>
             BSc In Computer Science -{" "}
-            <a href="https://www.fct.unl.pt/en" target="_blank">
+            <a
+              href="https://www.fct.unl.pt/en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               New University of Lisbon
             </a>
           </h3>

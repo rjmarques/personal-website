@@ -8,12 +8,17 @@ const Footer = () => (
     <div className="content">
       <div className="Footer-info">
         <div className="Footer-links">
-          <a href="https://github.com/rjmarques" target="_blank">
+          <a
+            href="https://github.com/rjmarques"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Icon type="github" />
           </a>
           <a
             href="https://linkedin.com/in/ricardo-marques-48568b44"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <Icon type="linkedin" />
           </a>

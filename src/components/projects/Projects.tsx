@@ -51,10 +51,20 @@ const Projects = () => (
             className="Projects-card"
             cover={<img alt="example" src={proj.image} />}
             actions={[
-              <a key="demo_url" href={proj.url} target="_blank">
+              <a
+                key="demo_url"
+                href={proj.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon className="Projects-action-icon" type="play-circle" />
               </a>,
-              <a key="repo_url" href={proj.repoUrl} target="_blank">
+              <a
+                key="repo_url"
+                href={proj.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon className="Projects-action-icon" type="github" />
               </a>
             ]}
