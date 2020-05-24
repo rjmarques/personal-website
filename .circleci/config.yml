@@ -4,6 +4,12 @@ jobs:
     docker:
       - image: circleci/node:14.3.0
     steps:
+        - run:
+            name: Install LFTP
+            command: |
+                sudo apt-get update;
+                sudo apt-get install lftp;
+
       - checkout
 
       - run:
@@ -20,7 +26,4 @@ jobs:
 
       - run:
           name: "Deploy to Hosting Service"
-          command: |
-            pwd
-            ls -l
-            ls -l static
+          command: lftp -e "open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ -X *.map -X php/ -X cv.pdf --reverse --verbose --delete build/ www/; bye"
