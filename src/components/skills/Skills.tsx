@@ -17,30 +17,11 @@ const skills: ISkill[] = [
     title: "react",
     url: "https://reactjs.org/"
   },
-  {
-    icon: require("./img/angular.svg"),
-    title: "angular",
-    url: "https://angular.io/"
-  },
-  {
-    icon: require("./img/javascript.svg"),
-    title: "javascript",
-    url: "https://www.javascript.com/"
-  },
-  {
-    icon: require("./img/sass.svg"),
-    title: "sass",
-    url: "https://sass-lang.com/"
-  },
+
   {
     icon: require("./img/typescript.svg"),
     title: "typescript",
     url: "https://www.typescriptlang.org/"
-  },
-  {
-    icon: require("./img/java.svg"),
-    title: "java ee",
-    url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html"
   },
   {
     icon: require("./img/go.svg"),
@@ -51,6 +32,26 @@ const skills: ISkill[] = [
     icon: require("./img/postgres.svg"),
     title: "postgresql",
     url: "https://www.postgresql.org/"
+  },
+  {
+    icon: require("./img/java.svg"),
+    title: "java ee",
+    url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html"
+  },
+  {
+    icon: require("./img/javascript.svg"),
+    title: "javascript",
+    url: "https://www.javascript.com/"
+  },
+  {
+    icon: require("./img/angular.svg"),
+    title: "angular",
+    url: "https://angular.io/"
+  },
+  {
+    icon: require("./img/docker.svg"),
+    title: "docker",
+    url: "https://www.docker.com/"
   }
 ];
 
@@ -63,7 +64,7 @@ const Skills = () => (
     <Row gutter={16} className="Skills-card-row materialize">
       {skills.map((skill: ISkill) => (
         <Col key={skill.title} xs={24} sm={12} md={12} lg={6} xl={6}>
-          <a href={skill.url} target="_blank">
+          <a href={skill.url} target="_blank" rel="noopener noreferrer">
             <Card
               className="Skills-card"
               hoverable={true}

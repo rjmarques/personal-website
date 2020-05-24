@@ -15,11 +15,11 @@ interface IProject {
 
 const projects: IProject[] = [
   {
-    description: "An Angular webapp recipe for web projects",
-    image: require("./img/angular-typescript-recipe.png"),
-    repoUrl: "https://github.com/rjmarques/angular2-typescript-recipe",
-    title: "Angular & Typescript Recipe",
-    url: "https://angular2recipe.ricardomarq.com/"
+    description: "A twitter joke scraper running on ECS",
+    image: require("./img/something-of-the-day.png"),
+    repoUrl: "https://github.com/rjmarques/something-of-the-day",
+    title: "Something of the day",
+    url: "http://something.ricardomarq.com/"
   },
   {
     description: "A Fractal WebAssembly Viewer",
@@ -29,11 +29,18 @@ const projects: IProject[] = [
     url: "https://wasmmandel.ricardomarq.com/"
   },
   {
-    description: "My tiny solar system",
+    description: "My Solar System",
     image: require("./img/solar-system.png"),
     repoUrl: "https://github.com/rjmarques/SolarSystem",
     title: "WebGL Solar System",
     url: "https://solar.ricardomarq.com/"
+  },
+  {
+    description: "An Angular webapp recipe for web projects",
+    image: require("./img/angular-typescript-recipe.png"),
+    repoUrl: "https://github.com/rjmarques/angular2-typescript-recipe",
+    title: "Angular & Typescript Recipe",
+    url: "https://angular2recipe.ricardomarq.com/"
   }
 ];
 
@@ -45,16 +52,26 @@ const Projects = () => (
   >
     <Row gutter={12} className="Projects-card-row materialize">
       {projects.map(proj => (
-        <Col key={proj.title} xs={24} sm={24} md={12} lg={8} xl={8}>
+        <Col key={proj.title} xs={24} sm={12} md={12} lg={12} xl={8}>
           <Card
             hoverable={true}
             className="Projects-card"
             cover={<img alt="example" src={proj.image} />}
             actions={[
-              <a key="demo_url" href={proj.url} target="_blank">
+              <a
+                key="demo_url"
+                href={proj.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon className="Projects-action-icon" type="play-circle" />
               </a>,
-              <a key="repo_url" href={proj.repoUrl} target="_blank">
+              <a
+                key="repo_url"
+                href={proj.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Icon className="Projects-action-icon" type="github" />
               </a>
             ]}

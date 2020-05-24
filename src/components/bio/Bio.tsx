@@ -14,7 +14,7 @@ const Bio = () => (
     <Row>
       <Col xs={0} sm={0} md={0} lg={4} xl={4}>
         <div className="Bio-picture">
-          <img alt="bio picture" src={require("../../assets/img/me.jpg")} />{" "}
+          <img alt="ric" src={require("../../assets/img/me.jpg")} />
         </div>
       </Col>
       <Col xs={24} sm={24} md={24} lg={20} xl={20}>
@@ -37,6 +37,7 @@ const Bio = () => (
             <a
               href="https://github.com/rjmarques/personal-website"
               target="_blank"
+              rel="noopener noreferrer"
             >
               this website was built with both those technologies
             </a>

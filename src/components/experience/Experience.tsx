@@ -38,7 +38,7 @@ const Experience = () => {
               <div className="App-card-wide">
                 <h3>
                   {entry.jobTitle} -{" "}
-                  <a href={entry.url} target="_blank">
+                  <a href={entry.url} target="_blank" rel="noopener noreferrer">
                     {entry.company}
                   </a>
                 </h3>

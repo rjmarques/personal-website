@@ -58,7 +58,7 @@ const Home = (props: IProps) => (
             <img
               id="Home-hero-image"
               className={IMG_CLASS}
-              alt="picture of me"
+              alt="ric"
               src={require("./img/me_placeholder.png")}
               data-src={require("../../assets/img/me.jpg")}
             />

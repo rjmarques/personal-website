@@ -7,6 +7,12 @@ jobs:
       - checkout
 
       - run:
+          name: Install LFTP
+          command: |
+            sudo apt-get update ;
+            sudo apt-get install lftp
+
+      - run:
           name: Install dependencies
           command: npm install
 
@@ -22,5 +28,5 @@ jobs:
           name: "Deploy to Hosting Service"
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                echo fake deploy
+                lftp -e "open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ -X *.map -X php/ -X cv.pdf --reverse --verbose --delete build/ www/; bye"
             fi
