@@ -4,9 +4,21 @@
     "endingDate": "Now",
     "jobTitle": "senior full stack developer",
     "location": "London",
-    "roles": ["Stay tuned for more..."],
+    "roles": [
+      "Lead the UI development of internal and customer facing web UIs: including defining CI/CD workflows, selecting technologies, and UI/UX design.",
+      "Ownership over greenfield full stack projects (React+Golang+Postgres), where I was responsible for all development phases, including: requirement gathering, architecture design, full stack implementation, deployment and maintenance.",
+      "Enhanced Longshot’s testing methodology with the introduction of Dockerized Integration Tests, for the database layer of different microservices. This work eventually lead to the development of a Clustered Test Environment where developers were able to have a portion of the Longshot system running on their local machines.",
+      "Worked on multiple high-frequency/low-latency integrations. The latter handled large trading volumes and had to be robust to failures (running 24/7)."
+    ],
     "startingDate": "Nov 2018",
-    "technologies": ["Golang"],
+    "technologies": [
+      "React",
+      "Golang",
+      "PostgreSQL",
+      "Typescript",
+      "Docker",
+      "Webpack"
+    ],
     "url": "https://www.longshotsystems.co.uk/"
   },
   {
