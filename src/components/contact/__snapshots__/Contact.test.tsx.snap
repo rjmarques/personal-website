@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing renders correctly 1`] = `
+<section
+  className="Contact"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="Content-title"
+    >
+      <h2>
+        Contact
+      </h2>
+      <span
+        className="Section-sub-title"
+      >
+        Want to get in touch? Leave me a message
+      </span>
+    </div>
+    <form
+      className="ant-form ant-form-horizontal Contact-form materialize"
+      onSubmit={[Function]}
+    >
+      <div
+        className="ant-row"
+        style={
+          Object {
+            "marginLeft": -18,
+            "marginRight": -18,
+          }
+        }
+      >
+        <div
+          className="Contact-form-column ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-12 ant-col-xl-12"
+          style={
+            Object {
+              "paddingLeft": 18,
+              "paddingRight": 18,
+            }
+          }
+        >
+          <div
+            className="ant-row ant-form-item"
+          >
+            <div
+              className="ant-form-item-control-wrapper"
+            >
+              <div
+                className="ant-form-item-control"
+              >
+                <span
+                  className="ant-form-item-children"
+                >
+                  <input
+                    className="ant-input ant-input-lg"
+                    data-__field={
+                      Object {
+                        "name": "name",
+                      }
+                    }
+                    data-__meta={
+                      Object {
+                        "name": "name",
+                        "originalProps": Object {
+                          "disabled": false,
+                          "placeholder": "Your Name *",
+                          "size": "large",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "rules": Array [
+                          Object {
+                            "message": "What's your name?",
+                            "required": true,
+                          },
+                        ],
+                        "trigger": "onChange",
+                        "validate": Array [
+                          Object {
+                            "rules": Array [
+                              Object {
+                                "message": "What's your name?",
+                                "required": true,
+                              },
+                            ],
+                            "trigger": Array [
+                              "onChange",
+                            ],
+                          },
+                        ],
+                        "valuePropName": "value",
+                      }
+                    }
+                    disabled={false}
+                    id="name"
+                    onChange={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Your Name *"
+                    size="large"
+                    type="text"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Contact-form-column ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-12 ant-col-xl-12"
+          style={
+            Object {
+              "paddingLeft": 18,
+              "paddingRight": 18,
+            }
+          }
+        >
+          <div
+            className="ant-row ant-form-item"
+          >
+            <div
+              className="ant-form-item-control-wrapper"
+            >
+              <div
+                className="ant-form-item-control"
+              >
+                <span
+                  className="ant-form-item-children"
+                >
+                  <input
+                    className="ant-input ant-input-lg"
+                    data-__field={
+                      Object {
+                        "name": "email",
+                      }
+                    }
+                    data-__meta={
+                      Object {
+                        "name": "email",
+                        "originalProps": Object {
+                          "disabled": false,
+                          "placeholder": "Email *",
+                          "size": "large",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "rules": Array [
+                          Object {
+                            "message": "The input is not valid Email",
+                            "type": "email",
+                          },
+                          Object {
+                            "message": "How do I message you back?",
+                            "required": true,
+                          },
+                        ],
+                        "trigger": "onChange",
+                        "validate": Array [
+                          Object {
+                            "rules": Array [
+                              Object {
+                                "message": "The input is not valid Email",
+                                "type": "email",
+                              },
+                              Object {
+                                "message": "How do I message you back?",
+                                "required": true,
+                              },
+                            ],
+                            "trigger": Array [
+                              "onChange",
+                            ],
+                          },
+                        ],
+                        "valuePropName": "value",
+                      }
+                    }
+                    disabled={false}
+                    id="email"
+                    onChange={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Email *"
+                    size="large"
+                    type="text"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row"
+        style={
+          Object {
+            "marginLeft": -18,
+            "marginRight": -18,
+          }
+        }
+      >
+        <div
+          className="Contact-form-column ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-12 ant-col-xl-12"
+          style={
+            Object {
+              "paddingLeft": 18,
+              "paddingRight": 18,
+            }
+          }
+        >
+          <div
+            className="ant-row ant-form-item"
+          >
+            <div
+              className="ant-form-item-control-wrapper"
+            >
+              <div
+                className="ant-form-item-control"
+              >
+                <span
+                  className="ant-form-item-children"
+                >
+                  <input
+                    className="ant-input ant-input-lg"
+                    data-__field={
+                      Object {
+                        "name": "subject",
+                      }
+                    }
+                    data-__meta={
+                      Object {
+                        "name": "subject",
+                        "originalProps": Object {
+                          "disabled": false,
+                          "placeholder": "Subject",
+                          "size": "large",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "trigger": "onChange",
+                        "validate": Array [],
+                        "valuePropName": "value",
+                      }
+                    }
+                    disabled={false}
+                    id="subject"
+                    onChange={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Subject"
+                    size="large"
+                    type="text"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="Contact-form-column ant-col-xs-24 ant-col-sm-24 ant-col-md-12 ant-col-lg-12 ant-col-xl-12"
+          style={
+            Object {
+              "paddingLeft": 18,
+              "paddingRight": 18,
+            }
+          }
+        >
+          <div
+            className="ant-row ant-form-item"
+          >
+            <div
+              className="ant-form-item-control-wrapper"
+            >
+              <div
+                className="ant-form-item-control"
+              >
+                <span
+                  className="ant-form-item-children"
+                >
+                  <input
+                    className="ant-input ant-input-lg"
+                    data-__field={
+                      Object {
+                        "name": "company",
+                      }
+                    }
+                    data-__meta={
+                      Object {
+                        "name": "company",
+                        "originalProps": Object {
+                          "disabled": false,
+                          "placeholder": "Company",
+                          "size": "large",
+                          "type": "text",
+                        },
+                        "ref": null,
+                        "trigger": "onChange",
+                        "validate": Array [],
+                        "valuePropName": "value",
+                      }
+                    }
+                    disabled={false}
+                    id="company"
+                    onChange={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Company"
+                    size="large"
+                    type="text"
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row"
+        style={
+          Object {
+            "marginLeft": -18,
+            "marginRight": -18,
+          }
+        }
+      >
+        <div
+          className="Contact-form-column ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-24 ant-col-xl-24"
+          style={
+            Object {
+              "paddingLeft": 18,
+              "paddingRight": 18,
+            }
+          }
+        >
+          <div
+            className="ant-row ant-form-item"
+          >
+            <div
+              className="ant-form-item-control-wrapper"
+            >
+              <div
+                className="ant-form-item-control"
+              >
+                <span
+                  className="ant-form-item-children"
+                >
+                  <textarea
+                    className="ant-input Contact-text-area"
+                    data-__field={
+                      Object {
+                        "name": "message",
+                      }
+                    }
+                    data-__meta={
+                      Object {
+                        "name": "message",
+                        "originalProps": Object {
+                          "autosize": Object {
+                            "maxRows": 6,
+                            "minRows": 6,
+                          },
+                          "className": "Contact-text-area",
+                          "placeholder": "Message *",
+                        },
+                        "ref": null,
+                        "rules": Array [
+                          Object {
+                            "message": "Did you want to tell me something?",
+                            "required": true,
+                          },
+                        ],
+                        "trigger": "onChange",
+                        "validate": Array [
+                          Object {
+                            "rules": Array [
+                              Object {
+                                "message": "Did you want to tell me something?",
+                                "required": true,
+                              },
+                            ],
+                            "trigger": Array [
+                              "onChange",
+                            ],
+                          },
+                        ],
+                        "valuePropName": "value",
+                      }
+                    }
+                    id="message"
+                    onChange={[Function]}
+                    onKeyDown={[Function]}
+                    placeholder="Message *"
+                    style={Object {}}
+                    value=""
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <div />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+      >
+        <div
+          className="ant-form-item-control-wrapper"
+        >
+          <div
+            className="ant-form-item-control"
+          >
+            <span
+              className="ant-form-item-children"
+            >
+              <button
+                className="ant-btn Contact-submit ant-btn-primary ant-btn-lg"
+                onClick={[Function]}
+                type="submit"
+              >
+                <span>
+                  send message
+                </span>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;
