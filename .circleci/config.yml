@@ -21,8 +21,6 @@ jobs:
       - run:
           name: "Deploy to Hosting Service"
           command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-               pwd
-               ls -l
-               ls -l static
-            fi
+            pwd
+            ls -l
+            ls -l static
