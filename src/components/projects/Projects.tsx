@@ -15,6 +15,13 @@ interface IProject {
 
 const projects: IProject[] = [
   {
+    description: "A twitter joke scraper running on ECS",
+    image: require("./img/something-of-the-day.png"),
+    repoUrl: "https://github.com/rjmarques/something-of-the-day",
+    title: "Something of the day",
+    url: "http://something.ricardomarq.com/"
+  },
+  {
     description: "A Fractal WebAssembly Viewer",
     image: require("./img/wasm-mandel.png"),
     repoUrl: "https://github.com/rjmarques/webasm-mandelbrot",
@@ -22,7 +29,7 @@ const projects: IProject[] = [
     url: "https://wasmmandel.ricardomarq.com/"
   },
   {
-    description: "My tiny solar system",
+    description: "My Solar System",
     image: require("./img/solar-system.png"),
     repoUrl: "https://github.com/rjmarques/SolarSystem",
     title: "WebGL Solar System",
@@ -45,7 +52,7 @@ const Projects = () => (
   >
     <Row gutter={12} className="Projects-card-row materialize">
       {projects.map(proj => (
-        <Col key={proj.title} xs={24} sm={24} md={12} lg={8} xl={8}>
+        <Col key={proj.title} xs={24} sm={12} md={12} lg={12} xl={8}>
           <Card
             hoverable={true}
             className="Projects-card"
