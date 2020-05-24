@@ -15,13 +15,6 @@ interface IProject {
 
 const projects: IProject[] = [
   {
-    description: "An Angular webapp recipe for web projects",
-    image: require("./img/angular-typescript-recipe.png"),
-    repoUrl: "https://github.com/rjmarques/angular2-typescript-recipe",
-    title: "Angular & Typescript Recipe",
-    url: "https://angular2recipe.ricardomarq.com/"
-  },
-  {
     description: "A Fractal WebAssembly Viewer",
     image: require("./img/wasm-mandel.png"),
     repoUrl: "https://github.com/rjmarques/webasm-mandelbrot",
@@ -34,6 +27,13 @@ const projects: IProject[] = [
     repoUrl: "https://github.com/rjmarques/SolarSystem",
     title: "WebGL Solar System",
     url: "https://solar.ricardomarq.com/"
+  },
+  {
+    description: "An Angular webapp recipe for web projects",
+    image: require("./img/angular-typescript-recipe.png"),
+    repoUrl: "https://github.com/rjmarques/angular2-typescript-recipe",
+    title: "Angular & Typescript Recipe",
+    url: "https://angular2recipe.ricardomarq.com/"
   }
 ];
 

@@ -1,54 +1,47 @@
 module.exports = {
-  collectCoverageFrom: ["src/**/*.{js,jsx,ts,tsx}"],
-  setupFiles: ["<rootDir>/config/polyfills.js"],
-  setupTestFrameworkScriptFile: "<rootDir>/enzyme.js",
-  testEnvironment: "node",
-  testMatch: [
-    "<rootDir>/src/**/__tests__/**/*.(j|t)s?(x)",
-    "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)"
+  setupFilesAfterEnv: ["<rootDir>/enzyme.js"],
+  collectCoverageFrom: [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!src/**/*.d.ts",
+    "!src/index.tsx",
+    "!src/serviceWorker.ts",
+    "!src/icons.ts"
   ],
-  testURL: "http://localhost",
+  setupFiles: ["react-app-polyfill/jsdom"],
+  testMatch: [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  testEnvironment: "jest-environment-jsdom-fourteen",
   transform: {
-    "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
-    "^.+\\.tsx?$": "<rootDir>/config/jest/typescriptTransform.js",
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
     "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-    "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":
+      "<rootDir>/config/jest/fileTransform.js"
   },
   transformIgnorePatterns: [
-    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$"
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss|less)$"
   ],
+  modulePaths: [],
   moduleNameMapper: {
-    "^react-native$": "react-native-web"
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss|less)$": "identity-obj-proxy"
   },
   moduleFileExtensions: [
+    "web.js",
+    "js",
     "web.ts",
     "ts",
     "web.tsx",
     "tsx",
-    "web.js",
-    "js",
+    "json",
     "web.jsx",
     "jsx",
-    "json",
-    "node",
-    "mjs"
+    "node"
   ],
-  globals: {
-    "ts-jest": {
-      tsConfigFile: "tsconfig.test.json"
-    }
-  },
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: 10
-    }
-  },
-  coveragePathIgnorePatterns: [
-    "/node_modules/",
-    "/src/index.tsx",
-    "/src/registerServiceWorker.ts"
+  watchPlugins: [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
   ]
 };

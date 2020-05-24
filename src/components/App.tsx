@@ -233,14 +233,14 @@ class App extends Component<{}, IState> {
 
       const cur = view.ref.current;
       if (cur && InView(cur)) {
-        this.state.visitedViewsByID[view.id] = true;
+        this.state.visitedViewsByID.set(view.id, true);
         this.setState({ visitedViewsByID: this.state.visitedViewsByID });
       }
     }
   };
 
   private isViewVisited(id: string): boolean {
-    return this.state.visitedViewsByID[id] || false;
+    return this.state.visitedViewsByID.get(id) || false;
   }
 }
 
