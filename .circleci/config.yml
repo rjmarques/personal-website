@@ -23,3 +23,7 @@ jobs:
       - run:
           name: Build the Webapp
           command: npm run build
+
+      - run:
+          name: "Deploy to Hosting Service"
+          command: lftp -e "open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ -X *.map -X php/ -X cv.pdf --reverse --verbose --delete build/ www/; bye"
