@@ -7,6 +7,12 @@ jobs:
       - checkout
 
       - run:
+          name: Install LFTP
+          command: |
+            sudo apt-get update \
+            sudo apt-get install lftp
+
+      - run:
           name: Install dependencies
           command: npm install
 
