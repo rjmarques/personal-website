@@ -5,7 +5,7 @@ import * as serviceWorker from "./serviceWorker";
 
 import "./index.less";
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <App />
   </React.StrictMode>,

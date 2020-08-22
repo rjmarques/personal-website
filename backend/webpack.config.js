@@ -1,20 +1,23 @@
 const path = require("path");
+const nodeExternals = require("webpack-node-externals");
 
 const paths = {
-  appSrc: path.resolve(__dirname, "src"),
-  appBuild: path.resolve(__dirname, "dist"),
+  serverSrc: path.resolve(__dirname, "src"),
+  serverBuild: path.resolve(__dirname, "dist"),
+  uiSrc: path.resolve(__dirname, "../frontend/src/components"),
 };
 
 module.exports = {
   entry: "./src/index.ts",
   target: "node",
+  externals: [nodeExternals()],
   mode: "production",
   module: {
     rules: [
       // First, run the linter.
       // It's important to do this before Babel processes the JS.
       {
-        test: /\.(ts)$/,
+        test: /\.(ts|tsx)$/,
         enforce: "pre",
         use: [
           {
@@ -24,25 +27,40 @@ module.exports = {
               resolvePluginsRelativeTo: __dirname,
               fix: true,
             },
-            loader: require.resolve("eslint-loader"),
+            loader: "eslint-loader",
           },
         ],
-        include: paths.appSrc,
-        exclude: /node_modules/,
+        include: [paths.serverSrc],
       },
       {
-        test: /\.tsx?$/,
+        test: /\.(ts|tsx)$/,
         use: "ts-loader",
-        include: paths.appSrc,
-        exclude: /node_modules/,
+      },
+      {
+        test: /\.less$/,
+        use: "ignore-loader",
+      },
+      {
+        test: /\.(gif|jpeg|png|svg)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              esModule: false,
+              emitFile: false,
+              publicPath: "/static/media/",
+            },
+          },
+        ],
       },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
   output: {
     filename: "server.js",
-    path: paths.appBuild,
+    path: paths.serverBuild,
   },
 };

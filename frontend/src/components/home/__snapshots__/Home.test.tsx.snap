@@ -16,7 +16,7 @@ exports[`renders without crashing renders correctly 1`] = `
         <img
           alt="ric"
           className="lazy"
-          data-src="me.jpg"
+          data-src="me.jpeg"
           id="home-hero-image"
           src="me_placeholder.png"
         />

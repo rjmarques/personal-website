@@ -15,7 +15,7 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".ts"]
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   },
@@ -24,7 +24,8 @@
       "error",
       "ignorePackages",
       {
-        "ts": "never"
+        "ts": "never",
+        "tsx": "never"
       }
     ]
   }

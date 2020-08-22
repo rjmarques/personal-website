@@ -12,7 +12,7 @@ const Bio = () => (
   >
     <div className="bio-grid">
       <div className="bio-picture">
-        <img alt="ric" src={require("../../assets/img/me.jpg")} />
+        <img alt="ric" src={require("../../assets/img/me.jpeg")} />
       </div>
       <div>
         <div className="bio-divider" />

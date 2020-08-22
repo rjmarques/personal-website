@@ -1,6 +1,15 @@
+import path from "path";
+import fs from "fs";
+
+import React from "react";
 import express, { Request, Response } from "express";
+import ReactDOMServer from "react-dom/server";
+import App from "../../frontend/src/components/App";
 import { ValidateRecaptcha } from "./recaptcha";
 import mailto from "./mailto";
+
+const PORT = process.env.PORT || 8000;
+const STATIC = process.env.STATIC || "./build";
 
 const app = express();
 
@@ -14,6 +23,24 @@ interface ContactRequest {
   subject?: string;
   company?: string;
 }
+
+app.get("/", (req, res) => {
+  const rendered = ReactDOMServer.renderToString(React.createElement(App));
+  const indexFile = path.resolve(`${STATIC}/index.html`);
+  fs.readFile(indexFile, "utf8", (err, data) => {
+    if (err) {
+      console.error("Something went wrong:", err);
+      return res
+        .status(500)
+        .send("Something went wrong, please try again later");
+    }
+    return res.send(
+      data.replace('<div id="root"></div>', `<div id="root">${rendered}</div>`)
+    );
+  });
+});
+
+app.use(express.static(STATIC));
 
 app.post("/api/contact", async (req: Request, res: Response) => {
   try {
@@ -52,6 +79,7 @@ app.post("/api/contact", async (req: Request, res: Response) => {
   }
 });
 
-app.listen(8000, () => {
-  console.log("Server Started at Port, 8000");
+app.listen(PORT, () => {
+  console.log(`Static folder being used: ${STATIC}`);
+  console.log(`Server Started at Port, ${PORT}`);
 });

@@ -27,7 +27,7 @@ exports[`renders without crashing renders correctly 1`] = `
       >
         <img
           alt="ric"
-          src="me.jpg"
+          src="me.jpeg"
         />
       </div>
       <div>
