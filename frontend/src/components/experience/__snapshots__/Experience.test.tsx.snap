@@ -1,0 +1,538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing renders correctly 1`] = `
+<section
+  className="experience"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="content-title"
+    >
+      <h2>
+        Experience
+      </h2>
+      <span
+        className="section-sub-title"
+      >
+        What I have done professionally
+      </span>
+    </div>
+    <div
+      className="experience-timeline materialize"
+    >
+      <ul>
+        <li
+          className="experience-timeline-entry"
+        >
+          <div
+            className="app-card-wide"
+          >
+            <h3>
+              senior full stack developer
+               -
+               
+              <a
+                href="https://www.longshotsystems.co.uk/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Longshot Systems
+              </a>
+            </h3>
+            <div
+              className="app-card-subtitle"
+            >
+              <div
+                className="date-location-entry"
+              >
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="calendar"
+                    className="anticon anticon-calendar"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="calendar"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  Nov 2018
+                   to 
+                  Now
+                </span>
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="environment"
+                    className="anticon anticon-environment"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="environment"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M854.6 289.1a362.49 362.49 0 00-79.9-115.7 370.83 370.83 0 00-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8A363.6 363.6 0 00169.4 289c-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153a43.9 43.9 0 0022.4 6.1c7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1zm0-617.2c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 551c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  London
+                </span>
+              </div>
+            </div>
+            <div
+              className="experience-roles"
+            >
+              <p>
+                Lead the UI development of internal and customer facing web UIs: including defining CI/CD workflows, selecting technologies, and UI/UX design.
+              </p>
+              <p>
+                Ownership over greenfield full stack projects (React+Golang+Postgres), where I was responsible for all development phases, including: requirement gathering, architecture design, full stack implementation, deployment and maintenance.
+              </p>
+              <p>
+                Enhanced Longshot’s testing methodology with the introduction of Dockerized Integration Tests, for the database layer of different microservices. This work eventually lead to the development of a Clustered Test Environment where developers were able to have a portion of the Longshot system running on their local machines.
+              </p>
+              <p>
+                Worked on multiple high-frequency/low-latency integrations. The latter handled large trading volumes and had to be robust to failures (running 24/7).
+              </p>
+            </div>
+            <div
+              className="experience-technologies"
+            >
+              <h4>
+                main tools: 
+              </h4>
+              <div
+                className="experience-technologies-items"
+              >
+                <span>
+                  React
+                </span>
+                <span>
+                  Golang
+                </span>
+                <span>
+                  PostgreSQL
+                </span>
+                <span>
+                  Typescript
+                </span>
+                <span>
+                  Docker
+                </span>
+                <span>
+                  Webpack
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="experience-timeline-entry"
+        >
+          <div
+            className="app-card-wide"
+          >
+            <h3>
+              senior full stack developer
+               -
+               
+              <a
+                href="https://trussle.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Trussle
+              </a>
+            </h3>
+            <div
+              className="app-card-subtitle"
+            >
+              <div
+                className="date-location-entry"
+              >
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="calendar"
+                    className="anticon anticon-calendar"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="calendar"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  Apr 2018
+                   to 
+                  Oct 2018
+                </span>
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="environment"
+                    className="anticon anticon-environment"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="environment"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M854.6 289.1a362.49 362.49 0 00-79.9-115.7 370.83 370.83 0 00-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8A363.6 363.6 0 00169.4 289c-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153a43.9 43.9 0 0022.4 6.1c7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1zm0-617.2c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 551c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  London
+                </span>
+              </div>
+            </div>
+            <div
+              className="experience-roles"
+            >
+              <p>
+                Conceptualized and implemented the first version of Typescript fraud-checker bot, on top of Node.js. The bot used data heuristics to compare new applications against, previously flagged, fraudulent ones and would automatically notify internal compliance, if required.
+              </p>
+              <p>
+                Implemented both the client side (React) and server side (Typescript) of an internal tool, used by Customer Success personnel, that replaced a non GDPR compliant workflow. The tool allowed bigger visibility, particularly in terms of data, into a critical part of the mortgage submission workflow.
+              </p>
+              <p>
+                Worked on mortgage application automation, by implementing a server-side Typescript budget planner. The latter used statistical data to assess user’s affordability to mortgage products.
+              </p>
+            </div>
+            <div
+              className="experience-technologies"
+            >
+              <h4>
+                main tools: 
+              </h4>
+              <div
+                className="experience-technologies-items"
+              >
+                <span>
+                  React
+                </span>
+                <span>
+                  SASS
+                </span>
+                <span>
+                  Typescript
+                </span>
+                <span>
+                  PostgreSQL
+                </span>
+                <span>
+                  Node.js
+                </span>
+                <span>
+                  Webpack
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="experience-timeline-entry"
+        >
+          <div
+            className="app-card-wide"
+          >
+            <h3>
+              senior full stack developer
+               -
+               
+              <a
+                href="https://www.hyperglance.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Hyperglance
+              </a>
+            </h3>
+            <div
+              className="app-card-subtitle"
+            >
+              <div
+                className="date-location-entry"
+              >
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="calendar"
+                    className="anticon anticon-calendar"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="calendar"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  Jul 2014
+                   to 
+                  Mar 2018
+                </span>
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="environment"
+                    className="anticon anticon-environment"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="environment"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M854.6 289.1a362.49 362.49 0 00-79.9-115.7 370.83 370.83 0 00-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8A363.6 363.6 0 00169.4 289c-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153a43.9 43.9 0 0022.4 6.1c7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1zm0-617.2c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 551c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  London
+                </span>
+              </div>
+            </div>
+            <div
+              className="experience-roles"
+            >
+              <p>
+                Kick-started and lead conceptualization and development of Hyperglance’s Web Client. This included selecting what technologies to use, defining a CI build, developing the Client’s architectural backbone, implementing a scalable SASS rule-structure, and outlining coding practices and standards. Moreover, oversaw all technical aspects regarding the Web Client and its integration with the Hyperglance server.
+              </p>
+              <p>
+                Enhanced the Hyperglance JEE server-side feature-base, by developing core modules. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components. Additionally, implemented several real-time data gathering integrations between Hyperglance and external datasources (e.g., AWS, Openstack). This involved normalizing external data into Hyperglance’s topological and analytical data model.
+              </p>
+              <p>
+                Other responsibilities included: interviewing both frontend and backend developer candidates, attending conferences, interacting with customers, mentoring new-hires.
+              </p>
+            </div>
+            <div
+              className="experience-technologies"
+            >
+              <h4>
+                main tools: 
+              </h4>
+              <div
+                className="experience-technologies-items"
+              >
+                <span>
+                  AngularJs
+                </span>
+                <span>
+                  Javascript
+                </span>
+                <span>
+                  SASS
+                </span>
+                <span>
+                  Three.js
+                </span>
+                <span>
+                  Java EE
+                </span>
+                <span>
+                  EJBs
+                </span>
+                <span>
+                  PostgreSQL
+                </span>
+                <span>
+                  Webpack
+                </span>
+                <span>
+                  Gradle
+                </span>
+                <span>
+                  Wildfly
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="experience-timeline-entry"
+        >
+          <div
+            className="app-card-wide"
+          >
+            <h3>
+              solutions consultant
+               -
+               
+              <a
+                href="https://www.guidewire.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Guidewire Software
+              </a>
+            </h3>
+            <div
+              className="app-card-subtitle"
+            >
+              <div
+                className="date-location-entry"
+              >
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="calendar"
+                    className="anticon anticon-calendar"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="calendar"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  Nov 2012
+                   to 
+                  Jun 2014
+                </span>
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="environment"
+                    className="anticon anticon-environment"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="environment"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M854.6 289.1a362.49 362.49 0 00-79.9-115.7 370.83 370.83 0 00-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8A363.6 363.6 0 00169.4 289c-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153a43.9 43.9 0 0022.4 6.1c7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1zm0-617.2c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 551c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  Dublin
+                </span>
+              </div>
+            </div>
+            <div
+              className="experience-roles"
+            >
+              <p>
+                Partly designed, developed and maintained an efficient and fault-tolerant configuration of a multi-tiered J2EE Guidewire billing product on two tier one Insurance companies, that would later handle several millions of Dollars and GBPs of insurance premium.
+              </p>
+              <p>
+                Designed and developed integration points (e.g., SOAP, JMS) between the client server application and external third party services, that provided scalable and concurrent bidirectional data flows based on real-time monetary client transactions.
+              </p>
+              <p>
+                Conceptualized and implemented a modular JUnit framework for populating Guidewire’s product database with test data. The framework improved the JUnit development productivity, on average, by 50%.
+              </p>
+            </div>
+            <div
+              className="experience-technologies"
+            >
+              <h4>
+                main tools: 
+              </h4>
+              <div
+                className="experience-technologies-items"
+              >
+                <span>
+                  Java
+                </span>
+                <span>
+                  JMS
+                </span>
+                <span>
+                  SOAP
+                </span>
+                <span>
+                  Rest
+                </span>
+                <span>
+                  PostgreSQL
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;

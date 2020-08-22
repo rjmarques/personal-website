@@ -1,0 +1,324 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing renders correctly 1`] = `
+<section
+  className="skills"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="content-title"
+    >
+      <h2>
+        Expertise
+      </h2>
+      <span
+        className="section-sub-title"
+      >
+        The technologies I am proficient in
+      </span>
+    </div>
+    <div
+      className="skills-card-row materialize"
+    >
+      <a
+        href="https://reactjs.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="react"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "react.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              react
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.typescriptlang.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="typescript"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "typescript.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              typescript
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://golang.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="golang"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "go.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              golang
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.postgresql.org/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="postgresql"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "postgres.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              postgresql
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.oracle.com/technetwork/java/javaee/overview/index.html"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="java ee"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "java.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              java ee
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.javascript.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="javascript"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "javascript.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              javascript
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://angular.io/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="angular"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "angular.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              angular
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="https://www.docker.com/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <div
+          className="ant-card skills-card ant-card-bordered ant-card-hoverable"
+        >
+          <div
+            className="ant-card-cover"
+          >
+            <img
+              alt="docker"
+              src={
+                Object {
+                  "ReactComponent": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "render": [Function],
+                  },
+                  "__esModule": true,
+                  "default": "docker.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="ant-card-body"
+            style={Object {}}
+          >
+            <div
+              className="skills-card-meta"
+            >
+              docker
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+`;
