@@ -10,7 +10,6 @@ const paths = {
 module.exports = {
   entry: "./src/index.ts",
   target: "node",
-  externals: [nodeExternals()],
   mode: "production",
   module: {
     rules: [
@@ -59,8 +58,11 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
+  externals: [nodeExternals()],
   output: {
     filename: "server.js",
     path: paths.serverBuild,
+    library: "app",
+    libraryTarget: "commonjs2",
   },
 };

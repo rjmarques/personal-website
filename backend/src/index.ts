@@ -8,7 +8,7 @@ import App from "../../frontend/src/components/App";
 import { ValidateRecaptcha } from "./recaptcha";
 import mailto from "./mailto";
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 80;
 const STATIC = process.env.STATIC || "./build";
 
 const app = express();

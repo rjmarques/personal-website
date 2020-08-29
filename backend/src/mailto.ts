@@ -1,8 +1,30 @@
-import sendmail from "sendmail";
+import nodemailer from "nodemailer";
+
+const smtpHost = process.env.SMTP_HOST;
+const smtpUser = process.env.SMTP_USER;
+const smtpPass = process.env.SMTP_PASS;
 
 const contactEmail = process.env.CONTACT_EMAIL;
 
-const sendMailFn = sendmail({});
+const transporter = nodemailer.createTransport({
+  pool: true,
+  host: smtpHost,
+  port: 465,
+  secure: true,
+  auth: {
+    user: smtpUser,
+    pass: smtpPass,
+  },
+});
+
+// verify connection configuration
+transporter.verify(function (error, success) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(`Server is ready to take our messages: ${success}`);
+  }
+});
 
 export default async (
   name: string,
@@ -11,23 +33,12 @@ export default async (
   subject?: string,
   company?: string
 ): Promise<string> => {
-  const from = `${name} - ${company || "N/A"} <${sender}>`;
-
-  return new Promise<string>((resolve, reject) => {
-    sendMailFn(
-      {
-        from,
-        to: contactEmail,
-        subject,
-        html: msg,
-      },
-      (err, reply) => {
-        if (err) {
-          reject(err.message);
-          return;
-        }
-        resolve(reply);
-      }
-    );
+  const info = await transporter.sendMail({
+    from: `${name} - ${company || "N/A"} <${sender}>`,
+    to: contactEmail,
+    subject,
+    html: msg,
   });
+
+  return info;
 };

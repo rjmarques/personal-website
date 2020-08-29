@@ -39,8 +39,6 @@ class Contact extends Component<IProps, IState> {
     const hide = message.loading("Sending message...", 0);
     this.setState({ isSending: true });
 
-    console.log(values);
-
     try {
       await this.props.sendMessage(
         values.name,
