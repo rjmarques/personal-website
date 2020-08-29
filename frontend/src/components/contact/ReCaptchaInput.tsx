@@ -1,7 +1,7 @@
 import React, { Component, RefObject } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const SITE_KEY = "6LcKIigTAAAAAJrd3T7rUu08qAysuwuMqWb3MvuN"; // "6LdoTSkTAAAAACxMJ2yf5S_CghOhFnyNkyT3ZFe9";
+const SITE_KEY = "6LdoTSkTAAAAACxMJ2yf5S_CghOhFnyNkyT3ZFe9";
 
 interface IProps {
   onChange?: any; // antd will add this property
