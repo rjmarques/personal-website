@@ -1,8 +1,8 @@
 resource "aws_ssm_parameter" "personal-website_recaptcha_secret" {
-  name        = "/production/personal-website/database/db_url"
-  description = "PG connection URL"
+  name        = "/production/personal-website/recaptcha/secret"
+  description = "Recatpcha secret"
   type        = "SecureString"
-  value       = var.postgres_url
+  value       = var.recaptcha_secret
 
   tags = {
     environment = "production"
