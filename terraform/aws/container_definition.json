@@ -3,7 +3,7 @@
   "image": "${repository_url}:latest",
   "essential": true,
   "memory": 64,
-  "cpu": 128,
+  "cpu": 256,
   "secrets": [
     {
       "name": "RECAPTCHA_SECRET",
