@@ -1,10 +1,10 @@
 output "ecr_repository_url" {
-  value = data.aws_ecr_repository.personal-website-repo.repository_url
+  value = aws_ecr_repository.personal-website-repo.repository_url
 }
 
 output "container_definition" {
   value = templatefile("${path.module}/container_definition.json", {
-    repository_url   = data.aws_ecr_repository.personal-website-repo.repository_url,
+    repository_url   = aws_ecr_repository.personal-website-repo.repository_url
     recaptcha_secret = aws_ssm_parameter.personal-website_recaptcha_secret.arn,
     smtp_host        = aws_ssm_parameter.personal-website_smtp_host.arn,
     smtp_user        = aws_ssm_parameter.personal-website_smtp_user.arn,
