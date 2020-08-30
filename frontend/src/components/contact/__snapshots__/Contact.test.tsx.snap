@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing renders correctly 1`] = `
+<section
+  className="contact"
+>
+  <div
+    className="content"
+  >
+    <div
+      className="content-title"
+    >
+      <h2>
+        Contact
+      </h2>
+      <span
+        className="section-sub-title"
+      >
+        Want to get in touch? Leave me a message
+      </span>
+    </div>
+    <form
+      className="ant-form ant-form-horizontal contact-form materialize"
+      id="contact-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <input
+                className="ant-input ant-input-lg"
+                id="contact-form_name"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Your Name *"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <input
+                className="ant-input ant-input-lg"
+                id="contact-form_email"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Email *"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <input
+                className="ant-input ant-input-lg"
+                id="contact-form_subject"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Subject"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <input
+                className="ant-input ant-input-lg"
+                id="contact-form_company"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Company"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item full-row"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <textarea
+                className="ant-input contact-text-area"
+                id="contact-form_message"
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Message *"
+                rows={6}
+                style={Object {}}
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ant-row ant-form-item full-row"
+        style={Object {}}
+      >
+        <div
+          className="ant-col ant-form-item-control"
+          style={Object {}}
+        >
+          <div
+            className="ant-form-item-control-input"
+          >
+            <div
+              className="ant-form-item-control-input-content"
+            >
+              <button
+                className="ant-btn ant-btn-primary ant-btn-lg"
+                onClick={[Function]}
+                type="submit"
+              >
+                <span>
+                  send message
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;

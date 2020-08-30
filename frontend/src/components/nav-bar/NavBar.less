@@ -1,0 +1,59 @@
+@import "../../theme.less";
+
+.nav {
+  width: 100%;
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .nav-menu {
+    display: none;
+
+    .nav-item {
+      margin: 0px 0px 0px 30px;
+      padding: 0px;
+    }
+
+    .for-size(laptop-small-up; {display: block});
+  }
+
+  .nav-hamburger {
+    cursor: pointer;
+    display: block;
+    font-size: 30px;
+    padding-right: 4px;
+
+    .for-size(laptop-small-up; {display: none});
+  }
+}
+
+// outside .nav since Antd places this DOM just beneath <body>
+.nav-menu {
+  background-color: inherit;
+  border: none;
+  text-transform: uppercase;
+
+  &.vertical {
+    background: @main-blue;
+    width: 100%;
+
+    .nav-item {
+      padding: 10px 20px;
+    }
+  }
+
+  .nav-item {
+    color: @white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+
+    &.ant-dropdown-menu-item:hover,
+    &.ant-dropdown-menu-item-selected {
+      color: @primary-color;
+    }
+  }
+}
