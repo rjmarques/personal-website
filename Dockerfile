@@ -1,5 +1,5 @@
 ## Build container
-FROM node:alpine3.11 as build
+FROM node:12.18.3-alpine3.11 as build
 RUN apk update \
     && apk add --no-cache bash make
 
