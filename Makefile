@@ -27,13 +27,17 @@ build_server:
 	echo "Building Server"
 	cd backend ; npm run build
 
+run:
+	echo "Running the app"
+	cd backend/dist ; STATIC="../../frontend/build" node server.js
+
 build_image:
-	echo "Building the app"
+	echo "Building the container image"
 	docker build -t rjmarques/personal-website .
 	echo "Runnable docker image: rjmarques/personal-website"
 
-run:
-	echo "Running app in container"
+run_container:
+	echo "Running app in a container"
 	docker run --rm -p 80:80/tcp --env RECAPTCHA_SECRET --env CONTACT_EMAIL --env SMTP_HOST --env SMTP_USER --env SMTP_PASS rjmarques/personal-website
 
 deploy:
