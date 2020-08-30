@@ -29,20 +29,21 @@ const Bio = () => (
             related. So, when the opportunity to jump into Full Stack
             development presented itself I was over the moon, and as a result,
             these days I'm a full-blown Stack Developer. More recently, at a
-            professional level, I’ve been working with Typescript on the backend
-            side of things, and with React on the front-end bits -{" "}
+            professional level, I’ve been working with Golang on the backend
+            side of things, and with React and Typescript on the front-end bits
+            -{" "}
             <a
               href="https://github.com/rjmarques/personal-website"
               target="_blank"
               rel="noopener noreferrer"
             >
-              this website was built with both those technologies
+              this website is a SSR React App with a Typescript backend
             </a>
             .
           </p>
           <p>
-            In my free time I dabble with tech I don't know much about. Recently
-            it has been Go and Webassembly.
+            In my free time I dabble with tech I'm less familiar with. Recently
+            it has been AWS ECS and Webassembly.
           </p>
         </div>
       </div>
