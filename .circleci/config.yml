@@ -2,17 +2,13 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: circleci/node:14.3.0
+      - image: cimg/base:2020.01
     steps:
       - checkout
 
       - setup_remote_docker
 
       - aws-cli/setup
-
-      - run:
-          name: Run UI Tests
-          command: make test_ui
 
       - run:
           name: Build the App image
