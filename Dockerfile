@@ -8,8 +8,6 @@ WORKDIR /root/workspace/personal-website
 
 RUN make install
 
-RUN make test
-
 RUN make build
 
 ## Final container that holds the artifacts

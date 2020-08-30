@@ -1,32 +1,28 @@
-# version: 2.1
-# jobs:
-#   build:
-#     docker:
-#       - image: circleci/node:14.3.0
-#     steps:
-#       - checkout
-
-#       - run:
-#           name: Install LFTP
-#           command: |
-#             sudo apt-get update ;
-#             sudo apt-get install lftp
-
-#       - run:
-#           name: Install dependencies
-#           command: npm install
-
-#       - run:
-#           name: Run Tests
-#           command: npm test -- --coverage
-
-#       - run:
-#           name: Build the Webapp
-#           command: npm run build
-
-#       - run:
-#           name: "Deploy to Hosting Service"
-#           command: |
-#             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-#                 lftp -e "open $FTP_HOST; user $FTP_USERNAME $FTP_PASSWORD; mirror -X .* -X .*/ -X *.map -X php/ -X cv.pdf --reverse --verbose --delete build/ www/; bye"
-#             fi
+jobs:
+    build:
+      docker:
+        - image: cimg/base:2020.01
+      steps:
+        - checkout
+  
+        - setup_remote_docker
+  
+        - aws-cli/setup
+  
+        - run:
+            name: Run UI Tests
+            command: make test_ui
+  
+        - run:
+            name: Build the App image
+            command: make build_image
+  
+        - run:
+            name: "Deploy to ECS"
+            command: |
+              if [ "${CIRCLE_BRANCH}" == "master" ]; then
+                  make deploy
+              fi         
+  
+  orbs:
+    aws-cli: circleci/aws-cli@1.0.0
