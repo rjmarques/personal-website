@@ -33,7 +33,7 @@ run:
 
 build_image:
 	echo "Building the container image"
-	docker build -t rjmarques/personal-website .
+	docker build --build-arg GITHUB_TOKEN=${GITHUB_TOKEN} -t rjmarques/personal-website .
 	echo "Runnable docker image: rjmarques/personal-website"
 
 run_container:
