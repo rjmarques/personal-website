@@ -4,8 +4,9 @@ import fs from "fs";
 import React from "react";
 import express, { Request, Response } from "express";
 import ReactDOMServer from "react-dom/server";
+import ValidateRecaptcha from "@rjmarques/recaptcha-validator";
+
 import App from "../../frontend/src/components/App";
-import { ValidateRecaptcha } from "./recaptcha";
 import mailto from "./mailto";
 
 const PORT = process.env.PORT || 80;
