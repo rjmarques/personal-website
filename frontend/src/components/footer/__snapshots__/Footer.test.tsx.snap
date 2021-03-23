@@ -71,7 +71,7 @@ exports[`renders without crashing renders correctly 1`] = `
         className="footer-copy"
       >
         © Copyright 
-        2020
+        2021
          Ricardo Marques
       </small>
     </div>
