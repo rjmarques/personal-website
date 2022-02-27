@@ -39,16 +39,6 @@ const skills: ISkill[] = [
     url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html",
   },
   {
-    icon: require("./img/javascript.svg"),
-    title: "javascript",
-    url: "https://www.javascript.com/",
-  },
-  {
-    icon: require("./img/angular.svg"),
-    title: "angular",
-    url: "https://angular.io/",
-  },
-  {
     icon: require("./img/docker.svg"),
     title: "docker",
     url: "https://www.docker.com/",

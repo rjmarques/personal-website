@@ -23,15 +23,11 @@ const Bio = () => (
             things go: <i>Beep-Boop</i>.
           </p>
           <p>
-            I started off, as a Java developer, building JEE applications. From
-            multithread solutions, to REST integrations and even JPA enabled
-            EJBs. However, I've always had a big interest in all things Web
-            related. So, when the opportunity to jump into Full Stack
-            development presented itself I was over the moon, and as a result,
-            these days I'm a full-blown Stack Developer. More recently, at a
-            professional level, I’ve been working with Golang on the backend
-            side of things, and with React and Typescript on the front-end bits
-            -{" "}
+            I started off my career as a backend Java developer, building JEE
+            applications. Shortly after, my interest in all things Web related
+            made me expand into becoming a Full Stack Developer. More recently
+            I’ve been working with Golang on the backend side of things, and
+            with React and Typescript on the front-end bits -{" "}
             <a
               href="https://github.com/rjmarques/personal-website"
               target="_blank"
@@ -43,7 +39,7 @@ const Bio = () => (
           </p>
           <p>
             In my free time I dabble with tech I'm less familiar with. Recently
-            it has been AWS ECS and Webassembly.
+            it has been self-hosting, IoT home automation, and Arduino.
           </p>
         </div>
       </div>

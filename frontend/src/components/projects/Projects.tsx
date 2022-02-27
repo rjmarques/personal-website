@@ -16,6 +16,20 @@ interface IProject {
 
 const projects: IProject[] = [
   {
+    description: "A set of air quality sensors connected to an ESP32 MCU",
+    image: require("./img/esp32.png"),
+    repoUrl: "https://github.com/rjmarques/esp32-air-quality-sensor",
+    title: "Esp32 Air Quality",
+    url: "https://github.com/rjmarques/esp32-air-quality-sensor",
+  },
+  {
+    description: "My own Terraform provisioned ECS cluster",
+    image: require("./img/ecs.png"),
+    repoUrl: "https://github.com/rjmarques/my-ecs-cluster",
+    title: "My ECS Cluster",
+    url: "https://github.com/rjmarques/my-ecs-cluster",
+  },
+  {
     description: "A twitter joke scraper running on ECS",
     image: require("./img/something-of-the-day.png"),
     repoUrl: "https://github.com/rjmarques/something-of-the-day",

@@ -113,10 +113,10 @@ exports[`renders without crashing renders correctly 1`] = `
                 Ownership over greenfield full stack projects (React+Golang+Postgres), where I was responsible for all development phases, including: requirement gathering, architecture design, full stack implementation, deployment and maintenance.
               </p>
               <p>
-                Enhanced Longshot’s testing methodology with the introduction of Dockerized Integration Tests, for the database layer of different microservices. This work eventually lead to the development of a Clustered Test Environment where developers were able to have a portion of the Longshot system running on their local machines.
+                Spearheaded the introduction of Docker as the execution platform for Longshot’s microservices, replacing the previous service manager (systemd). Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Thus, greatly facilitating the transition to Docker, from the developer’s perspective.
               </p>
               <p>
-                Worked on multiple high-frequency/low-latency integrations. The latter handled large trading volumes and had to be robust to failures (running 24/7).
+                Worked on multiple high-frequency/low-latency integrations with third party Bookies. These integrations handled large trading volumes and had to be robust to external failures (e.g., crashes, bugs) while having to run 24/7 all year long.
               </p>
             </div>
             <div
@@ -234,13 +234,10 @@ exports[`renders without crashing renders correctly 1`] = `
               className="experience-roles"
             >
               <p>
-                Conceptualized and implemented the first version of Typescript fraud-checker bot, on top of Node.js. The bot used data heuristics to compare new applications against, previously flagged, fraudulent ones and would automatically notify internal compliance, if required.
+                Conceptualized and implemented v1.0 of a Typescript fraud-checker bot, on top of Node.js. The bot used data heuristics to compare new applications against, previously flagged, fraudulent ones and would automatically notify the internal compliance team, if need be.
               </p>
               <p>
-                Implemented both the client side (React) and server side (Typescript) of an internal tool, used by Customer Success personnel, that replaced a non GDPR compliant workflow. The tool allowed bigger visibility, particularly in terms of data, into a critical part of the mortgage submission workflow.
-              </p>
-              <p>
-                Worked on mortgage application automation, by implementing a server-side Typescript budget planner. The latter used statistical data to assess user’s affordability to mortgage products.
+                Implemented both the client side (React) and server side (Typescript) of an internal tool, used by Customer Success personnel, that replaced a non-GDPR compliant workflow. The tool allowed increased productivity while at the same time provided bigger visibility, into a critical part of the mortgage submission workflow.
               </p>
             </div>
             <div
@@ -254,9 +251,6 @@ exports[`renders without crashing renders correctly 1`] = `
               >
                 <span>
                   React
-                </span>
-                <span>
-                  SASS
                 </span>
                 <span>
                   Typescript
@@ -358,13 +352,13 @@ exports[`renders without crashing renders correctly 1`] = `
               className="experience-roles"
             >
               <p>
-                Kick-started and lead conceptualization and development of Hyperglance’s Web Client. This included selecting what technologies to use, defining a CI build, developing the Client’s architectural backbone, implementing a scalable SASS rule-structure, and outlining coding practices and standards. Moreover, oversaw all technical aspects regarding the Web Client and its integration with the Hyperglance server.
+                Enhanced the Hyperglance JEE server-side feature-base, by developing core modules. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components
               </p>
               <p>
-                Enhanced the Hyperglance JEE server-side feature-base, by developing core modules. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components. Additionally, implemented several real-time data gathering integrations between Hyperglance and external datasources (e.g., AWS, Openstack). This involved normalizing external data into Hyperglance’s topological and analytical data model.
+                Kick-started conceptualization and development of Hyperglance’s Web GUI. This included selecting what technologies to use, defining a build used by developers and CI tools, developing the client’s architectural backbone (that integrated a WebGL module for data visualization, and outlining coding practices/standards. Moreover, was in charge of all technical aspects regarding the Web GUI and its integration with the Hyperglance backend. All the while being the only web developer on the team.
               </p>
               <p>
-                Other responsibilities included: interviewing both frontend and backend developer candidates, attending conferences, interacting with customers, mentoring new-hires.
+                Other responsibilities included: interviewing both frontend and backend developer candidates, attending conferences, speaking to customers, mentoring new-hires, and evaluating codebase health.
               </p>
             </div>
             <div
@@ -381,9 +375,6 @@ exports[`renders without crashing renders correctly 1`] = `
                 </span>
                 <span>
                   Javascript
-                </span>
-                <span>
-                  SASS
                 </span>
                 <span>
                   Three.js
@@ -494,13 +485,13 @@ exports[`renders without crashing renders correctly 1`] = `
               className="experience-roles"
             >
               <p>
-                Partly designed, developed and maintained an efficient and fault-tolerant configuration of a multi-tiered J2EE Guidewire billing product on two tier one Insurance companies, that would later handle several millions of Dollars and GBPs of insurance premium.
+                Partly designed, developed and maintained an efficient and fault-tolerant configuration of a multi-tiered J2EE Guidewire billing product on two tier one Insurance companies, that would later handle millions of dollars in early revenue.
               </p>
               <p>
-                Designed and developed integration points (e.g., SOAP, JMS) between the client server application and external third party services, that provided scalable and concurrent bidirectional data flows based on real-time monetary client transactions.
+                Designed and developed integration points (e.g., SOAP, JMS) between the client server application and external third-party services, that provided scalable and concurrent bidirectional data flows based on real-time monetary client transactions.
               </p>
               <p>
-                Conceptualized and implemented a modular JUnit framework for populating Guidewire’s product database with test data. The framework improved the JUnit development productivity, on average, by 50%.
+                Conceptualized and implemented a modular JUnit framework for populating Guidewire’s product database with test data. The framework improved the JUnit development productivity in 50%, on average.
               </p>
             </div>
             <div
