@@ -8,10 +8,13 @@ on:
 
 env:
   AWS_REGION: eu-west-2
+  AWS_DEFAULT_REGION: eu-west-2
   ECR: 661157442746.dkr.ecr.eu-west-2.amazonaws.com
-  ECR_PERSONAL_REPO: $ECR/personal-website
+  ECR_PERSONAL_REPO: 661157442746.dkr.ecr.eu-west-2.amazonaws.com/personal-website
   ECS_CLUSTER: hobby-cluster
   ECS_SERVICE: hobby-ecs-service
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 jobs:
   build:
@@ -20,13 +23,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: build the image
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: make build_image
+      # - name: build the image
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: make build_image
 
       - name: push the image to ECR
-        run: echo "push"
+        run: aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $ECR
   deploy:
     needs: build
     runs-on: ubuntu-latest
