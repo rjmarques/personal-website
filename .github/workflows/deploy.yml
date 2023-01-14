@@ -1,0 +1,35 @@
+name: Deploy Personal Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - *
+
+env:
+  AWS_REGION: eu-west-2
+  ECR: 661157442746.dkr.ecr.eu-west-2.amazonaws.com
+  ECR_PERSONAL_REPO: $ECR/personal-website
+  ECS_CLUSTER: hobby-cluster
+  ECS_SERVICE: hobby-ecs-service
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: build the image
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: make build_image
+
+      - name: push the image to ECR
+        run: echo "push"
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy on ECR
+        run: echo "deploy on ECR"
