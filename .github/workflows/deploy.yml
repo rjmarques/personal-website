@@ -29,4 +29,5 @@ jobs:
         run: make build_image
 
       - name: push to ECR and deploy to ECS
+        if: github.ref == 'refs/heads/master'
         run: make deploy
