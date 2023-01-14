@@ -1,7 +1,5 @@
 # Personal Website
 
-[![CircleCI](https://circleci.com/gh/rjmarques/personal-website.svg?style=svg)](https://circleci.com/gh/rjmarques/personal-website)
-
 https://ricardomarq.com
 
 ## Built using
@@ -14,7 +12,7 @@ _Automatically deployed using CircleCI into my ECS Cluster - see this [repo](htt
 
 ## Build locally
 
-```
+```bash
 make
 ```
 
@@ -35,7 +33,7 @@ Before running ensure you have the following env vars are available:
 
 If so, run:
 
-```
+```bash
 make run
 ```
 
@@ -43,7 +41,7 @@ It automatically points the server's to the frontend's build folder.
 
 ## Build in Docker
 
-```
+```bash
 make build_image
 ```
 
@@ -53,7 +51,7 @@ New image will be available as - `rjmarques/personal-website`
 
 Assuming all the env vars are available, as previously defined.
 
-```
+```bash
 make run_container
 ```
 
@@ -63,6 +61,6 @@ Deployment builds on my _[ECS repo](https://github.com/rjmarques/my-ecs-cluster)
 
 To deploy this image to ECS run:
 
-```
+```bash
 make deploy
 ```
