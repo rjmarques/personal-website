@@ -1,0 +1,47 @@
+@import "~antd/lib/style/themes/default.less";
+
+/** Colors **/
+@main-black: #333333;
+@white: #fff;
+@dirty-white: #f8f8f8;
+@grey: #8c8c8c;
+@light-grey: #eaeaea;
+@main-blue: #192837;
+
+/** Sizes **/
+@card-spacing: 30px;
+
+/** Responsive rule wrappes **/
+@phone-upper-boundary: 425px;
+@large-phone-upper-boundary: 576px;
+@tablet-upper-boundary: 768px;
+@laptop-small-upper-boundary: 992px;
+@laptop-upper-boundary: 1440px;
+
+.for-size(@range, @rules) {
+  & when(@range = large-phone-up) {
+    @media (min-width: @phone-upper-boundary) {
+      @rules();
+    }
+  }
+  & when(@range = tablet-up) {
+    @media (min-width: @large-phone-upper-boundary) {
+      @rules();
+    }
+  }
+  & when(@range = laptop-small-up) {
+    @media (min-width: @tablet-upper-boundary) {
+      @rules();
+    }
+  }
+  & when(@range = laptop-up) {
+    @media (min-width: @laptop-small-upper-boundary) {
+      @rules();
+    }
+  }
+  & when(@range = desktop-up) {
+    @media (min-width: @laptop-upper-boundary) {
+      @rules();
+    }
+  }
+}

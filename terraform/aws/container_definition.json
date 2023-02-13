@@ -1,0 +1,29 @@
+{
+  "name": "personal-website",
+  "image": "${repository_url}:latest",
+  "essential": true,
+  "memory": 64,
+  "cpu": 256,
+  "secrets": [
+    {
+      "name": "RECAPTCHA_SECRET",
+      "valueFrom": "${recaptcha_secret}"
+    },
+    {
+      "name": "SMTP_HOST",
+      "valueFrom": "${smtp_host}"
+    },
+    {
+      "name": "SMTP_USER",
+      "valueFrom": "${smtp_user}"
+    },
+    {
+      "name": "SMTP_PASS",
+      "valueFrom": "${smtp_password}"
+    },
+    {
+      "name": "CONTACT_EMAIL",
+      "valueFrom": "${contact_email}"
+    }
+  ]
+}
