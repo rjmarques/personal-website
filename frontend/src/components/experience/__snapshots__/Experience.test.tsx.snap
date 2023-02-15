@@ -113,7 +113,7 @@ exports[`renders without crashing renders correctly 1`] = `
                 Ownership over greenfield full stack projects (React+Golang+Postgres), where I was responsible for all development phases, including: requirement gathering, architecture design, full stack implementation, deployment and maintenance.
               </p>
               <p>
-                Spearheaded the introduction of Docker as the execution platform for Longshot’s microservices, replacing the previous service manager (systemd). Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Thus, greatly facilitating the transition to Docker, from the developer’s perspective.
+                Spearheaded the introduction of Docker as the execution platform for Longshot’s microservices, in place of Systemd deployments. Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Which greatly facilitated the transition to Docker, from the developer’s perspective.
               </p>
               <p>
                 Managed software developer interns. Which included defining the interview process and carrying out the end-to-end technical hiring process. Writing and allocating tasks for them, that fitted in the team’s broader goals. Reviewing their progress, and guiding them as needed. And also, mentoring them on Software Engineering best practices and techniques.
@@ -122,10 +122,7 @@ exports[`renders without crashing renders correctly 1`] = `
                 Worked on various complex data processing pipeline applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was by achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
               </p>
               <p>
-                Worked on multiple high-frequency/low-latency integrations with third party Bookies. These integrations handled large trading volumes and had to be robust to external failures (e.g., crashes, bugs) while having to run 24/7 all year long.
-              </p>
-              <p>
-                Responsible for improving Longshot’s Authentication and Authorization procedures and tooling. In particular, evaluation what OpenID Connect system could to jointly solve internal and external use-cases. This involved developing PoCs (that represented how each tool would fit with the rest of our architecture), analyzing the pros and cons of each solution and, eventually, presenting the findings to the wider-team. Lastly, was also responsible for overseeing the introducing of the selected system into production.
+                •	Responsible for improving Longshot’s Authentication and Authorization systems and tooling. In particular, evaluating what OpenID Connect system would fit into the wider architecture. As well as, being responsible for overseeing the introducing of the selected system into production.
               </p>
             </div>
             <div
@@ -154,9 +151,6 @@ exports[`renders without crashing renders correctly 1`] = `
                 </span>
                 <span>
                   Node.js
-                </span>
-                <span>
-                  Webpack
                 </span>
               </div>
             </div>
@@ -283,13 +277,7 @@ exports[`renders without crashing renders correctly 1`] = `
                   PostgreSQL
                 </span>
                 <span>
-                  Webpack
-                </span>
-                <span>
                   Node.js
-                </span>
-                <span>
-                  Gradle
                 </span>
                 <span>
                   Wildfly
