@@ -122,7 +122,7 @@ exports[`renders without crashing renders correctly 1`] = `
                 Worked on various complex data processing pipeline applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was by achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
               </p>
               <p>
-                •	Responsible for improving Longshot’s Authentication and Authorization systems and tooling. In particular, evaluating what OpenID Connect system would fit into the wider architecture. As well as, being responsible for overseeing the introducing of the selected system into production.
+                Responsible for improving Longshot’s Authentication and Authorization systems and tooling. In particular, evaluating what OpenID Connect system would fit into the wider architecture. As well as, being responsible for overseeing the introducing of the selected system into production.
               </p>
             </div>
             <div
