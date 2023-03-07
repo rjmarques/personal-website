@@ -152,6 +152,9 @@ exports[`renders without crashing renders correctly 1`] = `
                 <span>
                   Node.js
                 </span>
+                <span>
+                  AWS EC2
+                </span>
               </div>
             </div>
           </div>
@@ -281,6 +284,9 @@ exports[`renders without crashing renders correctly 1`] = `
                 </span>
                 <span>
                   Wildfly
+                </span>
+                <span>
+                  AWS EC2
                 </span>
               </div>
             </div>
