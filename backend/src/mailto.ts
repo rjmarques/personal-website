@@ -7,6 +7,7 @@ const smtpPass = process.env.SMTP_PASS;
 const contactEmail = process.env.CONTACT_EMAIL;
 
 const transporter = nodemailer.createTransport({
+  name:"www.ricardomarques.dev",
   pool: true,
   host: smtpHost,
   port: 465,
