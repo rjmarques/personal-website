@@ -266,7 +266,7 @@ exports[`renders without crashing renders correctly 1`] = `
           >
             <span>
               <a
-                href="http://something.ricardomarq.com/"
+                href="https://something.ricardomarques.dev/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
