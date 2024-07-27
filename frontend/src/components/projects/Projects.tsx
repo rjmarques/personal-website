@@ -34,7 +34,7 @@ const projects: IProject[] = [
     image: require("./img/something-of-the-day.png"),
     repoUrl: "https://github.com/rjmarques/something-of-the-day",
     title: "Something of the day",
-    url: "http://something.ricardomarq.com/",
+    url: "https://something.ricardomarques.dev/",
   },
   {
     description: "A Fractal WebAssembly Viewer",
