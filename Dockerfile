@@ -1,5 +1,5 @@
 ## Build container
-FROM node:12.18.3-alpine3.11 as build
+FROM node:16-alpine as build
 RUN apk update \
     && apk add --no-cache bash make
 
@@ -16,7 +16,7 @@ RUN make test
 RUN make build
 
 # Final container that holds the artifacts
-FROM node:alpine3.11 
+FROM node:16-alpine
 RUN apk update \
     && apk add --no-cache bash
 
