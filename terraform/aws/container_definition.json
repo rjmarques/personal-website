@@ -2,7 +2,7 @@
   "name": "personal-website",
   "image": "${repository_url}:latest",
   "essential": true,
-  "memory": 64,
+  "memory": 128,
   "cpu": 256,
   "secrets": [
     {
