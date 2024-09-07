@@ -370,7 +370,7 @@ exports[`renders without crashing renders correctly 1`] = `
           >
             <span>
               <a
-                href="https://wasmmandel.ricardomarq.com/"
+                href="https://wasmmandel.ricardomarques.dev/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -474,7 +474,7 @@ exports[`renders without crashing renders correctly 1`] = `
           >
             <span>
               <a
-                href="https://solar.ricardomarq.com/"
+                href="https://solar.ricardomarques.dev/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
