@@ -41,14 +41,14 @@ const projects: IProject[] = [
     image: require("./img/wasm-mandel.png"),
     repoUrl: "https://github.com/rjmarques/webasm-mandelbrot",
     title: "WebAssembly Mandelbrot",
-    url: "https://wasmmandel.ricardomarq.com/",
+    url: "https://wasmmandel.ricardomarques.dev/",
   },
   {
     description: "My Solar System",
     image: require("./img/solar-system.png"),
     repoUrl: "https://github.com/rjmarques/SolarSystem",
     title: "WebGL Solar System",
-    url: "https://solar.ricardomarq.com/",
+    url: "https://solar.ricardomarques.dev/",
   },
 ];
 
