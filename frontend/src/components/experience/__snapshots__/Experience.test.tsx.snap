@@ -364,7 +364,7 @@ exports[`renders without crashing renders correctly 1`] = `
                 Spearheaded the introduction of Docker as the execution platform for Longshot’s microservices, in place of Systemd. Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Which greatly facilitated the transition to Docker, from the developer’s perspective.
               </p>
               <p>
-                Worked on various high throughput and event driven data processing applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was by achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
+                Worked on various high throughput and event driven data processing applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
               </p>
             </div>
             <div
