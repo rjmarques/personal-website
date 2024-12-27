@@ -9,7 +9,7 @@ export default [
       "Led and mentored the Core Banking team, comprised of 4 engineers (2 seniors, 2 mid-level.",
       "Responsible for the integrity of the bank's ledger, safeguarding customer funds and maintaining accurate reconciliations. While designing and developing new banking products.",
       "Led the implementation of new transfer flows, enabling seamless transfers of customer funds between accounts with tens of millions of pounds in monthly throughput.",
-      "Collaborated closely with Finance and Cash Operations teams to automate regulatory reporting and account reconciliation processes, ensuring precision and compliance with industry-wide standards."
+      "Automated regulatory reporting and account reconciliation processes in partnership with Finance and Cash Operations teams. Ensuring compliance with industry-wide standards, while saving hours of manual effort every day.",
     ],
     technologies: [
       "Python",
