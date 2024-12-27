@@ -30,6 +30,254 @@ exports[`renders without crashing renders correctly 1`] = `
             className="app-card-wide"
           >
             <h3>
+              lead software engineer
+               -
+               
+              <a
+                href="https://www.thousandeyes.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                OakNorth Bank
+              </a>
+            </h3>
+            <div
+              className="app-card-subtitle"
+            >
+              <div
+                className="date-location-entry"
+              >
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="calendar"
+                    className="anticon anticon-calendar"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="calendar"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  January 2024
+                   to 
+                  Now
+                </span>
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="environment"
+                    className="anticon anticon-environment"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="environment"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M854.6 289.1a362.49 362.49 0 00-79.9-115.7 370.83 370.83 0 00-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8A363.6 363.6 0 00169.4 289c-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153a43.9 43.9 0 0022.4 6.1c7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1zm0-617.2c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 551c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  London
+                </span>
+              </div>
+            </div>
+            <div
+              className="experience-roles"
+            >
+              <p>
+                Led and mentored the Core Banking team, comprised of 4 engineers (2 seniors, 2 mid-level.
+              </p>
+              <p>
+                Responsible for the integrity of the bank's ledger, safeguarding customer funds and maintaining accurate reconciliations. While designing and developing new banking products.
+              </p>
+              <p>
+                Led the implementation of new transfer flows, enabling seamless transfers of customer funds between accounts with tens of millions of pounds in monthly throughput.
+              </p>
+              <p>
+                Collaborated closely with Finance and Cash Operations teams to automate regulatory reporting and account reconciliation processes, ensuring precision and compliance with industry-wide standards.
+              </p>
+            </div>
+            <div
+              className="experience-technologies"
+            >
+              <h4>
+                main tools: 
+              </h4>
+              <div
+                className="experience-technologies-items"
+              >
+                <span>
+                  Python
+                </span>
+                <span>
+                  Kafka
+                </span>
+                <span>
+                  PostgreSQL
+                </span>
+                <span>
+                  BigQuery
+                </span>
+                <span>
+                  Docker
+                </span>
+                <span>
+                  AWS
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="experience-timeline-entry"
+        >
+          <div
+            className="app-card-wide"
+          >
+            <h3>
+              senior software engineer
+               -
+               
+              <a
+                href="https://www.thousandeyes.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                ThousandEyes (Cisco)
+              </a>
+            </h3>
+            <div
+              className="app-card-subtitle"
+            >
+              <div
+                className="date-location-entry"
+              >
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="calendar"
+                    className="anticon anticon-calendar"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="calendar"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M880 184H712v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H384v-64c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H144c-17.7 0-32 14.3-32 32v664c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V216c0-17.7-14.3-32-32-32zm-40 656H184V460h656v380zM184 392V256h128v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h256v48c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-48h128v136H184z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  July 2023
+                   to 
+                  December 2023
+                </span>
+                <span
+                  className="text"
+                >
+                  <span
+                    aria-label="environment"
+                    className="anticon anticon-environment"
+                    role="img"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className=""
+                      data-icon="environment"
+                      fill="currentColor"
+                      focusable="false"
+                      height="1em"
+                      viewBox="64 64 896 896"
+                      width="1em"
+                    >
+                      <path
+                        d="M854.6 289.1a362.49 362.49 0 00-79.9-115.7 370.83 370.83 0 00-118.2-77.8C610.7 76.6 562.1 67 512 67c-50.1 0-98.7 9.6-144.5 28.5-44.3 18.3-84 44.5-118.2 77.8A363.6 363.6 0 00169.4 289c-19.5 45-29.4 92.8-29.4 142 0 70.6 16.9 140.9 50.1 208.7 26.7 54.5 64 107.6 111 158.1 80.3 86.2 164.5 138.9 188.4 153a43.9 43.9 0 0022.4 6.1c7.8 0 15.5-2 22.4-6.1 23.9-14.1 108.1-66.8 188.4-153 47-50.4 84.3-103.6 111-158.1C867.1 572 884 501.8 884 431.1c0-49.2-9.9-97-29.4-142zM512 880.2c-65.9-41.9-300-207.8-300-449.1 0-77.9 31.1-151.1 87.6-206.3C356.3 169.5 431.7 139 512 139s155.7 30.5 212.4 85.9C780.9 280 812 353.2 812 431.1c0 241.3-234.1 407.2-300 449.1zm0-617.2c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm79.2 255.2A111.6 111.6 0 01512 551c-29.9 0-58-11.7-79.2-32.8A111.6 111.6 0 01400 439c0-29.9 11.7-58 32.8-79.2C454 338.6 482.1 327 512 327c29.9 0 58 11.6 79.2 32.8C612.4 381 624 409.1 624 439c0 29.9-11.6 58-32.8 79.2z"
+                      />
+                    </svg>
+                  </span>
+                   
+                  London
+                </span>
+              </div>
+            </div>
+            <div
+              className="experience-roles"
+            >
+              <p>
+                Developed and maintained BigData ETL pipelines for both training and real-time anomaly detection, enriching telemetry data from customer networks to support adaptive early warning systems that autonomously learn and align with network usage patterns.
+              </p>
+            </div>
+            <div
+              className="experience-technologies"
+            >
+              <h4>
+                main tools: 
+              </h4>
+              <div
+                className="experience-technologies-items"
+              >
+                <span>
+                  Java
+                </span>
+                <span>
+                  Kafka
+                </span>
+                <span>
+                  PostgreSQL
+                </span>
+                <span>
+                  Spark
+                </span>
+                <span>
+                  Airflow
+                </span>
+                <span>
+                  Docker
+                </span>
+                <span>
+                  AWS
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li
+          className="experience-timeline-entry"
+        >
+          <div
+            className="app-card-wide"
+          >
+            <h3>
               senior full stack developer
                -
                
@@ -71,9 +319,9 @@ exports[`renders without crashing renders correctly 1`] = `
                     </svg>
                   </span>
                    
-                  Nov 2018
+                  November 2018
                    to 
-                  Now
+                  June 2023
                 </span>
                 <span
                   className="text"
@@ -107,22 +355,16 @@ exports[`renders without crashing renders correctly 1`] = `
               className="experience-roles"
             >
               <p>
-                Lead the UI development of internal and customer facing web UIs: including defining CI/CD workflows, selecting technologies, and UI/UX design.
+                Led the UI development of internal and customer facing web UIs: including defining CI/CD workflows, selecting technologies, and UI/UX design.
               </p>
               <p>
                 Ownership over greenfield full stack projects (React+Golang+Postgres), where I was responsible for all development phases, including: requirement gathering, architecture design, full stack implementation, deployment and maintenance.
               </p>
               <p>
-                Spearheaded the introduction of Docker as the execution platform for Longshot’s microservices, in place of Systemd deployments. Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Which greatly facilitated the transition to Docker, from the developer’s perspective.
+                Spearheaded the introduction of Docker as the execution platform for Longshot’s microservices, in place of Systemd. Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Which greatly facilitated the transition to Docker, from the developer’s perspective.
               </p>
               <p>
-                Managed software developer interns. Which included defining the interview process and carrying out the end-to-end technical hiring process. Writing and allocating tasks for them, that fitted in the team’s broader goals. Reviewing their progress, and guiding them as needed. And also, mentoring them on Software Engineering best practices and techniques.
-              </p>
-              <p>
-                Worked on various complex data processing pipeline applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was by achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
-              </p>
-              <p>
-                Responsible for improving Longshot’s Authentication and Authorization systems and tooling. In particular, evaluating what OpenID Connect system would fit into the wider architecture. As well as, being responsible for overseeing the introducing of the selected system into production.
+                Worked on various high throughput and event driven data processing applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was by achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
               </p>
             </div>
             <div
@@ -135,16 +377,16 @@ exports[`renders without crashing renders correctly 1`] = `
                 className="experience-technologies-items"
               >
                 <span>
-                  React
-                </span>
-                <span>
                   Golang
                 </span>
                 <span>
-                  PostgreSQL
+                  React
                 </span>
                 <span>
                   Typescript
+                </span>
+                <span>
+                  PostgreSQL
                 </span>
                 <span>
                   Docker
@@ -153,7 +395,7 @@ exports[`renders without crashing renders correctly 1`] = `
                   Node.js
                 </span>
                 <span>
-                  AWS EC2
+                  AWS
                 </span>
               </div>
             </div>
@@ -207,9 +449,9 @@ exports[`renders without crashing renders correctly 1`] = `
                     </svg>
                   </span>
                    
-                  Jul 2014
+                  July 2014
                    to 
-                  Oct 2018
+                  October 2018
                 </span>
                 <span
                   className="text"
@@ -243,13 +485,10 @@ exports[`renders without crashing renders correctly 1`] = `
               className="experience-roles"
             >
               <p>
-                Enhanced the Hyperglance JEE server-side feature-base, by developing core modules. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components
+                Developed core modules for the Hyperglance JEE product. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components.
               </p>
               <p>
-                Kick-started conceptualization and development of Hyperglance’s Web GUI. This included selecting what technologies to use, defining a build used by developers and CI tools, developing the client’s architectural backbone (that integrated a WebGL module for data visualization, and outlining coding practices/standards. Moreover, was in charge of all technical aspects regarding the Web GUI and its integration with the Hyperglance backend. All the while being the only web developer on the team.
-              </p>
-              <p>
-                Other responsibilities included: interviewing both frontend and backend developer candidates, attending conferences, speaking to customers, mentoring new-hires, and evaluating codebase health.
+                Kick-started the conceptualization and development of Hyperglance’s Web GUI. This included selecting technologies, defining CI/CD pipelines, being in charge of best practices, API contracts between frontend and backend.
               </p>
             </div>
             <div
@@ -262,31 +501,19 @@ exports[`renders without crashing renders correctly 1`] = `
                 className="experience-technologies-items"
               >
                 <span>
-                  AngularJs
-                </span>
-                <span>
-                  Javascript
-                </span>
-                <span>
-                  Three.js
-                </span>
-                <span>
-                  Java EE
-                </span>
-                <span>
-                  EJBs
-                </span>
-                <span>
-                  PostgreSQL
+                  Angular
                 </span>
                 <span>
                   Node.js
                 </span>
                 <span>
-                  Wildfly
+                  Java EE (Wildfly)
                 </span>
                 <span>
-                  AWS EC2
+                  PostgreSQL
+                </span>
+                <span>
+                  AWS
                 </span>
               </div>
             </div>
@@ -340,9 +567,9 @@ exports[`renders without crashing renders correctly 1`] = `
                     </svg>
                   </span>
                    
-                  Nov 2012
+                  November 2012
                    to 
-                  Jun 2014
+                  June 2014
                 </span>
                 <span
                   className="text"
@@ -380,9 +607,6 @@ exports[`renders without crashing renders correctly 1`] = `
               </p>
               <p>
                 Designed and developed integration points (e.g., SOAP, JMS) between the client server application and external third-party services, that provided scalable and concurrent bidirectional data flows based on real-time monetary client transactions.
-              </p>
-              <p>
-                Conceptualized and implemented a modular JUnit framework for populating Guidewire’s product database with test data. The framework improved the JUnit development productivity in 50%, on average.
               </p>
             </div>
             <div
