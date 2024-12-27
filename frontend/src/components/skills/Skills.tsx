@@ -13,25 +13,9 @@ interface ISkill {
 
 const skills: ISkill[] = [
   {
-    icon: require("./img/react.svg"),
-    title: "react",
-    url: "https://reactjs.org/",
-  },
-
-  {
-    icon: require("./img/typescript.svg"),
-    title: "typescript",
-    url: "https://www.typescriptlang.org/",
-  },
-  {
     icon: require("./img/go.svg"),
     title: "golang",
     url: "https://golang.org/",
-  },
-  {
-    icon: require("./img/postgres.svg"),
-    title: "postgresql",
-    url: "https://www.postgresql.org/",
   },
   {
     icon: require("./img/java.svg"),
@@ -39,9 +23,24 @@ const skills: ISkill[] = [
     url: "https://www.oracle.com/technetwork/java/javaee/overview/index.html",
   },
   {
+    icon: require("./img/postgres.svg"),
+    title: "postgresql",
+    url: "https://www.postgresql.org/",
+  },
+  {
     icon: require("./img/docker.svg"),
     title: "docker",
     url: "https://www.docker.com/",
+  },
+  {
+    icon: require("./img/typescript.svg"),
+    title: "typescript",
+    url: "https://www.typescriptlang.org/",
+  },
+  {
+    icon: require("./img/react.svg"),
+    title: "react",
+    url: "https://reactjs.org/",
   },
 ];
 
