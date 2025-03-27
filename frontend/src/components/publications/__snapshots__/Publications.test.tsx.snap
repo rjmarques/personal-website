@@ -40,11 +40,11 @@ exports[`renders without crashing renders correctly 1`] = `
           </div>
           <div>
             <a
-              href="http://nova-lincs.di.fct.unl.pt/publication/1329"
+              href="https://dl.acm.org/doi/10.1145/2554850.2555018"
               rel="noopener noreferrer"
               target="_blank"
             >
-              http://nova-lincs.di.fct.unl.pt/publication/1329
+              https://dl.acm.org/doi/10.1145/2554850.2555018
             </a>
           </div>
         </div>
