@@ -15,7 +15,7 @@ const publications: IPublication[] = [
     conference: "Sac'14",
     paper:
       "On the Support of Task-Parallel Algorithmic Skeletons for Multi-GPU Computing",
-    urls: ["http://nova-lincs.di.fct.unl.pt/publication/1329"],
+    urls: ["https://dl.acm.org/doi/10.1145/2554850.2555018"],
   },
   {
     conference: "Euro-Par 2013",
