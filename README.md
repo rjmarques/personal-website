@@ -1,6 +1,6 @@
 # Personal Website
 
-https://ricardomarq.com
+https://ricardomarques.dev.com
 
 ## Built using
 
