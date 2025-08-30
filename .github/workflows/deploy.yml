@@ -18,13 +18,13 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: '22'
+        cache: 'npm'
+        cache-dependency-path: package-lock.json
 
     - name: Install dependencies
-      working-directory: frontend_new
       run: npm ci
 
     - name: Build application
-      working-directory: frontend_new
       run: npm run build
 
     - name: Deploy to Cloudflare Workers
@@ -34,4 +34,4 @@ jobs:
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         command: deploy
         environment: production
-        workingDirectory: frontend_new
+
