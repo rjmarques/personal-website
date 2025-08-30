@@ -1,0 +1,21 @@
+@use "../../theme.scss" as *;
+
+.date-location-entry {
+  display: flex;
+  flex-direction: row;
+
+  .text {
+    display: inline-block;
+    margin-right: 10px;
+
+    svg {
+      font-size: inherit;
+      margin-right: 4px;
+      vertical-align: sub;
+    }
+
+    @include for-size(tablet-up) {
+      flex: 0 0 auto;
+    }
+  }
+}

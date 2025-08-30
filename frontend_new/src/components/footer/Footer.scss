@@ -1,0 +1,37 @@
+@use "../../theme.scss" as *;
+
+.footer {
+  .footer-info {
+    border-top: 2px solid $light-grey;
+    padding-top: 35px;
+    text-align: center;
+  }
+
+  .footer-links {
+    color: rgba(0, 0, 0, 0.45);
+
+    a {
+      color: inherit;
+      margin: 0 20px;
+      transition: color 0.3s ease;
+
+      svg {
+        font-size: 28px;
+        width: 28px;
+        height: 28px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .footer-copy {
+    display: block;
+    padding: 0 10px;
+    margin: 15px 0 60px 0;
+  }
+}
