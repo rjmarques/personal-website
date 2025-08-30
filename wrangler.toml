@@ -15,4 +15,3 @@ enabled = true
 
 [[send_email]]
 name = "SEB"
-destination_address = "${CONTACT_EMAIL}"
