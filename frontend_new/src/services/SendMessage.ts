@@ -8,9 +8,7 @@ export default async function (
   subject?: string,
   company?: string
 ) {
-  // TODO: Add captcha validation
-  // if (!name || !email || !message || !captcha) {
-  if (!name || !email || !message) {
+  if (!name || !email || !message || !captcha) {
     throw new Error("Name, Email, Message and Captcha are mandatory fields!");
   }
 
