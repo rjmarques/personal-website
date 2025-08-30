@@ -15,7 +15,7 @@ enabled = true
 
 [[send_email]]
 name = "SEB"
-destination_address = "{{ env.CONTACT_EMAIL }}"
+destination_address = "${CONTACT_EMAIL}"
 
 [vars]
-CONTACT_EMAIL = "{{ env.CONTACT_EMAIL }}"
+CONTACT_EMAIL = "${CONTACT_EMAIL}"
