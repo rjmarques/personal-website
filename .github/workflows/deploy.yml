@@ -33,6 +33,8 @@ jobs:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         command: deploy
+        secrets: |
+          CONTACT_EMAIL
         environment: production
       env:
         CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
