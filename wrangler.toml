@@ -3,7 +3,7 @@ main = "worker.js"
 compatibility_date = "2025-08-29"
 
 send_email = [
-    {type = "send_email", name = "SEB"}
+    {name = "SEB"}
 ]
 
 [assets]
