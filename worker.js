@@ -1,7 +1,7 @@
 import { EmailMessage } from "cloudflare:email";
 import { createMimeMessage } from 'mimetext/browser'
 
-function validateContactForm(body) {
+function validateRequestDetails(body) {
   const { name, email, message } = body;
   if (!name || !email || !message) {
     throw new Error('Missing required fields: name, email, and message are required');
@@ -28,7 +28,7 @@ async function handleContactForm(request, env) {
   const body = await request.json();
   console.log('Received contact form submission:', body);
   
-  const formData = validateContactForm(body);
+  const formData = validateRequestDetails(body);
   console.log('Sending email to:', env.CONTACT_EMAIL);
   const emailMessage = createEmailMessage(formData, env.CONTACT_EMAIL);
   
