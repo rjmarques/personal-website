@@ -13,9 +13,5 @@ custom_domain = true
 [observability]
 enabled = true
 
-[[send_email]]
-name = "SEB"
-destination_address = "test@place.com"
-
-[env.production]
-CONTACT_EMAIL = "test@place.com"
+[vars]
+CONTACT_EMAIL = "${CONTACT_EMAIL}"
