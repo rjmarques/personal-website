@@ -1,7 +1,8 @@
 {
-  "name": "frontend_new",
-  "version": "0.1.0",
+  "name": "personal-website",
+  "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
