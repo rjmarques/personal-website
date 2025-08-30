@@ -29,7 +29,7 @@ async function handleContactForm(request, env) {
   console.log('Received contact form submission:', body);
   
   const formData = validateRequestDetails(body);
-  console.log(`env object: ${env}`);
+  console.log(`env object: ${JSON.stringify(env, null, 2)}`);
   const emailMessage = createEmailMessage(formData, env.CONTACT_EMAIL);
   
   await env.EMAIL.send(emailMessage);
