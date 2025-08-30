@@ -34,4 +34,6 @@ jobs:
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         command: deploy
         environment: production
+      env:
+        CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
 

@@ -12,3 +12,10 @@ custom_domain = true
 
 [observability]
 enabled = true
+
+[[email]]
+name = "SEB"
+destination_address = "{{ env.CONTACT_EMAIL }}"
+
+[vars]
+CONTACT_EMAIL = "{{ env.CONTACT_EMAIL }}"
