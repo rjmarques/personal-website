@@ -17,5 +17,5 @@ enabled = true
 name = "SEB"
 destination_address = "test@place.com"
 
-[vars]
+[env.production]
 CONTACT_EMAIL = "test@place.com"
