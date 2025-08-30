@@ -2,9 +2,8 @@ name = "personal-website"
 main = "worker.js"
 compatibility_date = "2025-08-29"
 
-send_email = [
-    { name = "SEB"}
-]
+[[send_email]]
+name = "EMAIL"
 
 [assets]
 directory = "./out/"

@@ -32,7 +32,7 @@ async function handleContactForm(request, env) {
   console.log("env object:", env);
   const emailMessage = createEmailMessage(formData, env.CONTACT_EMAIL);
   
-  await env.SEB.send(emailMessage);
+  await env.EMAIL.send(emailMessage);
   console.log('Email sent successfully');
   
   return new Response(JSON.stringify({
