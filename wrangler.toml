@@ -15,3 +15,7 @@ enabled = true
 
 [vars]
 CONTACT_EMAIL = "${CONTACT_EMAIL}"
+
+[[send_email]]
+name = "SEB"
+destination_address = "${CONTACT_EMAIL}"
