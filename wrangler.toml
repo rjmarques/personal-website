@@ -13,5 +13,6 @@ custom_domain = true
 [observability]
 enabled = true
 
-[[send_email]]
-name = "SEB"
+send_email = [
+    {type = "send_email", name = "SEB"}
+]
