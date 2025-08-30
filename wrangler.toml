@@ -13,7 +13,7 @@ custom_domain = true
 [observability]
 enabled = true
 
-[vars]
+[env.production.vars]
 CONTACT_EMAIL = "${CONTACT_EMAIL}"
 
 [[send_email]]
