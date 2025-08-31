@@ -1,11 +1,36 @@
 import { Resend } from 'resend';
 
-function validateRequestDetails(body) {
+async function validateTurnstileToken(token, secretKey, remoteIp) {
+  const formData = new FormData();
+  formData.append('secret', secretKey);
+  formData.append('response', token);
+  formData.append('remoteip', remoteIp);
+
+  const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+    method: 'POST',
+    body: formData,
+  });
+
+  const validation  = await response.json();
+  
+  if (!validation .success) {
+    const errorCodes = validation ['error-codes'] || [];
+    throw new Error(`Turnstile validation failed: ${errorCodes.join(', ')}`);
+  }
+  
+  return validation ;
+}
+
+async function validateRequestDetails(body, headers, turnstileSecretKey) {
   const { name, email, message, captcha } = body;
   if (!name || !email || !message || !captcha) {
-    throw new Error('Missing required fields: name, email, and message are required');
+    throw new Error('Missing required fields: name, email, message, and captcha are required');
   }
-  // TODO: Add captcha validation
+  
+  const clientIp = headers.get('CF-Connecting-IP') || headers.get('X-Forwarded-For') || 'unknown';
+  
+  await validateTurnstileToken(captcha, turnstileSecretKey, clientIp);
+  
   return { name, email, message, subject: body.subject };
 }
 
@@ -33,9 +58,8 @@ async function sendEmail(formData, contactEmail, resendApiKey) {
 
 async function handleContactForm(request, env) {  
   const body = await request.json();
-  console.log('Received contact form submission:', body);
   
-  const formData = validateRequestDetails(body);
+  const formData = await validateRequestDetails(body, request.headers, env.TURNSTILE_SECRET_KEY);
   
   await sendEmail(formData, env.CONTACT_EMAIL, env.RESEND_API_KEY);
   console.log('Email sent successfully');
