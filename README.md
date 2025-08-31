@@ -1,66 +1,36 @@
-# Personal Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-https://ricardomarques.dev
+## Getting Started
 
-## Built using
-
-- React (and the create-react-app)
-- Typescript
-- Antd
-
-_Automatically deployed using CircleCI into my ECS Cluster - see this [repo](https://github.com/rjmarques/my-ecs-cluster)_
-
-## Build locally
+First, run the development server:
 
 ```bash
-make
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-The following folders will contain the built artifacts:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- _./front/build_
-- _./backend/dist_
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Run locally
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Before running ensure you have the following env vars are available:
+## Learn More
 
-- RECAPTCHA_SECRET - Google Recaptcha V2 server side api secret
-- CONTACT_EMAIL - Email to where the website sends contact messages
-- SMTP_HOST - The URL of the SMTP server that delivers our emails
-- SMTP_USER - SMTP auth username
-- SMTP_PASS - SMTP auth password
+To learn more about Next.js, take a look at the following resources:
 
-If so, run:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-```bash
-make run
-```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-It automatically points the server's to the frontend's build folder.
+## Deploy on Vercel
 
-## Build in Docker
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-```bash
-make build_image
-```
-
-New image will be available as - `rjmarques/personal-website`
-
-## Run in Docker
-
-Assuming all the env vars are available, as previously defined.
-
-```bash
-make run_container
-```
-
-## Deploy to ECS
-
-Deployment builds on my _[ECS repo](https://github.com/rjmarques/my-ecs-cluster)_, to provide an ESC cluster that hosts this web app. Moreover, this step assumes all the terraform infrastructure is already provisioned.
-
-To deploy this image to ECS run:
-
-```bash
-make deploy
-```
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

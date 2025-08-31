@@ -1,0 +1,11 @@
+@use "../../theme.scss" as *;
+
+.education {
+  .education-entry {
+    padding-bottom: $card-spacing;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}
