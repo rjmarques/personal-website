@@ -99,7 +99,6 @@ const Contact: React.FC<ContactProps> = ({ sendMessage }) => {
   };
 
   const handleCaptchaChange = (token: string | null) => {
-    console.log('Captcha token:', token);
     setFormData(prev => ({ ...prev, captcha: token || '' }));
     
     // Clear captcha error when user completes the challenge

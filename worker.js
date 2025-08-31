@@ -23,7 +23,7 @@ async function sendEmail(formData, contactEmail, resendApiKey) {
   const result = await resend.emails.send(emailData);
   
   if (result.error) {
-    throw new Error(`Failed to send email: ${result.error.message}`);
+    throw new Error(`Failed to send email: ${result.error}`);
   }
   
   return result;
@@ -34,7 +34,6 @@ async function handleContactForm(request, env) {
   console.log('Received contact form submission:', body);
   
   const formData = validateRequestDetails(body);
-  console.log(`env object: ${JSON.stringify(env, null, 2)}`);
   
   await sendEmail(formData, env.CONTACT_EMAIL, env.RESEND_API_KEY);
   console.log('Email sent successfully');
