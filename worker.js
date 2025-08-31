@@ -18,7 +18,7 @@ async function sendEmail(formData, contactEmail, resendApiKey) {
     from: "contact@ricardomarques.dev",
     to: contactEmail,
     subject: subject || `Contact form submission from ${name}`,
-    html: `<strong>Name: ${name}\nEmail: ${email}\nSubject: ${subject || 'No subject'}\n\nMessage:\n${message}</strong>`,
+    html: `<p>Name: ${name}\nEmail: ${email}\nSubject: ${subject || 'No subject'}\n\nMessage:\n${message}</p>`,
     reply_to: email
   };
 
