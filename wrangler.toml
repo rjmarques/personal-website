@@ -7,7 +7,7 @@ directory = "./out/"
 html_handling = "auto-trailing-slash"
 
 [[routes]]
-pattern = "test.ricardomarques.dev"
+pattern = "ricardomarques.dev"
 custom_domain = true
 
 [observability]
