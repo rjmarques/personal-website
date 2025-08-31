@@ -1,5 +1,4 @@
-import { EmailMessage } from "cloudflare:email";
-import { createMimeMessage } from 'mimetext/browser'
+import { Resend } from 'resend';
 
 function validateRequestDetails(body) {
   const { name, email, message } = body;
@@ -9,19 +8,26 @@ function validateRequestDetails(body) {
   return { name, email, message, subject: body.subject };
 }
 
-function createEmailMessage(formData, contactEmail) {
+async function sendEmail(formData, contactEmail, resendApiKey) {
   const { name, email, message, subject } = formData;
   
-  const msg = createMimeMessage();
-  msg.setSender({ name: name, addr: email });
-  msg.setRecipient(contactEmail);
-  msg.setSubject(subject || `Contact form submission from ${name}`);
-  msg.addMessage({
-    contentType: "text/plain",
-    data: `Name: ${name}\nEmail: ${email}\nSubject: ${subject || 'No subject'}\n\nMessage:\n${message}`,
-  });
+  const resend = new Resend(resendApiKey);
+  
+  const emailData = {
+    from: email,
+    to: contactEmail,
+    subject: subject || `Contact form submission from ${name}`,
+    text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject || 'No subject'}\n\nMessage:\n${message}`,
+    reply_to: email
+  };
 
-  return new EmailMessage(email, contactEmail, msg.asRaw());
+  const result = await resend.emails.send(emailData);
+  
+  if (result.error) {
+    throw new Error(`Failed to send email: ${result.error.message}`);
+  }
+  
+  return result;
 }
 
 async function handleContactForm(request, env) {  
@@ -30,9 +36,8 @@ async function handleContactForm(request, env) {
   
   const formData = validateRequestDetails(body);
   console.log(`env object: ${JSON.stringify(env, null, 2)}`);
-  const emailMessage = createEmailMessage(formData, env.CONTACT_EMAIL);
   
-  await env.EMAIL.send(emailMessage);
+  await sendEmail(formData, env.CONTACT_EMAIL, env.RESEND_API_KEY);
   console.log('Email sent successfully');
   
   return new Response(JSON.stringify({

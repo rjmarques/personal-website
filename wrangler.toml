@@ -2,9 +2,6 @@ name = "personal-website"
 main = "worker.js"
 compatibility_date = "2025-08-29"
 
-[[send_email]]
-name = "EMAIL"
-
 [assets]
 directory = "./out/"
 html_handling = "auto-trailing-slash"

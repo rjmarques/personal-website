@@ -35,7 +35,9 @@ jobs:
         command: deploy
         secrets: |
           CONTACT_EMAIL
+          RESEND_API_KEY
         environment: production
       env:
         CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+        RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
 
