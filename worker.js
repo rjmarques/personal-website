@@ -1,10 +1,11 @@
 import { Resend } from 'resend';
 
 function validateRequestDetails(body) {
-  const { name, email, message } = body;
-  if (!name || !email || !message) {
+  const { name, email, message, captcha } = body;
+  if (!name || !email || !message || !captcha) {
     throw new Error('Missing required fields: name, email, and message are required');
   }
+  // TODO: Add captcha validation
   return { name, email, message, subject: body.subject };
 }
 
@@ -23,7 +24,7 @@ async function sendEmail(formData, contactEmail, resendApiKey) {
   const result = await resend.emails.send(emailData);
   
   if (result.error) {
-    throw new Error(`Failed to send email: ${result.error}`);
+    throw new Error(`Failed to send email: ${JSON.stringify(result.error)}`);
   }
   
   return result;
@@ -56,12 +57,12 @@ export default {
       try {
         return await handleContactForm(request, env);
       } catch (error) {
-        console.error('Error processing contact form:', error);
+        console.error(error);
         
         const statusCode = error instanceof SyntaxError ? 400 : 500;
         return new Response(JSON.stringify({
           success: false,
-          error: error.message || 'An error occurred'
+          error: 'An error occurred...'
         }), {
           status: statusCode,
           headers: { 'Content-Type': 'application/json' }
