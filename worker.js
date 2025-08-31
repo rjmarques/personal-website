@@ -15,10 +15,11 @@ async function sendEmail(formData, contactEmail, resendApiKey) {
   const resend = new Resend(resendApiKey);
   
   const emailData = {
-    from: email,
+    from: "contact@ricardomarques.dev",
     to: contactEmail,
     subject: subject || `Contact form submission from ${name}`,
     html: `<strong>Name: ${name}\nEmail: ${email}\nSubject: ${subject || 'No subject'}\n\nMessage:\n${message}</strong>`,
+    reply_to: email
   };
 
   const result = await resend.emails.send(emailData);
