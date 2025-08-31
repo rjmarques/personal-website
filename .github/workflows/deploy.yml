@@ -37,7 +37,6 @@ jobs:
           CONTACT_EMAIL
           RESEND_API_KEY
           TURNSTILE_SECRET_KEY
-        environment: production
       env:
         CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
         RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
