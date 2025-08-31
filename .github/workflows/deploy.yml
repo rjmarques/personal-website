@@ -2,9 +2,9 @@ name: Deploy to Cloudflare Workers
 
 on:
   push:
-    branches: [ modernise ]
+    branches: [ master ]
   pull_request:
-    branches: [ modernise ]
+    branches: [ master ]
 
 jobs:
   deploy:
