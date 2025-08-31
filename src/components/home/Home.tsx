@@ -27,7 +27,7 @@ const Home = (props: IProps) => {
           </div>
           <div className="home-description materialize">
             <h1>Ricardo Marques</h1>
-            <span className="home-sub-title">Full Stack Developer</span>
+            <span className="home-sub-title">Senior Full Stack Developer</span>
             <p>
               I specialize in Objected Oriented Development and Web Development.
               I stand for quality and love spending time optimizing every little
