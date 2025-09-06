@@ -1,0 +1,85 @@
+@use "../../theme.scss" as *;
+@use "sass:math";
+
+$border-width: 2px;
+$dot-size: 16px;
+$dot-top: 24px;
+
+.experience {
+  .experience-timeline-entry {
+    border-left: $border-width solid $light-grey;
+    position: relative;
+    margin-left: 10px;
+    padding-bottom: $card-spacing;
+    padding-left: 40px;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+
+    &::before {
+      content: "";
+      background: $dirty-white;
+      border: 3px solid $primary-color;
+      border-radius: 100%;
+      height: $dot-size;
+      left: calc(-1 * $dot-size / 2 - $border-width / 2);
+      position: absolute;
+      top: $dot-top;
+      width: $dot-size;
+    }
+
+    &::after {
+      content: "";
+      border: calc($border-width / 2) solid $primary-color;
+      height: 1px;
+      left: calc($dot-size / 2 - $border-width / 2);
+      position: absolute;
+      top: calc($dot-top + $dot-size / 2 - $border-width / 2);
+      width: 14px;
+    }
+  }
+
+  .experience-roles {
+    display: none;
+
+    @include for-size(laptop-small-up) {
+      display: block;
+    }
+  }
+
+  .experience-technologies {
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -10px;
+    padding-top: 5px;
+
+    @include for-size(laptop-small-up) {
+      flex-direction: row;
+    }
+
+    h4 {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .experience-technologies-items {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+
+    span {
+      background: $dirty-white;
+      border: 1px solid $light-grey;
+      border-radius: 4px;
+      flex: 0 0 auto;
+      font-size: 13px;
+      padding: 2px 4px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

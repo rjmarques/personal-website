@@ -1,0 +1,11 @@
+@use "../../theme.scss" as *;
+
+.publications {
+  .publications-entry {
+    padding-bottom: $card-spacing;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+  }
+}

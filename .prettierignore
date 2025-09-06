@@ -1,0 +1,8 @@
+backend/
+node_modules/
+.next/
+out/
+*.config.js
+*.config.mjs
+*.config.ts
+package-lock.json

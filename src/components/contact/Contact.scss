@@ -1,0 +1,46 @@
+@use "../../theme.scss" as *;
+
+.contact {
+  .contact-form {
+    overflow: hidden;
+    
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 12px;
+      
+      @include for-size(laptop-small-up) {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+        row-gap: 16px;
+      }
+      
+      .full-width {
+        @include for-size(laptop-small-up) {
+          grid-column-start: 1;
+          grid-column-end: 3;
+        }
+      }
+    }
+
+    .contact-text-area {
+      font-size: 16px;
+    }
+
+    .submit-button {
+      font-weight: 600;
+      margin-bottom: 24px
+    }
+
+    .captcha-container {
+      padding-bottom: 18px;
+
+      .captcha-error {
+        color: #d32f2f;
+        font-size: 0.75rem;
+        margin-left: 14px;
+        position: absolute;
+      }
+    }
+  }  
+}

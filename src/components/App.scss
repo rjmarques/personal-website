@@ -1,0 +1,107 @@
+@use "../theme.scss" as *;
+
+.app {
+  position: relative;
+
+  .content {
+    margin: auto;
+    min-width: 320px; // the website is not made for ants
+    padding: 0px 15px;
+    width: 100%;
+
+    @include for-size(laptop-small-up) {
+      width: 750px;
+    }
+    @include for-size(laptop-up) {
+      width: 970px;
+    }
+    @include for-size(desktop-up) {
+      width: 1170px;
+    }
+  }
+
+  .app-header {
+    background-color: $main-blue;
+    display: flex;
+    align-items: center;
+    // IF THIS CHANGES THE AUTO-SCROLL WON'T WORK AS EXPECTED
+    min-height: 82px;
+    // IF THIS CHANGES THE AUTO-SCROLL WON'T WORK AS EXPECTED
+    padding: 18px 0px;
+    position: fixed;
+    transition: 0.2s all;
+    width: 100%;
+    z-index: 100;
+
+    &.ghost {
+      @include for-size(laptop-small-up) {
+        background-color: rgba(25, 40, 55, 0.8);
+      }
+      @include for-size(desktop-up) {
+        padding: 36px 0px;
+      }
+    }
+  }
+
+  .app-main-content {
+    section {
+      padding: 15px 0px;
+      @include for-size(tablet-up) {
+        padding: 25px 0px;
+      }
+      @include for-size(laptop-up) {
+        padding: 40px 0px;
+      }
+    }
+  }
+
+  .app-card-wide {
+    background: $white;
+    border: 1px solid $light-grey;
+    border-left: 2px solid $primary-color;
+    padding: 20px 30px;
+    word-break: break-word;
+  }
+
+  .app-card-subtitle {
+    margin-top: 4px;
+    margin-bottom: 15px;
+  }
+
+  .visited {
+    .materialize {
+      @include for-size(laptop-small-up) {
+        animation-name: fadeInUp;
+        animation-duration: 1s;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .materialize {
+    @include for-size(laptop-small-up) {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    20% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+}

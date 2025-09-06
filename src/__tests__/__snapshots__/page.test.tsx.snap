@@ -1,0 +1,1989 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="app"
+  >
+    <header
+      class="app-header"
+    >
+      <nav
+        class="navbar"
+      >
+        <div
+          class="content nav-wrapper"
+        >
+          <button
+            class="navbar-hamburger "
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="MenuIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="navbar-menu "
+          >
+            <li
+              class="navbar-item active"
+            >
+              <button
+                class="navbar-link"
+              >
+                home
+              </button>
+            </li>
+            <li
+              class="navbar-item "
+            >
+              <button
+                class="navbar-link"
+              >
+                bio
+              </button>
+            </li>
+            <li
+              class="navbar-item "
+            >
+              <button
+                class="navbar-link"
+              >
+                experience
+              </button>
+            </li>
+            <li
+              class="navbar-item "
+            >
+              <button
+                class="navbar-link"
+              >
+                projects
+              </button>
+            </li>
+            <li
+              class="navbar-item "
+            >
+              <button
+                class="navbar-link"
+              >
+                academic
+              </button>
+            </li>
+            <li
+              class="navbar-item "
+            >
+              <button
+                class="navbar-link"
+              >
+                contact
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="visited"
+      id="HOME"
+    >
+      <section
+        class="home"
+      >
+        <div
+          class="content"
+        >
+          <div
+            class="home-content"
+          >
+            <div
+              class="home-hero-wrapper"
+            >
+              <img
+                alt="ric"
+                data-nimg="1"
+                decoding="async"
+                height="40"
+                id="home-hero-image"
+                src="/_next/image?url=%2Fimg.jpg&w=96&q=75"
+                srcset="/_next/image?url=%2Fimg.jpg&w=48&q=75 1x, /_next/image?url=%2Fimg.jpg&w=96&q=75 2x"
+                style="color: transparent;"
+                width="40"
+              />
+            </div>
+            <div
+              class="home-description materialize"
+            >
+              <h1>
+                Ricardo Marques
+              </h1>
+              <span
+                class="home-sub-title"
+              >
+                Senior Full Stack Developer
+              </span>
+              <p>
+                I specialize in Objected Oriented Development and Web Development. I stand for quality and love spending time optimizing every little piece of code.
+              </p>
+              <div
+                class="home-buttons"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary css-wn9s2t-MuiButtonBase-root-MuiButton-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="MailIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+                      />
+                    </svg>
+                  </span>
+                  Contact me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="app-main-content"
+    >
+      <div
+        class="visited"
+        id="BIO"
+      >
+        <section
+          class="bio"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                about me
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                Know me a bit better
+              </span>
+            </div>
+            <div
+              class="bio-grid"
+            >
+              <div
+                class="bio-picture"
+              >
+                <img
+                  alt="Ricardo Marques"
+                  data-nimg="1"
+                  decoding="async"
+                  height="150"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimg.jpg&w=384&q=75"
+                  srcset="/_next/image?url=%2Fimg.jpg&w=256&q=75 1x, /_next/image?url=%2Fimg.jpg&w=384&q=75 2x"
+                  style="color: transparent;"
+                  width="150"
+                />
+              </div>
+              <div>
+                <div
+                  class="bio-divider"
+                />
+                <div
+                  class="bio-text materialize"
+                >
+                  <p>
+                    Hi, I'm Ricardo Marques. I'm a professional nerd that works on both the back and front end, while using a modern tech stack to make things go: 
+                    <em>
+                      Beep-Boop
+                    </em>
+                    .
+                  </p>
+                  <p>
+                    I started off my career as a backend Java developer, building JEE applications. Shortly after, my interest in all things Web related made me expand into becoming a Full Stack Developer. More recently I've been working with Golang on the backend side of things, and with React and Typescript on the front-end bits -
+                     
+                    <a
+                      href="https://github.com/rjmarques/personal-website"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      this website is a SSG Next.js App served by a cloudflare worker
+                    </a>
+                    .
+                  </p>
+                  <p>
+                    In my free time I dabble with tech I'm less familiar with. Recently it has been self-hosting, IoT home automation, and Arduino.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="skills"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                Expertise
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                The technologies I am proficient in
+              </span>
+            </div>
+            <div
+              class="skills-card-row"
+            >
+              <a
+                class="skill-link"
+                href="https://golang.org/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root skills-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                  style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+                >
+                  <img
+                    alt="golang"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img skill-image css-1kuwa16-MuiCardMedia-root"
+                    src="/img.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root skills-card-meta css-1lt5qva-MuiCardContent-root"
+                  >
+                    golang
+                  </div>
+                </div>
+              </a>
+              <a
+                class="skill-link"
+                href="https://www.oracle.com/technetwork/java/javaee/overview/index.html"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root skills-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                  style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+                >
+                  <img
+                    alt="java ee"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img skill-image css-1kuwa16-MuiCardMedia-root"
+                    src="/img.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root skills-card-meta css-1lt5qva-MuiCardContent-root"
+                  >
+                    java ee
+                  </div>
+                </div>
+              </a>
+              <a
+                class="skill-link"
+                href="https://www.postgresql.org/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root skills-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                  style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+                >
+                  <img
+                    alt="postgresql"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img skill-image css-1kuwa16-MuiCardMedia-root"
+                    src="/img.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root skills-card-meta css-1lt5qva-MuiCardContent-root"
+                  >
+                    postgresql
+                  </div>
+                </div>
+              </a>
+              <a
+                class="skill-link"
+                href="https://www.docker.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root skills-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                  style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+                >
+                  <img
+                    alt="docker"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img skill-image css-1kuwa16-MuiCardMedia-root"
+                    src="/img.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root skills-card-meta css-1lt5qva-MuiCardContent-root"
+                  >
+                    docker
+                  </div>
+                </div>
+              </a>
+              <a
+                class="skill-link"
+                href="https://www.typescriptlang.org/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root skills-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                  style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+                >
+                  <img
+                    alt="typescript"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img skill-image css-1kuwa16-MuiCardMedia-root"
+                    src="/img.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root skills-card-meta css-1lt5qva-MuiCardContent-root"
+                  >
+                    typescript
+                  </div>
+                </div>
+              </a>
+              <a
+                class="skill-link"
+                href="https://reactjs.org/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <div
+                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root skills-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                  style="--Paper-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);"
+                >
+                  <img
+                    alt="react"
+                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img skill-image css-1kuwa16-MuiCardMedia-root"
+                    src="/img.jpg"
+                  />
+                  <div
+                    class="MuiCardContent-root skills-card-meta css-1lt5qva-MuiCardContent-root"
+                  >
+                    react
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="visited"
+        id="EXPERIENCE"
+      >
+        <section
+          class="experience"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                Experience
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                What I have done professionally
+              </span>
+            </div>
+            <div
+              class="experience-timeline materialize"
+            >
+              <ul>
+                <li
+                  class="experience-timeline-entry"
+                >
+                  <div
+                    class="app-card-wide"
+                  >
+                    <h3>
+                      Senior Software Engineer
+                       -
+                       
+                      <a
+                        href="https://www.cloudflare.com/en-gb/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Cloudflare
+                      </a>
+                    </h3>
+                    <div
+                      class="app-card-subtitle"
+                    >
+                      <div
+                        class="date-location-entry"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="CalendarTodayIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                            />
+                          </svg>
+                          August 2025
+                           to 
+                          Now
+                        </span>
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="LocationOnIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                            />
+                          </svg>
+                          London
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="experience-roles"
+                    />
+                    <div
+                      class="experience-technologies"
+                    >
+                      <h4>
+                        main tools: 
+                      </h4>
+                      <div
+                        class="experience-technologies-items"
+                      >
+                        <span>
+                          Python
+                        </span>
+                        <span>
+                          Kafka
+                        </span>
+                        <span>
+                          PostgreSQL
+                        </span>
+                        <span>
+                          Kubernetes
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="experience-timeline-entry"
+                >
+                  <div
+                    class="app-card-wide"
+                  >
+                    <h3>
+                      lead software engineer
+                       -
+                       
+                      <a
+                        href="https://oaknorth.co.uk/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        OakNorth Bank
+                      </a>
+                    </h3>
+                    <div
+                      class="app-card-subtitle"
+                    >
+                      <div
+                        class="date-location-entry"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="CalendarTodayIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                            />
+                          </svg>
+                          January 2024
+                           to 
+                          August 2025
+                        </span>
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="LocationOnIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                            />
+                          </svg>
+                          London
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="experience-roles"
+                    >
+                      <p>
+                        Led and mentored the Core Banking team, comprised of 4 engineers (2 seniors, 2 mid-level).
+                      </p>
+                      <p>
+                        Responsible for the integrity of the bank's ledger, safeguarding customer funds and maintaining accurate reconciliations. While designing and developing new banking products.
+                      </p>
+                      <p>
+                        Led the implementation of new transfer flows, enabling seamless transfers of customer funds between accounts with tens of millions of pounds in monthly throughput.
+                      </p>
+                      <p>
+                        Automated regulatory reporting and account reconciliation processes in partnership with Finance and Cash Operations teams. Ensuring compliance with industry-wide standards, while saving hours of manual effort every day.
+                      </p>
+                    </div>
+                    <div
+                      class="experience-technologies"
+                    >
+                      <h4>
+                        main tools: 
+                      </h4>
+                      <div
+                        class="experience-technologies-items"
+                      >
+                        <span>
+                          Python
+                        </span>
+                        <span>
+                          Kafka
+                        </span>
+                        <span>
+                          PostgreSQL
+                        </span>
+                        <span>
+                          BigQuery
+                        </span>
+                        <span>
+                          Docker
+                        </span>
+                        <span>
+                          AWS
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="experience-timeline-entry"
+                >
+                  <div
+                    class="app-card-wide"
+                  >
+                    <h3>
+                      senior software engineer
+                       -
+                       
+                      <a
+                        href="https://www.thousandeyes.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        ThousandEyes (Cisco)
+                      </a>
+                    </h3>
+                    <div
+                      class="app-card-subtitle"
+                    >
+                      <div
+                        class="date-location-entry"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="CalendarTodayIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                            />
+                          </svg>
+                          July 2023
+                           to 
+                          December 2023
+                        </span>
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="LocationOnIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                            />
+                          </svg>
+                          London
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="experience-roles"
+                    >
+                      <p>
+                        Developed and maintained BigData ETL pipelines for both training and real-time anomaly detection, enriching telemetry data from customer networks to support adaptive early warning systems that autonomously learn and align with network usage patterns.
+                      </p>
+                    </div>
+                    <div
+                      class="experience-technologies"
+                    >
+                      <h4>
+                        main tools: 
+                      </h4>
+                      <div
+                        class="experience-technologies-items"
+                      >
+                        <span>
+                          Java
+                        </span>
+                        <span>
+                          Kafka
+                        </span>
+                        <span>
+                          PostgreSQL
+                        </span>
+                        <span>
+                          Spark
+                        </span>
+                        <span>
+                          Airflow
+                        </span>
+                        <span>
+                          Docker
+                        </span>
+                        <span>
+                          AWS
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="experience-timeline-entry"
+                >
+                  <div
+                    class="app-card-wide"
+                  >
+                    <h3>
+                      senior full stack developer
+                       -
+                       
+                      <a
+                        href="https://www.longshotsystems.co.uk/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Longshot Systems
+                      </a>
+                    </h3>
+                    <div
+                      class="app-card-subtitle"
+                    >
+                      <div
+                        class="date-location-entry"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="CalendarTodayIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                            />
+                          </svg>
+                          November 2018
+                           to 
+                          June 2023
+                        </span>
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="LocationOnIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                            />
+                          </svg>
+                          London
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="experience-roles"
+                    >
+                      <p>
+                        Led the UI development of internal and customer facing web UIs: including defining CI/CD workflows, selecting technologies, and UI/UX design.
+                      </p>
+                      <p>
+                        Ownership over greenfield full stack projects (React+Golang+Postgres), where I was responsible for all development phases, including: requirement gathering, architecture design, full stack implementation, deployment and maintenance.
+                      </p>
+                      <p>
+                        Spearheaded the introduction of Docker as the execution platform for Longshot's microservices, in place of Systemd. Additionally, designed and developed a build & deployment CLI tool that streamlined the Docker development workflow. Which greatly facilitated the transition to Docker, from the developer's perspective.
+                      </p>
+                      <p>
+                        Worked on various high throughput and event driven data processing applications. For example, one that aggregated sport information across different third-party systems (bookies) and produced internal representations, which abstracted the rest of the system from the various bookie-specific nomenclatures. This was achieved by producing a proximity graph for sporting events that were closely related to one another, and required high amounts of integration/blackbox tests (harnessing docker-compose) to ensure ongoing reliability.
+                      </p>
+                    </div>
+                    <div
+                      class="experience-technologies"
+                    >
+                      <h4>
+                        main tools: 
+                      </h4>
+                      <div
+                        class="experience-technologies-items"
+                      >
+                        <span>
+                          Golang
+                        </span>
+                        <span>
+                          React
+                        </span>
+                        <span>
+                          Typescript
+                        </span>
+                        <span>
+                          PostgreSQL
+                        </span>
+                        <span>
+                          Docker
+                        </span>
+                        <span>
+                          Node.js
+                        </span>
+                        <span>
+                          AWS
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="experience-timeline-entry"
+                >
+                  <div
+                    class="app-card-wide"
+                  >
+                    <h3>
+                      senior full stack developer
+                       -
+                       
+                      <a
+                        href="https://www.hyperglance.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Hyperglance
+                      </a>
+                    </h3>
+                    <div
+                      class="app-card-subtitle"
+                    >
+                      <div
+                        class="date-location-entry"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="CalendarTodayIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                            />
+                          </svg>
+                          July 2014
+                           to 
+                          October 2018
+                        </span>
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="LocationOnIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                            />
+                          </svg>
+                          London
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="experience-roles"
+                    >
+                      <p>
+                        Developed core modules for the Hyperglance JEE product. The latter spanned the full server-side architectural stack, ranging from JAX-RS Rest Endpoints, and EJB enhanced business-logic features, to JPA persistence components.
+                      </p>
+                      <p>
+                        Kick-started the conceptualization and development of Hyperglance's Web GUI. This included selecting technologies, defining CI/CD pipelines, being in charge of best practices, API contracts between frontend and backend.
+                      </p>
+                    </div>
+                    <div
+                      class="experience-technologies"
+                    >
+                      <h4>
+                        main tools: 
+                      </h4>
+                      <div
+                        class="experience-technologies-items"
+                      >
+                        <span>
+                          Angular
+                        </span>
+                        <span>
+                          Node.js
+                        </span>
+                        <span>
+                          Java EE (Wildfly)
+                        </span>
+                        <span>
+                          PostgreSQL
+                        </span>
+                        <span>
+                          AWS
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="experience-timeline-entry"
+                >
+                  <div
+                    class="app-card-wide"
+                  >
+                    <h3>
+                      solutions consultant
+                       -
+                       
+                      <a
+                        href="https://www.guidewire.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        Guidewire Software
+                      </a>
+                    </h3>
+                    <div
+                      class="app-card-subtitle"
+                    >
+                      <div
+                        class="date-location-entry"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="CalendarTodayIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                            />
+                          </svg>
+                          November 2012
+                           to 
+                          June 2014
+                        </span>
+                        <span
+                          class="text"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                            data-testid="LocationOnIcon"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                            />
+                          </svg>
+                          Dublin
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      class="experience-roles"
+                    >
+                      <p>
+                        Partly designed, developed and maintained an efficient and fault-tolerant configuration of a multi-tiered J2EE Guidewire billing product on two tier one Insurance companies, that would later handle millions of dollars in early revenue.
+                      </p>
+                      <p>
+                        Designed and developed integration points (e.g., SOAP, JMS) between the client server application and external third-party services, that provided scalable and concurrent bidirectional data flows based on real-time monetary client transactions.
+                      </p>
+                    </div>
+                    <div
+                      class="experience-technologies"
+                    >
+                      <h4>
+                        main tools: 
+                      </h4>
+                      <div
+                        class="experience-technologies-items"
+                      >
+                        <span>
+                          Java
+                        </span>
+                        <span>
+                          JMS
+                        </span>
+                        <span>
+                          SOAP
+                        </span>
+                        <span>
+                          Rest
+                        </span>
+                        <span>
+                          PostgreSQL
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="visited"
+        id="PROJECTS"
+      >
+        <section
+          class="projects"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                Projects
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                Some projects I've done in my free time
+              </span>
+            </div>
+            <div
+              class="projects-card-row"
+            >
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root projects-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                style="--Paper-shadow: none;"
+              >
+                <img
+                  alt="Esp32 Air Quality"
+                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1kuwa16-MuiCardMedia-root"
+                  src="/img.jpg"
+                />
+                <div
+                  class="MuiCardContent-root projects-content css-1lt5qva-MuiCardContent-root"
+                >
+                  <h4>
+                    Esp32 Air Quality
+                  </h4>
+                  <span
+                    class="projects-card-subtitle"
+                  >
+                    Air quality sensors connected to an ESP32 MCU
+                  </span>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing projects-actions css-1q4nm6f-MuiCardActions-root"
+                >
+                  <a
+                    aria-label="View demo"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/esp32-air-quality-sensor"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="PlayCircleOutlineIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m10 16.5 6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="View repository"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/esp32-air-quality-sensor"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root projects-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                style="--Paper-shadow: none;"
+              >
+                <img
+                  alt="My ECS Cluster"
+                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1kuwa16-MuiCardMedia-root"
+                  src="/img.jpg"
+                />
+                <div
+                  class="MuiCardContent-root projects-content css-1lt5qva-MuiCardContent-root"
+                >
+                  <h4>
+                    My ECS Cluster
+                  </h4>
+                  <span
+                    class="projects-card-subtitle"
+                  >
+                    My own Terraform provisioned ECS cluster
+                  </span>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing projects-actions css-1q4nm6f-MuiCardActions-root"
+                >
+                  <a
+                    aria-label="View demo"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/my-ecs-cluster"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="PlayCircleOutlineIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m10 16.5 6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="View repository"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/my-ecs-cluster"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root projects-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                style="--Paper-shadow: none;"
+              >
+                <img
+                  alt="Something of the day"
+                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1kuwa16-MuiCardMedia-root"
+                  src="/img.jpg"
+                />
+                <div
+                  class="MuiCardContent-root projects-content css-1lt5qva-MuiCardContent-root"
+                >
+                  <h4>
+                    Something of the day
+                  </h4>
+                  <span
+                    class="projects-card-subtitle"
+                  >
+                    A twitter joke scraper running on ECS
+                  </span>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing projects-actions css-1q4nm6f-MuiCardActions-root"
+                >
+                  <a
+                    aria-label="View demo"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://something.ricardomarques.dev/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="PlayCircleOutlineIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m10 16.5 6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="View repository"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/something-of-the-day"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root projects-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                style="--Paper-shadow: none;"
+              >
+                <img
+                  alt="WebAssembly Mandelbrot"
+                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1kuwa16-MuiCardMedia-root"
+                  src="/img.jpg"
+                />
+                <div
+                  class="MuiCardContent-root projects-content css-1lt5qva-MuiCardContent-root"
+                >
+                  <h4>
+                    WebAssembly Mandelbrot
+                  </h4>
+                  <span
+                    class="projects-card-subtitle"
+                  >
+                    A Fractal WebAssembly Viewer
+                  </span>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing projects-actions css-1q4nm6f-MuiCardActions-root"
+                >
+                  <a
+                    aria-label="View demo"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://wasmmandel.ricardomarques.dev/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="PlayCircleOutlineIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m10 16.5 6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="View repository"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/webasm-mandelbrot"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root projects-card css-1j74uew-MuiPaper-root-MuiCard-root"
+                style="--Paper-shadow: none;"
+              >
+                <img
+                  alt="WebGL Solar System"
+                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1kuwa16-MuiCardMedia-root"
+                  src="/img.jpg"
+                />
+                <div
+                  class="MuiCardContent-root projects-content css-1lt5qva-MuiCardContent-root"
+                >
+                  <h4>
+                    WebGL Solar System
+                  </h4>
+                  <span
+                    class="projects-card-subtitle"
+                  >
+                    My Solar System
+                  </span>
+                </div>
+                <div
+                  class="MuiCardActions-root MuiCardActions-spacing projects-actions css-1q4nm6f-MuiCardActions-root"
+                >
+                  <a
+                    aria-label="View demo"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://solar.ricardomarques.dev/"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="PlayCircleOutlineIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="m10 16.5 6-4.5-6-4.5zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    aria-label="View repository"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium projects-action-icon css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+                    href="https://github.com/rjmarques/SolarSystem"
+                    rel="noopener noreferrer"
+                    tabindex="0"
+                    target="_blank"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                      data-testid="GitHubIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="visited"
+        id="ACADEMIC"
+      >
+        <section
+          class="publications"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                Publications
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                Papers I have published
+              </span>
+            </div>
+            <ul
+              class="materialize"
+            >
+              <li
+                class="publications-entry"
+              >
+                <div
+                  class="app-card-wide"
+                >
+                  <h3>
+                    Sac'14
+                  </h3>
+                  <div
+                    class="app-card-subtitle"
+                  >
+                    <span>
+                      On the Support of Task-Parallel Algorithmic Skeletons for Multi-GPU Computing
+                    </span>
+                  </div>
+                  <div>
+                    <a
+                      href="https://dl.acm.org/doi/10.1145/2554850.2555018"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      https://dl.acm.org/doi/10.1145/2554850.2555018
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="publications-entry"
+              >
+                <div
+                  class="app-card-wide"
+                >
+                  <h3>
+                    Euro-Par 2013
+                  </h3>
+                  <div
+                    class="app-card-subtitle"
+                  >
+                    <span>
+                      Algorithmic Skeleton Framework for the Orchestration of GPU Computations
+                    </span>
+                  </div>
+                  <div>
+                    <a
+                      href="http://link.springer.com/chapter/10.1007%2F978-3-642-40047-6_86"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      http://link.springer.com/chapter/10.1007%2F978-3-642-40047-6_86
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          class="education"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                Education
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                My academic background
+              </span>
+            </div>
+            <ul
+              class="materialize"
+            >
+              <li
+                class="education-entry"
+              >
+                <div
+                  class="app-card-wide"
+                >
+                  <h3>
+                    MSc In Computer Science -
+                     
+                    <a
+                      href="https://www.fct.unl.pt/en"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      New University of Lisbon
+                    </a>
+                  </h3>
+                  <div
+                    class="app-card-subtitle"
+                  >
+                    <div
+                      class="date-location-entry"
+                    >
+                      <span
+                        class="text"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                          data-testid="CalendarTodayIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                          />
+                        </svg>
+                        2010
+                         to 
+                        2012
+                      </span>
+                      <span
+                        class="text"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                          data-testid="LocationOnIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                          />
+                        </svg>
+                        Lisbon
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    Dissertation:
+                     
+                    <a
+                      href="https://run.unl.pt/handle/10362/8382"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Algorithmic skeleton framework for the orchestration of GPU computations
+                    </a>
+                  </div>
+                  <div>
+                    Source Code:
+                     
+                    <a
+                      href="https://bitbucket.org/MarrowTeam/marrow"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      https://bitbucket.org/MarrowTeam/marrow
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="education-entry"
+              >
+                <div
+                  class="app-card-wide"
+                >
+                  <h3>
+                    BSc In Computer Science -
+                     
+                    <a
+                      href="https://www.fct.unl.pt/en"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      New University of Lisbon
+                    </a>
+                  </h3>
+                  <div
+                    class="app-card-subtitle"
+                  >
+                    <div
+                      class="date-location-entry"
+                    >
+                      <span
+                        class="text"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                          data-testid="CalendarTodayIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 18H4V8h16z"
+                          />
+                        </svg>
+                        2007
+                         to 
+                        2010
+                      </span>
+                      <span
+                        class="text"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                          data-testid="LocationOnIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"
+                          />
+                        </svg>
+                        Lisbon
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div
+        class="visited"
+        id="CONTACT"
+        style="min-height: calc(100vh - 80px);"
+      >
+        <section
+          class="contact"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="content-title"
+            >
+              <h2>
+                Contact
+              </h2>
+              <span
+                class="section-sub-title"
+              >
+                Want to get in touch? Leave me a message
+              </span>
+            </div>
+            <form
+              class="contact-form"
+            >
+              <div
+                class="form-grid"
+              >
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root input-field css-1ncoffa-MuiFormControl-root-MuiTextField-root"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-bnqwvl-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-describedby="«rc»-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-a12wv3-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="«rc»"
+                      placeholder="Your Name *"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1nf2c5d-MuiNotchedOutlined-root"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-z9o5tx-MuiFormHelperText-root"
+                    id="«rc»-helper-text"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </p>
+                </div>
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root input-field css-1ncoffa-MuiFormControl-root-MuiTextField-root"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-bnqwvl-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-describedby="«rd»-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-a12wv3-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="«rd»"
+                      placeholder="Email *"
+                      type="email"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1nf2c5d-MuiNotchedOutlined-root"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-z9o5tx-MuiFormHelperText-root"
+                    id="«rd»-helper-text"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </p>
+                </div>
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root input-field css-1ncoffa-MuiFormControl-root-MuiTextField-root"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-bnqwvl-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-describedby="«re»-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-a12wv3-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="«re»"
+                      placeholder="Subject"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1nf2c5d-MuiNotchedOutlined-root"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-z9o5tx-MuiFormHelperText-root"
+                    id="«re»-helper-text"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </p>
+                </div>
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root input-field css-1ncoffa-MuiFormControl-root-MuiTextField-root"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall css-bnqwvl-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <input
+                      aria-describedby="«rf»-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-a12wv3-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="«rf»"
+                      placeholder="Company"
+                      type="text"
+                      value=""
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1nf2c5d-MuiNotchedOutlined-root"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeSmall MuiFormHelperText-contained css-z9o5tx-MuiFormHelperText-root"
+                    id="«rf»-helper-text"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </p>
+                </div>
+                <div
+                  class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root input-field contact-text-area full-width css-1ncoffa-MuiFormControl-root-MuiTextField-root"
+                >
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-multiline css-8iwmkx-MuiInputBase-root-MuiOutlinedInput-root"
+                  >
+                    <textarea
+                      aria-describedby="«rg»-helper-text"
+                      aria-invalid="false"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline css-doh88j-MuiInputBase-input-MuiOutlinedInput-input"
+                      id="«rg»"
+                      placeholder="Message *"
+                      rows="6"
+                      style="height: 0px; overflow: hidden;"
+                    />
+                    <textarea
+                      aria-hidden="true"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMultiline css-doh88j-MuiInputBase-input-MuiOutlinedInput-input"
+                      readonly=""
+                      style="visibility: hidden; position: absolute; overflow: hidden; height: 0px; top: 0px; left: 0px; transform: translateZ(0); padding-top: 0px; padding-bottom: 0px; width: 100%;"
+                      tabindex="-1"
+                    />
+                    <fieldset
+                      aria-hidden="true"
+                      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+                    >
+                      <legend
+                        class="css-1nf2c5d-MuiNotchedOutlined-root"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="notranslate"
+                        >
+                          ​
+                        </span>
+                      </legend>
+                    </fieldset>
+                  </div>
+                  <p
+                    class="MuiFormHelperText-root MuiFormHelperText-sizeMedium MuiFormHelperText-contained css-di2gla-MuiFormHelperText-root"
+                    id="«rg»-helper-text"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="notranslate"
+                    >
+                      ​
+                    </span>
+                  </p>
+                </div>
+                <div
+                  class="captcha-container full-width"
+                >
+                  <div
+                    class="cf-turnstile"
+                    data-callback="onTurnstileSuccess"
+                    data-error-callback="onTurnstileError"
+                    data-expired-callback="onTurnstileExpired"
+                    data-sitekey="0x4AAAAAABugWtNT62bs1yWd"
+                    data-size="normal"
+                    data-theme="dark"
+                  />
+                </div>
+                <div
+                  class="full-width"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary submit-button css-wn9s2t-MuiButtonBase-root-MuiButton-root"
+                    tabindex="0"
+                    type="submit"
+                  >
+                    <span
+                      class="MuiButton-loadingWrapper"
+                      style="display: contents;"
+                    />
+                    send message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <footer
+          class="footer"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="footer-info"
+            >
+              <div
+                class="footer-links"
+              >
+                <a
+                  aria-label="GitHub Profile"
+                  href="https://github.com/rjmarques"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="GitHubIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
+                    />
+                  </svg>
+                </a>
+                <a
+                  aria-label="LinkedIn Profile"
+                  href="https://linkedin.com/in/ricardo-marques-48568b44"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+                    data-testid="LinkedInIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <small
+                class="footer-copy"
+              >
+                © Copyright 
+                2025
+                 Ricardo Marques
+              </small>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+`;

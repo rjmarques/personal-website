@@ -1,0 +1,102 @@
+@use "../../theme.scss" as *;
+
+.navbar {
+  width: 100%;
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include for-size(laptop-small-up) {
+        flex-direction: row-reverse;
+    }
+  }
+
+  .navbar-menu {
+    background-color: inherit;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+
+    @include for-size(laptop-small-up) {
+        flex-direction: row;
+        max-height: none;
+    }
+
+    &.open {
+      max-height: 500px;
+      transition: max-height 0.3s ease;
+  
+      .navbar-item {
+        padding: 10px;
+        margin: 0px;
+
+        &.active {
+          background-color: $primary-color;
+        }
+      }
+
+      .navbar-link {
+        border: none;
+      }
+    }
+
+    .navbar-item {
+      margin: 0px 0px 0px 30px;
+
+      &.active {
+        .navbar-link {
+          border-color: $primary-color;
+        }
+      }
+    }
+
+    .navbar-link {
+      background: transparent;
+      border: none;
+      border-radius: 0 !important;
+      border-bottom: 2px solid transparent;
+      color: $white;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 40px;
+      padding: 0px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      width: 100%;
+
+      &:hover {
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+    }    
+  }
+
+  .navbar-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    margin-bottom: 14px;
+    margin-left: auto; 
+    transition: color 0.3s ease;
+
+    @media (max-width: #{$tablet-upper-boundary - 1px}) {
+      display: flex;
+    }
+
+    &.open {
+      color: $primary-color;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

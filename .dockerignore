@@ -1,7 +1,0 @@
-**/node_modules
-**/build
-**/coverage
-**/dist
-LICENSE
-README.md
-.gitignore
