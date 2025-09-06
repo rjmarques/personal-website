@@ -39,7 +39,7 @@ const Bio = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                this website is a SSR React App with a Typescript backend
+                this website is a SSG Next.js App served by a cloudflare worker
               </a>
               .
             </p>

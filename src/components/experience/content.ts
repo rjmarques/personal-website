@@ -1,8 +1,23 @@
 const experienceContent = [
   {
+    company: "Cloudflare",
+    startingDate: "August 2025",
+    endingDate: "Now",
+    jobTitle: "Senior Software Engineer",
+    location: "London",
+    roles: [],
+    technologies: [
+      "Python",
+      "Kafka",
+      "PostgreSQL",
+      "Kubernetes",
+    ],
+    url: "https://www.cloudflare.com/en-gb/",
+  },
+  {
     company: "OakNorth Bank",
     startingDate: "January 2024",
-    endingDate: "Now",
+    endingDate: "August 2025",
     jobTitle: "lead software engineer",
     location: "London",
     roles: [
