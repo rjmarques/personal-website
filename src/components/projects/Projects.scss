@@ -12,7 +12,7 @@
     }
 
     @include for-size(laptop-up) {
-      grid-template-columns: repeat(3, 3fr);
+      grid-template-columns: repeat(2, 2fr);
     }
   }
 
