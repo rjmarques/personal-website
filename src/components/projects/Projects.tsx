@@ -4,7 +4,6 @@ import { PlayCircleOutline, GitHub } from '@mui/icons-material';
 import ContentSection from '../common/ContentSection';
 import esp32Image from './img/esp32.png';
 import ecsImage from './img/ecs.png';
-import somethingOfTheDayImage from './img/something-of-the-day.png';
 import wasmMandelImage from './img/wasm-mandel.png';
 import solarSystemImage from './img/solar-system.png';
 import './Projects.scss';
@@ -31,13 +30,6 @@ const projects: IProject[] = [
     repoUrl: "https://github.com/rjmarques/my-ecs-cluster",
     title: "My ECS Cluster",
     url: "https://github.com/rjmarques/my-ecs-cluster",
-  },
-  {
-    description: "A twitter joke scraper running on ECS",
-    image: somethingOfTheDayImage,
-    repoUrl: "https://github.com/rjmarques/something-of-the-day",
-    title: "Something of the day",
-    url: "https://something.ricardomarques.dev/",
   },
   {
     description: "A Fractal WebAssembly Viewer",
